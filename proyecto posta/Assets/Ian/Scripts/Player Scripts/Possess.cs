@@ -1,0 +1,125 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Possess : MonoBehaviour
+{
+    bool isPossesing;
+    GameObject[] enemiesList;
+    GameObject found;
+    private Vector3 prevPos;
+    public GameObject sprite;
+
+    private void Start()
+    {
+        enemiesList = GameObject.FindGameObjectsWithTag("Possesable");
+    }
+    void Update()
+    {
+        if (isPossesing)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                Debug.Log("WOPAPAPA");
+            }
+
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                this.GetComponent<Movement>().enabled = true;
+                goBackToNormal();
+                isPossesing = false;
+            }
+        }
+        else
+        {
+            doPossess();
+            Detect();
+        }
+    }
+
+    void doPossess()
+    {
+        if (Input.GetKeyDown(KeyCode.F) && found != null)
+        {
+            Possesing();
+        }
+    }
+    void Possesing()
+    {
+        isPossesing = true;
+        prevPos = this.transform.position;
+        this.transform.position = found.transform.position;
+        this.GetComponent<CharacterController>().enabled = false;
+        this.GetComponent<PushNPull>().enabled = false;
+        sprite.SetActive(false);
+        this.GetComponent<Movement>().enabled = false;
+    }
+
+    public void goBackToNormal()
+    {
+        this.gameObject.transform.position = prevPos;
+        this.GetComponent<CharacterController>().enabled = true;
+        this.GetComponent<PushNPull>().enabled = true;
+        sprite.SetActive(true);
+    }
+
+    void Detect()
+    {
+        GameObject possesable;
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            try
+            {
+                possesable = GetClosestEnemy(enemiesList).gameObject;
+
+                if (Vector3.Distance(possesable.transform.position, transform.position) <= 10)
+                {
+                    possesable.GetComponent<Outline>().enabled = true;
+                    found = possesable;
+                }
+            }
+            catch(Exception e)
+            {
+                Debug.Log("LOL");
+                Debug.LogException(e, this);
+            }
+        }
+        if (Input.GetKeyUp(KeyCode.Q))
+        {
+            try
+            {
+                foreach (GameObject potentialTarget in enemiesList)
+                {
+                    potentialTarget.GetComponent<Outline>().enabled = false;
+                    found = null;
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.LogException(e, this);
+            }
+        }
+    }
+
+    Transform GetClosestEnemy(GameObject[] enemies)
+    {
+        Transform bestTarget = null;
+        float closestDistanceSqr = Mathf.Infinity;
+        Vector3 currentPosition = transform.position;
+        foreach (GameObject potentialTarget in enemies)
+        {
+            Vector3 directionToTarget = potentialTarget.transform.position - currentPosition;
+            float dSqrToTarget = directionToTarget.sqrMagnitude;
+            if (dSqrToTarget < closestDistanceSqr)
+            {
+                closestDistanceSqr = dSqrToTarget;
+                bestTarget = potentialTarget.transform;
+            }
+        }
+        Debug.Log(bestTarget + "diush");
+        return bestTarget;
+    }
+
+}
