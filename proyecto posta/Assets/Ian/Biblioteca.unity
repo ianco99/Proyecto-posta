@@ -121,6 +121,41 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!21 &51278170
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Silla
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 897acf0c8280fec46932831f2e7c71d1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 0.990566, g: 0.9421832, b: 0.4906105, a: 0}
+    - Color_779D8C7A: {r: 1, g: 0.96402425, b: 0.6556604, a: 0}
+    - Color_8768768687: {r: 0.5566038, g: 0.27460676, b: 0.17590779, a: 0}
+    - _L1_color: {r: 0.64116794, g: 0.63274807, b: 0.577656, a: 0.12823358}
+    - _L1_dir: {r: 0.37663287, g: 0.9202365, b: -0.106359504, a: 0}
 --- !u!21 &300614009
 Material:
   serializedVersion: 6
@@ -151,7 +186,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
     - Color_779D8C7A: {r: 1, g: 0.24056602, b: 0.24056602, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
     - _L1_color: {r: 0.2949018, g: 0.29102916, b: 0.26568982, a: 0.058980357}
     - _L1_dir: {r: -0.0067489264, g: 0.6006936, b: -0.7994509, a: 0}
 --- !u!114 &312688415 stripped
@@ -461,7 +498,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
     - Color_779D8C7A: {r: 1, g: 0.24056602, b: 0.24056602, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
     - _L1_color: {r: 0.32218495, g: 0.31795403, b: 0.29027042, a: 0.06443699}
     - _L1_dir: {r: 0.5083123, g: 0.6296943, b: -0.5874553, a: 0}
 --- !u!43 &800713552
@@ -669,7 +708,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
     - Color_779D8C7A: {r: 1, g: 0.24056602, b: 0.24056602, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
     - _L1_color: {r: 0.62644905, g: 0.61822253, b: 0.5643951, a: 0.12528981}
     - _L1_dir: {r: 0.18124022, g: 0.7320047, b: -0.6567504, a: 0}
 --- !u!1 &1246987446 stripped
@@ -1096,42 +1137,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
     - Color_779D8C7A: {r: 1, g: 0.24056602, b: 0.24056602, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
     - _L1_color: {r: 0.7942229, g: 0.78379315, b: 0.7155499, a: 0.15884458}
     - _L1_dir: {r: 0.4331807, g: 0.40383524, b: -0.805774, a: 0}
---- !u!21 &1807535215
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Testing
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: e1a7a55b9522bda4a90f420c872b877a, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_779D8C7A: {r: 1, g: 0.24056602, b: 0.24056602, a: 0}
-    - _L1_color: {r: 0.64116794, g: 0.63274807, b: 0.577656, a: 0.12823358}
-    - _L1_dir: {r: 0.37663287, g: 0.9202365, b: -0.106359504, a: 0}
 --- !u!114 &1813750252 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2007242263124091823, guid: 8f7f640f65eba3845a4d1bc5981b347c,
@@ -1186,7 +1196,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
     - Color_779D8C7A: {r: 1, g: 0.24056602, b: 0.24056602, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
     - _L1_color: {r: 0.5414834, g: 0.5343727, b: 0.4878459, a: 0.108296685}
     - _L1_dir: {r: -0.34121254, g: 0.8361728, b: -0.42940542, a: 0}
 --- !u!114 &2075776981 stripped
@@ -13524,15 +13536,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4eb6f4c6bf65845ad3370b8cd1401f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: d84bf77c9939a584bba36ad6dfec7e81, type: 2}
-  instanceMaterial: 1
-  meshCenter: {x: 0, y: 0, z: 0}
-  maxLights: 6
-  raycast: 1
-  raycastMask:
-    serializedVersion: 2
-    m_Bits: 0
-  raycastFadeSpeed: 10
 --- !u!114 &8975219065956166571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13545,15 +13548,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4eb6f4c6bf65845ad3370b8cd1401f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 0}
-  instanceMaterial: 1
-  meshCenter: {x: 0, y: 0, z: 0}
-  maxLights: 6
-  raycast: 1
-  raycastMask:
-    serializedVersion: 2
-    m_Bits: 0
-  raycastFadeSpeed: 10
 --- !u!108 &8975219065957047277
 Light:
   m_ObjectHideFlags: 0
@@ -14493,7 +14487,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1807535215}
+  - {fileID: 51278170}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14540,6 +14534,7 @@ GameObject:
   - component: {fileID: 8975219066165030884}
   - component: {fileID: 8975219066165030885}
   - component: {fileID: 8975219066165030888}
+  - component: {fileID: 8975219066165030889}
   m_Layer: 0
   m_Name: silla
   m_TagString: Untagged
@@ -14559,7 +14554,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4eb6f4c6bf65845ad3370b8cd1401f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: d84bf77c9939a584bba36ad6dfec7e81, type: 2}
+--- !u!114 &8975219066165030889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8975219066165030887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1da9768655aa3a4ab0dfc706b7d10a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 066a5700e4243e2448b0db4a96de4bab, type: 2}
   instanceMaterial: 1
   meshCenter: {x: 0, y: 0, z: 0}
   maxLights: 6
@@ -14832,15 +14839,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4eb6f4c6bf65845ad3370b8cd1401f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: d84bf77c9939a584bba36ad6dfec7e81, type: 2}
-  instanceMaterial: 1
-  meshCenter: {x: 0, y: 0, z: 0}
-  maxLights: 6
-  raycast: 1
-  raycastMask:
-    serializedVersion: 2
-    m_Bits: 0
-  raycastFadeSpeed: 10
 --- !u!114 &8975219066375269964
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -15483,15 +15481,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4eb6f4c6bf65845ad3370b8cd1401f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: d84bf77c9939a584bba36ad6dfec7e81, type: 2}
-  instanceMaterial: 1
-  meshCenter: {x: 0, y: 0, z: 0}
-  maxLights: 6
-  raycast: 1
-  raycastMask:
-    serializedVersion: 2
-    m_Bits: 0
-  raycastFadeSpeed: 10
 --- !u!33 &8975219066549100720
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -16504,15 +16493,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4eb6f4c6bf65845ad3370b8cd1401f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: d84bf77c9939a584bba36ad6dfec7e81, type: 2}
-  instanceMaterial: 1
-  meshCenter: {x: 0, y: 0, z: 0}
-  maxLights: 6
-  raycast: 1
-  raycastMask:
-    serializedVersion: 2
-    m_Bits: 0
-  raycastFadeSpeed: 10
 --- !u!33 &8975219067054640551
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -16721,15 +16701,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4eb6f4c6bf65845ad3370b8cd1401f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: d84bf77c9939a584bba36ad6dfec7e81, type: 2}
-  instanceMaterial: 1
-  meshCenter: {x: 0, y: 0, z: 0}
-  maxLights: 6
-  raycast: 1
-  raycastMask:
-    serializedVersion: 2
-    m_Bits: 0
-  raycastFadeSpeed: 10
 --- !u!33 &8975219067104278525
 MeshFilter:
   m_ObjectHideFlags: 0
