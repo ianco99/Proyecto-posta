@@ -5,12 +5,14 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public AudioSounds[] sounds;
+    static public float volume = 1f;
     // Start is called before the first frame update
     void Awake()
     {
         foreach(AudioSounds s in sounds){
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
+            s.volume = volume;
             s.source.volume = s.volume;
             s.source.pitch = s.pitch; 
         }
@@ -25,6 +27,9 @@ public class AudioManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        foreach(AudioSounds s in sounds){
+            s.volume = volume;
+            s.source.volume = s.volume;
+        }
     }
 }
