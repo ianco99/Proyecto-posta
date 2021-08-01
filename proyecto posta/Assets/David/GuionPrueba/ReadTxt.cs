@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
 public class ReadTxt : MonoBehaviour
-{
+{  
     public Text texto;
     public GameObject panel;
     public GameObject Tex;
@@ -15,6 +15,7 @@ public class ReadTxt : MonoBehaviour
     public int cantPal = 0;
     public bool estaPresente; 
     public string nombFile;
+    public string nombre = "";
     public int LineafinWW = 0;
 
     // Start is called before the first frame update
@@ -36,8 +37,12 @@ public class ReadTxt : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown("space")  && x && cor){
-            if( cantPal<textito.Length){
+            if( cantPal<textito.Length && nombre != "TFinn"){
               NextDialogue(LineafinWW);
+            }
+             
+            if(nombre == "TFinn"){
+                StartCoroutine(waitTen());
             }
         }
         //else if (Input.GetKeyDown("space") && cor) StartDialogue(nombFile, 5, 7);
@@ -87,11 +92,15 @@ public class ReadTxt : MonoBehaviour
                 }
                 else
                 {
-                    Nombre.text = nomb[0];
+                    nombre = nomb[0];
                     switch (nomb[0])
                     {
                         case "Finn":
                             panel.GetComponent<Image>().material.color = new Color(255, 255, 0);
+                            break;
+                        case  "TFinn": 
+                            panel.GetComponent<Image>().material.color = new Color(255, 255, 0);
+                            nomb[0] = "Finn";
                             break;
                         case "Dialogo Interno de Finn":
                             panel.GetComponent<Image>().material.color = new Color(255, 255, 100);
@@ -103,6 +112,7 @@ public class ReadTxt : MonoBehaviour
                             panel.GetComponent<Image>().material.color = new Color(255, 0, 255);
                             break;
                     }
+                    Nombre.text = nomb[0];
                     StartCoroutine(TypeSentence(nomb[1]));
                 }
                 cantPal++;
@@ -141,4 +151,17 @@ public class ReadTxt : MonoBehaviour
         Tex.SetActive(true);
         NextDialogue(lineaFin);
     }
+
+    IEnumerator waitTen(){
+        yield return new WaitForSeconds(10f);
+        NextDialogue(LineafinWW);
+    }
+
+    /* IEnumerator popUP(int lineaFin){
+        estaPresente = false;
+        Tex.SetActive(true);
+        yield return new WaitUntil(() => estaPresente);
+        Tex.SetActive(false);
+        NextDialogue(lineaFin);
+    }*/
 }

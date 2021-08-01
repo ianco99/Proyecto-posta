@@ -1,6 +1,6 @@
-Finn: ¿En serio estoy muerto? ¿Esto de verdad está ocurriendo?
+TFinn: ¿En serio estoy muerto? ¿Esto de verdad está ocurriendo?
 Bool: 
-Finn: ¿No será esto un sueño?
+TFinn: ¿No será esto un sueño?
 Bool: 
-Finn: Hay tanto que no hice.
+TFinn: Hay tanto que no hice.
 FIN  
