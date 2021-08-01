@@ -9,9 +9,6 @@ public class PushNPull : MonoBehaviour
     [SerializeField] GameObject interacted;
     [SerializeField] Transform raycastOrigin;
     [SerializeField] GameObject player;
-    private void Start()
-    {
-    }
     void Update()
     {
         PushAndPull();
