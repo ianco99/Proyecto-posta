@@ -1,0 +1,49 @@
+Profesor: Buen día, estamos llenos. ¡Gracias por venir!
+Finn: Eso fue rápido.
+Kevin: Disculpe, ¿no hay un lugar en donde pueda sentarme para unirme a la clase?
+Profesor: Como dije, todos los lugares están ocupados. A menos que quieras esperar hasta que alguno se vaya por una emergencia familiar, te ofrezco que vuelvas cualquier otro día.
+Bool: 5
+Finn: Dame un minuto, voy a intentar solucionar esto.
+Kevin: Todo tuyo.
+Bool: 5 
+Kevin: Wow, eso fue, ¿Vos hiciste eso?
+Finn: Si, no fue tan difícil como pensaba, pero pobrecito parecía re asustado
+Kevin: Como ahora se fue un alumno, ¿Puedo entrar yo?
+Profesor: Hmm, tuviste suerte. te voy a dejar entrar. Pero no esperes mi ayuda porque ese lugar no es tuyo.
+Finn: Dios hay gente tiene mala gana
+Kevin: Si, pero igual puedo probarlo ¿No?, vamos adentro.
+Bool: 1
+Kevin: ¿Con qué se supone que tengo que dibujar?
+Profesor: Los elementos están en el aula, arreglatelas
+Kevin: Uy bueno…
+Finn: No te preocupes yo me encargo de traer todo lo que necesites 
+Kevin: Bueno primero necesito una hoja
+Bool: 5
+Kevin: ¡Gracias!
+Finn: ¿Qué más vas a necesitar?
+Kevin: Hmmm, las témperas siempre me parecen muy lindas
+Finn: Ahora te las traigo. 
+Bool: 5
+Kevin: ¡Gracias! Creo que eso es todo lo que necesito
+Finn: Perfecto, ¿Ya sabes lo que tienes que dibujar?
+Kevin: Creo que tengo que dibujar esa estatua…
+Bool: 5
+Finn: Vos tampoco la podés ver, ¿verdad?
+Kevin: No…
+Finn: Bueno esperame que ayudo para que la puedas ver
+Bool: 5
+Kevin: ¡Perfecto ahora lo puedo ver!, manos a la obra
+Bool: 5
+Finn: Te quedo bastante bien, eh.
+Kevin: Gracias, me divirtió, pero no se si me gusto tanto como yo esperaba…
+Dialogo Interno de Finn: Ufa no le gusto, ¿Qué le puedo ofrecer?
+Finn: No pasa nada, todavía tenemos tiempo, seguiremos buscando
+Kevin: ¿Qué se te ocurre?
+Finn: ¡Ya se! Aca cerca hay un jardin botanica
+Kevin: Un jardín botanico…
+Finn: Sí, dale confía en mi va a ser divertido
+Kevin: Hmmm, no se ni que vamos a hacer pero despues de todo lo que hiciste por mi recien lo voy a intentar
+Finn: Entonces vayamos
+FIN
+
+

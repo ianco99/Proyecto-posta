@@ -9,6 +9,9 @@ public class PushNPull : MonoBehaviour
     [SerializeField] GameObject interacted;
     [SerializeField] Transform raycastOrigin;
     [SerializeField] GameObject player;
+    public float velocidad;
+    float initialDrag;
+    float initialAngularDrag;
     void Update()
     {
         PushAndPull();
@@ -29,13 +32,16 @@ public class PushNPull : MonoBehaviour
 
                 player.GetComponent<Movement>().speed = 2f;
                 interacted = hit.transform.gameObject;
-
+                initialAngularDrag = interacted.GetComponent<Rigidbody>().angularDrag;
+                initialDrag = interacted.GetComponent<Rigidbody>().drag;
             }
         }
         if (Input.GetKey(KeyCode.R) && interacting)
         {
             Vector3 moveObject = new Vector3(this.transform.position.x, interacted.transform.position.y, interacted.transform.position.z);
             interacted.GetComponent<Rigidbody>().velocity = player.GetComponent<Movement>().direction * player.GetComponent<Movement>().speed;
+            interacted.GetComponent<Rigidbody>().drag = 0f;
+            interacted.GetComponent<Rigidbody>().angularDrag = 0f;
             if (player.GetComponent<Movement>().direction.x < -0.0001 || player.GetComponent<Movement>().direction.z < -0.0001)
             {
                 Debug.Log("ARRASTRANDO");
@@ -47,7 +53,9 @@ public class PushNPull : MonoBehaviour
         }
         else if (Input.GetKeyUp(KeyCode.R) && interacting)
         {
-            //interacted.transform.SetParent(null);
+            interacted.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f, 0f);
+            interacted.GetComponent<Rigidbody>().drag = initialDrag;
+            interacted.GetComponent<Rigidbody>().angularDrag = initialAngularDrag;
             interacting = false;
             interacted = null;
             player.GetComponent<Movement>().speed = 6f;

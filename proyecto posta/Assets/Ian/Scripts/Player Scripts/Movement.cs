@@ -8,7 +8,7 @@ public class Movement : MonoBehaviour
     [SerializeField] CharacterController controller;
     [SerializeField] Transform cam;
     [SerializeField] Animator anim;
-
+    public float intialSpeed = 6f;
     public float speed = 6f;
     [SerializeField] float jumpSpeed = 5f;
     [SerializeField] float tiempoFlota;
@@ -88,8 +88,6 @@ public class Movement : MonoBehaviour
                 }
         }
 
-        SlideDown();
-
         if (direction.magnitude >= 0.1f)
         {
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
@@ -99,12 +97,13 @@ public class Movement : MonoBehaviour
             moveDir = Quaternion.Euler(0f,targetAngle, 0f) * Vector3.forward;
             moveDir.y = directionY;
             controller.Move(moveDir * speed * Time.deltaTime);
+            SlideDown();
         }   
         else{
             direction.y = directionY;
-            controller.Move(direction * speed * Time.deltaTime);            
+            controller.Move(direction * speed * Time.deltaTime);
+            SlideDown();
         }
-        
     }
 
     void Animations()
@@ -137,8 +136,10 @@ public class Movement : MonoBehaviour
         
         if(isOnSplope)
         {
+            direction.x += hitNormal.x * slideVelocity;
+            direction.z += hitNormal.z * slideVelocity;
             moveDir.x += hitNormal.x * slideVelocity;
-            moveDir.z += hitNormal.z * slideVelocity;
+            moveDir.z += hitNormal.x * slideVelocity;
         }
     }
     private void OnControllerColliderHit(ControllerColliderHit hit)

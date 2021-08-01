@@ -1,0 +1,15 @@
+Finn: Nunca cambiás biblioteca. 
+Bool: 4
+Finn: Acá están todos mis favoritos.
+Kevin: ¡Aja! Cinematografía 101, aca estas 
+Bool: 5
+Finn: Ese libro me encantó cuando lo leí, ¿a este chico le gusta el tema?
+Finn: ¿Cuántos años tendrá? Será un adolescente
+Kevin:  Me llevo este.
+Finn: A su edad me interesaba la cinematografía. me hace acordar mucho a mi de joven.
+Kevin: ¡Bueno, gracias hasta luego!
+Tiempo: 3
+Finn: ¿Le gustará el libro? Bah nunca lo sabré
+Finn: …
+Finn: Ay qué más da, lo voy a seguir. Ni siquiera me puede ver.
+FIN
