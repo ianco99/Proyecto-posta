@@ -41,13 +41,6 @@ public class Movement : MonoBehaviour
 
     [SerializeField] GameObject puller;
 
-    public GameObject AudioManager;
-    AudioManager audio;
-
-    void Awake(){
-        audio = AudioManager.GetComponent<AudioManager>();
-    }
-
     private void Update(){
 
         horizontal = Input.GetAxisRaw("Horizontal");
@@ -81,7 +74,6 @@ public class Movement : MonoBehaviour
 
             if(Input.GetKeyDown(KeyCode.Space)){
                 directionY = jumpSpeed;
-                audio.Play("Jump");
                 jumping = true;
             } 
         }

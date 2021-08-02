@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mesa
+  m_Name: Arbol
   m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
     type: 3}
   m_ShaderKeywords: 
@@ -30,8 +30,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors:
-    - Color_6820E916: {r: 0.0754717, g: 0.065859735, b: 0.065859735, a: 0}
-    - Color_779D8C7A: {r: 0.5764706, g: 0.38502076, b: 0.2627451, a: 0}
-    - Color_8768768687: {r: 0.13207549, g: 0.06043077, b: 0.06043077, a: 0}
-    - _L1_color: {r: 1.5080941, g: 1.4882898, b: 1.3587074, a: 0.3016188}
-    - _L1_dir: {r: 0.18887825, g: 0.963706, b: -0.18866819, a: 0}
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.15812458, g: 0.4433962, b: 0.07320219, a: 0}
+    - Color_8768768687: {r: 0.029592374, g: 0.3301887, b: 0.1483484, a: 0}
+    - _L1_color: {r: 0.46635816, g: 0.55783963, b: 0.754717, a: 0}
+    - _L1_dir: {r: 0.1888783, g: 0.963706, b: -0.1886682, a: 0}
