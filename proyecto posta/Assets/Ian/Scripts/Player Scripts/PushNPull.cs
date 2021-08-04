@@ -12,6 +12,12 @@ public class PushNPull : MonoBehaviour
     public float velocidad;
     float initialDrag;
     float initialAngularDrag;
+    Animator anim;
+
+    void Start()
+    {
+        anim = GetComponentInChildren<Animator>();
+    }
     void Update()
     {
         PushAndPull();
@@ -27,13 +33,24 @@ public class PushNPull : MonoBehaviour
             Debug.DrawRay(origin, this.transform.forward, Color.green, 20f, false);
             if (hit.collider != null && hit.transform.gameObject.tag == "Pushable")
             {
-                Debug.Log("INTERACTING");
+                
                 interacting = true;
 
                 player.GetComponent<Movement>().speed = 2f;
                 interacted = hit.transform.gameObject;
                 initialAngularDrag = interacted.GetComponent<Rigidbody>().angularDrag;
                 initialDrag = interacted.GetComponent<Rigidbody>().drag;
+
+
+                if (anim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+                {
+                    anim.SetBool("Pushing", true);
+                    Debug.Log("done did it");
+                }
+                else if (anim.GetCurrentAnimatorStateInfo(0).IsName("Idle volteado"))
+                {
+                    anim.SetBool("PushingVolteado", true);
+                }
             }
         }
         if (Input.GetKey(KeyCode.R) && interacting)
@@ -50,6 +67,8 @@ public class PushNPull : MonoBehaviour
             {
                 Debug.Log("EMPUJANDO");
             }
+
+            
         }
         else if (Input.GetKeyUp(KeyCode.R) && interacting)
         {
@@ -59,6 +78,8 @@ public class PushNPull : MonoBehaviour
             interacting = false;
             interacted = null;
             player.GetComponent<Movement>().speed = 6f;
+            anim.SetBool("Pushing", false);
+            anim.SetBool("PushingVolteado", false);
         }
     }
 }
