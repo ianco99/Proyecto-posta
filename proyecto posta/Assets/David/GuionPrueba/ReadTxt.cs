@@ -17,6 +17,7 @@ public class ReadTxt : MonoBehaviour
     public string nombFile;
     public string nombre = "";
     public int LineafinWW = 0;
+    public int lineatfin = 1;
     public bool cambiaDialogo = true;
 
     // Start is called before the first frame update
@@ -45,7 +46,8 @@ public class ReadTxt : MonoBehaviour
              
         }
         if(nombre == "TFinn" && cambiaDialogo){
-            StartCoroutine(waitTen());
+            StartCoroutine(waitTen(lineatfin));
+            lineatfin++;
             cambiaDialogo = false;
         }
         //else if (Input.GetKeyDown("space") && cor) StartDialogue(nombFile, 5, 7);
@@ -156,9 +158,9 @@ public class ReadTxt : MonoBehaviour
     }
 
 
-    IEnumerator waitTen(){
+    IEnumerator waitTen(int lineaFin){
         yield return new WaitForSeconds(10f);
-        NextDialogue(LineafinWW);
+        NextDialogue(lineaFin);
         cambiaDialogo = true;
     }
 
