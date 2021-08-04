@@ -56,7 +56,7 @@ public class ReadTxt : MonoBehaviour
     }
 
     public void StartDialogue(string name, int lineaprinc, int lineaFin){
-        gameManager.instance.UpdateGameState(GameState.Dialogue);
+        //gameManager.instance.UpdateGameState(GameState.Dialogue);
         x = true;
         string dataPath = Application.dataPath + "/TXT/" + name;
         textito = File.ReadAllLines(dataPath);
