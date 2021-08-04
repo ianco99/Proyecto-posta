@@ -1,40 +1,31 @@
 fileFormatVersion: 2
-guid: 0206e056c79db0a4390c9cb248141ef5
+guid: 5cd2dec8a617a174dbda89e29951f641
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3865516280462214360
-    second: IdleFinn_0
+      213: -4690800824964634935
+    second: KevinLibros_0
   - first:
-      213: 1901493420679444258
-    second: IdleFinn_1
+      213: 3391274773943337526
+    second: KevinLibros_1
   - first:
-      213: -2915872239306479427
-    second: IdleFinn_2
+      213: 5947824569833734416
+    second: KevinLibros_2
   - first:
-      213: 2615135053578360509
-    second: IdleFinn_3
+      213: 5513275779502384471
+    second: KevinLibros_3
   - first:
-      213: 7585356728040871015
-    second: IdleFinn_4
+      213: -4672167686730867591
+    second: KevinLibros_4
   - first:
-      213: 2414423569812469227
-    second: IdleFinn_5
+      213: 6446145498638127338
+    second: KevinLibros_5
   - first:
-      213: -3903109024676227271
-    second: IdleFinn_6
+      213: 3861216708287390099
+    second: KevinLibros_6
   - first:
-      213: 5863996884387760667
-    second: IdleFinn_7
-  - first:
-      213: 987579005639651364
-    second: IdleFinn_8
-  - first:
-      213: -2146599051087379973
-    second: IdleFinn_9
-  - first:
-      213: 5280720436103809323
-    second: IdleFinn_10
+      213: -8319972130848968612
+    second: KevinLibros_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -64,12 +55,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
-    aniso: -1
+    filterMode: -1
+    aniso: 2
     mipBias: -100
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -94,7 +85,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -106,7 +97,67 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -120,232 +171,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IdleFinn_0
+      name: KevinLibros_0
       rect:
         serializedVersion: 2
-        x: 116
-        y: 921
-        width: 430
-        height: 617
+        x: 32
+        y: 1223
+        width: 398
+        height: 1074
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82b7f8d5c6dea5ac0800000000000000
-      internalID: -3865516280462214360
+      spriteID: 9c6afdba08de6eeb0800000000000000
+      internalID: -4690800824964634935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdleFinn_1
+      name: KevinLibros_1
       rect:
         serializedVersion: 2
-        x: 814
-        y: 1084
-        width: 5
-        height: 8
+        x: 489
+        y: 1223
+        width: 398
+        height: 1074
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 227375a0136736a10800000000000000
-      internalID: 1901493420679444258
+      spriteID: 632c2ac607a301f20800000000000000
+      internalID: 3391274773943337526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdleFinn_2
+      name: KevinLibros_2
       rect:
         serializedVersion: 2
-        x: 822
-        y: 944
-        width: 422
-        height: 617
+        x: 946
+        y: 1223
+        width: 398
+        height: 1069
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db8e6b5b5adb887d0800000000000000
-      internalID: -2915872239306479427
+      spriteID: 011c74feeeaea8250800000000000000
+      internalID: 5947824569833734416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdleFinn_3
+      name: KevinLibros_3
       rect:
         serializedVersion: 2
-        x: 1521
-        y: 940
-        width: 414
-        height: 608
+        x: 1403
+        y: 1223
+        width: 398
+        height: 1064
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db6d534c973da4420800000000000000
-      internalID: 2615135053578360509
+      spriteID: 75521026c17138c40800000000000000
+      internalID: 5513275779502384471
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdleFinn_4
+      name: KevinLibros_4
       rect:
         serializedVersion: 2
-        x: 1161
-        y: 941
-        width: 17
-        height: 5
+        x: 1860
+        y: 1223
+        width: 398
+        height: 1066
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 764de7551c9944960800000000000000
-      internalID: 7585356728040871015
+      spriteID: 97c195d3e30292fb0800000000000000
+      internalID: -4672167686730867591
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdleFinn_5
+      name: KevinLibros_5
       rect:
         serializedVersion: 2
-        x: 1684
-        y: 930
-        width: 7
-        height: 4
+        x: 32
+        y: 59
+        width: 398
+        height: 1064
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be5b000d171c18120800000000000000
-      internalID: 2414423569812469227
+      spriteID: ae01fc88d2f457950800000000000000
+      internalID: 6446145498638127338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdleFinn_6
+      name: KevinLibros_6
       rect:
         serializedVersion: 2
-        x: 1825
-        y: 929
-        width: 7
-        height: 4
+        x: 489
+        y: 59
+        width: 398
+        height: 1069
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9375d88850f55d9c0800000000000000
-      internalID: -3903109024676227271
+      spriteID: 391e54a732cc59530800000000000000
+      internalID: 3861216708287390099
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IdleFinn_7
+      name: KevinLibros_7
       rect:
         serializedVersion: 2
-        x: 118
-        y: 146
-        width: 427
-        height: 613
+        x: 946
+        y: 59
+        width: 398
+        height: 1074
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1a0ee9f81a116150800000000000000
-      internalID: 5863996884387760667
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IdleFinn_8
-      rect:
-        serializedVersion: 2
-        x: 815
-        y: 130
-        width: 426
-        height: 613
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 420f8ca8fd594bd00800000000000000
-      internalID: 987579005639651364
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IdleFinn_9
-      rect:
-        serializedVersion: 2
-        x: 983
-        y: 118
-        width: 16
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bf10fb4498fb532e0800000000000000
-      internalID: -2146599051087379973
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IdleFinn_10
-      rect:
-        serializedVersion: 2
-        x: 1125
-        y: 118
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b290d181243e84940800000000000000
-      internalID: 5280720436103809323
+      spriteID: c50f8979d65898c80800000000000000
+      internalID: -8319972130848968612
       vertices: []
       indices: 
       edges: []
@@ -353,7 +341,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: ae984f91046903547acfb931faff26c3
+    spriteID: ca23e1e2394b4a34197d6e2bf986c731
     internalID: 0
     vertices: []
     indices: 

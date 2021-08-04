@@ -289,7 +289,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42786
+  m_Name: pb_Mesh16898
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1661,6 +1661,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1059452483230100468, guid: 599e8c73a7421ff44ba9688d6083a3a4,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059452483230100471, guid: 599e8c73a7421ff44ba9688d6083a3a4,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.623077
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059452483230100471, guid: 599e8c73a7421ff44ba9688d6083a3a4,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2.3730967
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059452483230100471, guid: 599e8c73a7421ff44ba9688d6083a3a4,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5340484735969768098, guid: 599e8c73a7421ff44ba9688d6083a3a4,
         type: 3}
       propertyPath: m_RootOrder
@@ -15417,7 +15437,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh42896
+  m_Name: pb_Mesh17024
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
