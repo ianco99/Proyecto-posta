@@ -111,16 +111,27 @@ public class Movement : MonoBehaviour
         if(horizontal > 0.01f)
         {
             anim.SetBool("FacingRight", true);
+            anim.SetBool("Sided", true);
         }
         else if(horizontal < -0.01f)
         {
             anim.SetBool("FacingRight", false);
+            anim.SetBool("Sided", true);
         }
+        if (vertical > 0.01f && horizontal == 0)
+        {
+            anim.SetBool("Sided", false);
+        }
+        else if (vertical < -0.01f && horizontal == 0)
+        {
+            anim.SetBool("Sided", false);
+        }
+
         anim.SetFloat("velocidadX", horizontal);
         anim.SetFloat("velocidadZ", vertical);
         anim.SetFloat("velocidadY", directionY);
 
-        if(direction.x == 0 && direction.y == 0 && direction.z == 0){
+        if(direction.x == 0 && direction.z == 0){
             anim.SetBool("Idle", true);
         }
         else{
