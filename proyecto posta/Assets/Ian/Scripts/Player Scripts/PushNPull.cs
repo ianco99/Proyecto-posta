@@ -9,6 +9,7 @@ public class PushNPull : MonoBehaviour
     [SerializeField] GameObject interacted;
     [SerializeField] Transform raycastOrigin;
     [SerializeField] GameObject player;
+    [SerializeField] CharacterController controller;
     public float velocidad;
     float initialDrag;
     float initialAngularDrag;
@@ -24,7 +25,7 @@ public class PushNPull : MonoBehaviour
     }
     void PushAndPull()
     {
-        if (Input.GetKeyDown(KeyCode.R) && !interacting)
+        if (Input.GetKeyDown(KeyCode.R) && !interacting && controller.isGrounded)
         {
 
             Vector3 origin = new Vector3(raycastOrigin.transform.position.x, raycastOrigin.transform.position.y, raycastOrigin.transform.position.z);

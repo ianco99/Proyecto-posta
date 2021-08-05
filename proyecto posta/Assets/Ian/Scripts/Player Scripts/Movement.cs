@@ -42,7 +42,7 @@ public class Movement : MonoBehaviour
     [SerializeField] GameObject puller;
 
     private void Update(){
-
+        anim.SetBool("IsGrounded", controller.isGrounded);
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
         direction = new Vector3(horizontal, 0f, vertical).normalized; //Getting our inputs in the vector3 direction
@@ -71,7 +71,7 @@ public class Movement : MonoBehaviour
         if (controller.isGrounded){
             jumping = false;
             puedeFlotar = true;
-
+            
             if(Input.GetKeyDown(KeyCode.Space)){
                 directionY = jumpSpeed;
                 jumping = true;
@@ -118,7 +118,8 @@ public class Movement : MonoBehaviour
         }
         anim.SetFloat("velocidadX", horizontal);
         anim.SetFloat("velocidadZ", vertical);
-        
+        anim.SetFloat("velocidadY", directionY);
+
         if(direction.x == 0 && direction.y == 0 && direction.z == 0){
             anim.SetBool("Idle", true);
         }
@@ -132,10 +133,12 @@ public class Movement : MonoBehaviour
         float elapsed = 0f;
         while (elapsed < tiempoFlota && Input.GetKey(KeyCode.Space))
         {
-        directionY = 0f;
-        elapsed += Time.deltaTime;
-        yield return new WaitForEndOfFrame();
+            anim.SetBool("Floating", true);
+            directionY = 0f;
+            elapsed += Time.deltaTime;
+            yield return new WaitForEndOfFrame();
         }
+        anim.SetBool("Floating", false);
     }
 
     public void SlideDown()
