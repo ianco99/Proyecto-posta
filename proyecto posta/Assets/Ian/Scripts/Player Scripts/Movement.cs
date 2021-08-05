@@ -108,6 +108,14 @@ public class Movement : MonoBehaviour
 
     void Animations()
     {
+        if(horizontal > 0.01f)
+        {
+            anim.SetBool("FacingRight", true);
+        }
+        else if(horizontal < -0.01f)
+        {
+            anim.SetBool("FacingRight", false);
+        }
         anim.SetFloat("velocidadX", horizontal);
         anim.SetFloat("velocidadZ", vertical);
         

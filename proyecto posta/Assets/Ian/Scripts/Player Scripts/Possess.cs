@@ -10,9 +10,11 @@ public class Possess : MonoBehaviour
     GameObject found;
     private Vector3 prevPos;
     public GameObject sprite;
+    Animator anim;
 
     private void Start()
     {
+        anim = GetComponentInChildren<Animator>();
         enemiesList = GameObject.FindGameObjectsWithTag("Possesable");
     }
     void Update()
@@ -27,7 +29,12 @@ public class Possess : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F))
             {
                 this.GetComponent<Movement>().enabled = true;
-                goBackToNormal();
+                
+                this.gameObject.transform.position = prevPos;
+                sprite.GetComponent<SpriteRenderer>().enabled = true;
+                anim.SetBool("BackFromPossess", true);
+                anim.SetBool("Possessing", false);
+                //goBackToNormal();
                 isPossesing = false;
             }
         }
@@ -42,26 +49,30 @@ public class Possess : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F) && found != null)
         {
-            Possesing();
+            anim.SetBool("Possessing", true);
+            //Possesing();
         }
     }
-    void Possesing()
+    public void Possesing()
     {
+        Debug.Log("LOCO SE ESTA HACIENDO");
         isPossesing = true;
         prevPos = this.transform.position;
         this.transform.position = found.transform.position;
         this.GetComponent<CharacterController>().enabled = false;
         this.GetComponent<PushNPull>().enabled = false;
-        sprite.SetActive(false);
+        sprite.GetComponent<SpriteRenderer>().enabled = false;
         this.GetComponent<Movement>().enabled = false;
     }
 
     public void goBackToNormal()
     {
-        this.gameObject.transform.position = prevPos;
+        //this.gameObject.transform.position = prevPos;
         this.GetComponent<CharacterController>().enabled = true;
         this.GetComponent<PushNPull>().enabled = true;
-        sprite.SetActive(true);
+        anim.SetBool("BackFromPossess", false);
+        //sprite.GetComponent<SpriteRenderer>().enabled = true;
+        //anim.SetBool("Possessing", false);
     }
 
     void Detect()
@@ -93,7 +104,7 @@ public class Possess : MonoBehaviour
                 foreach (GameObject potentialTarget in enemiesList)
                 {
                     potentialTarget.GetComponent<Outline>().enabled = false;
-                    found = null;
+                    //found = null;
                 }
             }
             catch (Exception e)

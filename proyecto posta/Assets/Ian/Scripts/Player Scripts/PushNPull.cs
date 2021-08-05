@@ -41,16 +41,7 @@ public class PushNPull : MonoBehaviour
                 initialAngularDrag = interacted.GetComponent<Rigidbody>().angularDrag;
                 initialDrag = interacted.GetComponent<Rigidbody>().drag;
 
-
-                if (anim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
-                {
-                    anim.SetBool("Pushing", true);
-                    Debug.Log("done did it");
-                }
-                else if (anim.GetCurrentAnimatorStateInfo(0).IsName("Idle volteado"))
-                {
-                    anim.SetBool("PushingVolteado", true);
-                }
+                anim.SetBool("Pushing", true);
             }
         }
         if (Input.GetKey(KeyCode.R) && interacting)
