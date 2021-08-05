@@ -21,14 +21,23 @@ public class spotMonologo : MonoBehaviour
             if(id == 1 && ids[0] && this.name == "Spot Monologo 1"){
                 Debug.Log("Aca");
                 script.StartDialogue("Bosque.txt.txt", 0, 6);
+                StartCoroutine(script.waitTen());
                 ids[0] = false;
             }
-            if(id == 2 && ids[1] && this.name == "Spot Monologo 2"){
+            if(id == 2 && ids[1]){
+                Debug.Log("2");
+                script.NextDialogue(0);
+                script.cambiaDialogo = true;
                 script.setEstaPresente(true);
+                StartCoroutine(script.waitTen());
                 ids[1] = false;
             }
-            if(id == 3 && ids[2] && this.name == "Spot Monologo 3"){
+            if(id == 3 && ids[2]){
+                Debug.Log("3");
+                script.NextDialogue(1);
+                script.cambiaDialogo = true;
                 script.setEstaPresente(true);
+                StartCoroutine(script.waitTen());
                 ids[2] = false;
             }
         }

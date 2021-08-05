@@ -1,6 +1,4 @@
 TFinn: ¿En serio estoy muerto? ¿Esto de verdad está ocurriendo?
-Bool: 
 TFinn: ¿No será esto un sueño?
-Bool: 
 TFinn: Hay tanto que no hice.
 FIN   

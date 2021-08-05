@@ -18,7 +18,7 @@ public class ReadTxt : MonoBehaviour
     public string nombre = "";
     public int LineafinWW = 0;
     public int lineatfin = 1;
-    public bool cambiaDialogo = true;
+    public bool cambiaDialogo = false;
 
     // Start is called before the first frame update
     void Start()
@@ -42,23 +42,18 @@ public class ReadTxt : MonoBehaviour
             if(cantPal<textito.Length && nombre != "TFinn"){
               NextDialogue(LineafinWW);
             }
-
-             
         }
         if(nombre == "TFinn" && cambiaDialogo){
-            StartCoroutine(waitTen(lineatfin));
-            lineatfin++;
+           // StartCoroutine(waitTen(lineatfin));
             cambiaDialogo = false;
         }
         //else if (Input.GetKeyDown("space") && cor) StartDialogue(nombFile, 5, 7);
         
-        if(Input.GetKeyDown("up")){
-            estaPresente = true;
-        }
     }
 
     public void StartDialogue(string name, int lineaprinc, int lineaFin){
         //gameManager.instance.UpdateGameState(GameState.Dialogue);
+        Debug.Log("Empieza");
         x = true;
         string dataPath = Application.dataPath + "/TXT/" + name;
         textito = File.ReadAllLines(dataPath);
@@ -75,9 +70,10 @@ public class ReadTxt : MonoBehaviour
        Tex.SetActive(false);
     }
 
-    void NextDialogue(int lineafin){
+    public void NextDialogue(int lineafin){
         if (cantPal == lineafin) EndDialogue();
         else{
+            Debug.Log("nexto");
             if (textito[cantPal] == "FIN")
             {
                 texto.text = "";
@@ -105,10 +101,7 @@ public class ReadTxt : MonoBehaviour
                             break;
                          case  "TFinn": 
                             panel.GetComponent<Image>().material.color = new Color(255, 255, 0);
-                            nomb[0] = "Finn";
-                            break;
-                        case "Dialogo Interno de Finn":
-                            panel.GetComponent<Image>().material.color = new Color(255, 255, 100);
+                            nomb[0] = " Dialogo de Finn";
                             break;
                         case "Kevin":
                             panel.GetComponent<Image>().material.color = new Color(0, 255, 255);
@@ -131,6 +124,7 @@ public class ReadTxt : MonoBehaviour
     }
 
     IEnumerator TypeSentence(string sentence){
+        Tex.SetActive(true);
         texto.text = "";
         foreach(char letter in sentence.ToCharArray()){
             texto.text += letter;
@@ -158,10 +152,11 @@ public class ReadTxt : MonoBehaviour
     }
 
 
-    IEnumerator waitTen(int lineaFin){
-        yield return new WaitForSeconds(10f);
-        NextDialogue(lineaFin);
-        cambiaDialogo = true;
+    public IEnumerator waitTen(){
+        yield return new WaitForSeconds(5f);
+        Tex.SetActive(false);
+        Debug.Log("Teoricamente apagafo");
+       
     }
 
     /* IEnumerator popUP(int lineaFin){

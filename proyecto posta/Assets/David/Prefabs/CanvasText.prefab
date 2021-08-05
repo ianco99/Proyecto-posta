@@ -106,6 +106,51 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7567699786360756979}
     m_Modifications:
+    - target: {fileID: 1997147888077719211, guid: b0ea1ac9f01647b409438a358054e003,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 427.81046
+      objectReference: {fileID: 0}
+    - target: {fileID: 1997147888077719211, guid: b0ea1ac9f01647b409438a358054e003,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 46.412247
+      objectReference: {fileID: 0}
+    - target: {fileID: 1997147888077719211, guid: b0ea1ac9f01647b409438a358054e003,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -23.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1997147888077719211, guid: b0ea1ac9f01647b409438a358054e003,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1997147888784076212, guid: b0ea1ac9f01647b409438a358054e003,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -157.21889
+      objectReference: {fileID: 0}
+    - target: {fileID: 1997147888784076212, guid: b0ea1ac9f01647b409438a358054e003,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -62
+      objectReference: {fileID: 0}
+    - target: {fileID: 1997147888784076213, guid: b0ea1ac9f01647b409438a358054e003,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1997147889025106065, guid: b0ea1ac9f01647b409438a358054e003,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -235
+      objectReference: {fileID: 0}
+    - target: {fileID: 1997147889025106065, guid: b0ea1ac9f01647b409438a358054e003,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1997147889115651740, guid: b0ea1ac9f01647b409438a358054e003,
         type: 3}
       propertyPath: m_Pivot.x
@@ -215,6 +260,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TextoDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1997147889115651741, guid: b0ea1ac9f01647b409438a358054e003,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0ea1ac9f01647b409438a358054e003, type: 3}
