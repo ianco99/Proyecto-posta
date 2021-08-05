@@ -78,7 +78,7 @@ public class Movement : MonoBehaviour
             } 
         }
         else{
-            directionY -= gravity * Time.deltaTime; //Applying gravity to direction on the Y axis times Time.deltaTime
+            directionY -= gravity/1.5f * Time.deltaTime; //Applying gravity to direction on the Y axis times Time.deltaTime
 
             if(Input.GetKeyUp(KeyCode.Space)){
                 jumping = false;
