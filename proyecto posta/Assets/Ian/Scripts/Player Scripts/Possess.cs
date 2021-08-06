@@ -31,7 +31,6 @@ public class Possess : MonoBehaviour
             {
                 AudioManager.GetComponent<AudioManager>().Play("Poseer");
                 this.GetComponent<Movement>().enabled = true;
-                
                 this.gameObject.transform.position = prevPos;
                 sprite.GetComponent<SpriteRenderer>().enabled = true;
                 anim.SetBool("BackFromPossess", true);
