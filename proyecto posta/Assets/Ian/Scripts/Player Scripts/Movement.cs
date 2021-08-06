@@ -39,6 +39,8 @@ public class Movement : MonoBehaviour
     private Vector3 hitNormal;
     public float slideVelocity;
 
+    public GameObject AudioManager;
+
     [SerializeField] GameObject puller;
 
     private void Update(){
@@ -74,6 +76,7 @@ public class Movement : MonoBehaviour
             
             if(Input.GetKeyDown(KeyCode.Space)){
                 directionY = jumpSpeed;
+                AudioManager.GetComponent<AudioManager>().Play("Jump");
                 jumping = true;
             } 
         }

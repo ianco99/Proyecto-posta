@@ -11,6 +11,7 @@ public class Possess : MonoBehaviour
     private Vector3 prevPos;
     public GameObject sprite;
     Animator anim;
+    public GameObject AudioManager;
 
     private void Start()
     {
@@ -28,6 +29,7 @@ public class Possess : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.F))
             {
+                AudioManager.GetComponent<AudioManager>().Play("Poseer");
                 this.GetComponent<Movement>().enabled = true;
                 
                 this.gameObject.transform.position = prevPos;

@@ -5,7 +5,7 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public AudioSounds[] sounds;
-    static public float volume = 1f;
+    static public float volume = .5f;
     // Start is called before the first frame update
     void Awake()
     {
