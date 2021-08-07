@@ -25,4 +25,15 @@ public class GameEvents : MonoBehaviour
             TalkedToKevin();
         }
     }
+
+    public event Action StudentScared;
+
+    public void ScaringStudent()
+    {
+        Debug.Log("Scaring");
+        if(StudentScared != null)
+        {
+            StudentScared();
+        }
+    }
 }

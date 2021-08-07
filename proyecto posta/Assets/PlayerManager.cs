@@ -6,7 +6,8 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     public bool hasTalkedToKevin;
-    // Start is called before the first frame update
+
+    public int bibliotecaPuzzles = 0;
     void Start()
     {
         

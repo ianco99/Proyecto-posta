@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class TriggerInicio : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter(Collider other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (other.tag == "Player")
+        {
+            if(other.transform.gameObject.GetComponent<PlayerManager>().bibliotecaPuzzles == 0)
+            {
+                Debug.Log("Hablando con el profe y kevin");
+                Debug.Log("uwu");
+            }
+            else if(other.transform.gameObject.GetComponent<PlayerManager>().bibliotecaPuzzles == 1)
+            {
+                Debug.Log("Podes pasar");
+            }
+            
+            //gameManager.instance.UpdateGameState(GameState.Dialogue);
+            //dialogueManager.readtxt(institutodearte);
+        }
     }
 }
