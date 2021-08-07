@@ -24,7 +24,7 @@ public class Possess : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Debug.Log("WOPAPAPA");
+                found.GetComponent<Interactable1>().Interact();
             }
 
             if (Input.GetKeyDown(KeyCode.F))
