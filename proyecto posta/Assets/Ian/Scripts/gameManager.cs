@@ -16,7 +16,9 @@ public class gameManager : MonoBehaviour
 
     public GameObject player;
 
-    public GameObject HUD; 
+    public GameObject HUD;
+
+    public int level = 0;
 
     void Awake()
     {

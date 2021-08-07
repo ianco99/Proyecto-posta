@@ -5,7 +5,8 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     public bool hasTalkedToKevin;
-    // Start is called before the first frame update
+    public bool scaredStudent;
+
     void Start()
     {
         

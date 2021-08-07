@@ -42,11 +42,33 @@ public class Dialogue : Interactable1
 
     public override void Interact()
     {
-        if (!alreadyTalked)
+        switch (gameManager.instance.level)
         {
-            Talk("Biblioteca.txt", 7, 14);
-            alreadyTalked = !alreadyTalked;
+            case 1:
+                if (!alreadyTalked)
+                {
+                    Talk("Biblioteca.txt", 7, 14);
+                    alreadyTalked = !alreadyTalked;
+                }
+                break;
+            case 2:
+                if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles == 0)
+                {
+                    Debug.Log("El gordo");
+                    alreadyTalked = !alreadyTalked;
+                    //talk "aaa finn ayuda quiero entrar"
+                }
+                else if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles == 2)
+                {
+                    Debug.Log("juntame las temperas querido");
+                }
+                break;
         }
+
+        
+
+        
+        
     }
  
     
