@@ -12,6 +12,7 @@ public class Possess : MonoBehaviour
     public GameObject sprite;
     Animator anim;
     public GameObject AudioManager;
+    [SerializeField] TMPro.TextMeshProUGUI interactionText;
 
     private void Start()
     {
@@ -22,6 +23,7 @@ public class Possess : MonoBehaviour
     {
         if (isPossesing)
         {
+            interactionText.text = found.GetComponent<Interactable1>().GetDescription();
             if (Input.GetKeyDown(KeyCode.E))
             {
                 found.GetComponent<Interactable1>().Interact();
@@ -41,6 +43,7 @@ public class Possess : MonoBehaviour
         }
         else
         {
+            interactionText.text = "";
             doPossess();
             Detect();
         }

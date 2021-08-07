@@ -26,7 +26,7 @@ public class Dialogue : Interactable1
         FindObjectOfType<LevelManager>().hasTalkedToKevin = true;
         GameEvents.current.TalkedToKevinFunct();
         //gameManager.instance.NextLevel();
-       // gameManager.instance.UpdateGameState(GameState.Dialogue);
+        //gameManager.instance.UpdateGameState(GameState.Dialogue);
     }
     public override string GetDescription()
     {

@@ -8,8 +8,9 @@ public class RoofLamp : Interactable1
     bool on = true;
     public override void Interact()
     {
-        luz.SetActive(on);
         on = !on;
+        luz.SetActive(on);
+        
     }
     public override string GetDescription()
     {
