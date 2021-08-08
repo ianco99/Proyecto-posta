@@ -6,9 +6,6 @@ using UnityEngine;
 public class GameEvents : MonoBehaviour
 {
     public static GameEvents current;
-
-    public GameObject Door;
-    public GameObject Kevin;
     private void Awake()
     {
         current = this;
@@ -34,6 +31,26 @@ public class GameEvents : MonoBehaviour
         if(StudentScared != null)
         {
             StudentScared();
+        }
+    }
+
+    public event Action kevinArtSupplies;
+
+    public void KevinArtSupplies()
+    {
+        if(kevinArtSupplies != null)
+        {
+            kevinArtSupplies();
+        }
+    }
+
+    public event Action needScaring;
+
+    public void KevinNeedsScaring()
+    {
+        if(needScaring != null)
+        {
+            needScaring();
         }
     }
 }

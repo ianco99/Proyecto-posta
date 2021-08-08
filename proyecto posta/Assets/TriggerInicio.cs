@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TriggerInicio : MonoBehaviour
 {
+    public Transform proxPosKevin;
+    public Transform kevin;
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
@@ -19,6 +21,7 @@ public class TriggerInicio : MonoBehaviour
                 Debug.Log("Podes pasar");
                 //tiene que poner el dialogo y hacer que el jugador pueda pasar por la puerta y desactivar que el jugador pueda acceder a la luz
                 other.transform.gameObject.GetComponent<PlayerManager>().bibliotecaPuzzles++;
+                kevin.position = proxPosKevin.position;
             }
             
             //gameManager.instance.UpdateGameState(GameState.Dialogue);

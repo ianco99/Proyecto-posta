@@ -192,10 +192,10 @@ TextureImporter:
       name: KevinPaint_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 1077
-        width: 558
-        height: 1040
+        x: 0
+        y: 1071
+        width: 581
+        height: 1067
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,10 +213,10 @@ TextureImporter:
       name: KevinPaint_1
       rect:
         serializedVersion: 2
-        x: 591
-        y: 1077
-        width: 572
-        height: 1040
+        x: 581
+        y: 1071
+        width: 581
+        height: 1067
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,10 +234,10 @@ TextureImporter:
       name: KevinPaint_2
       rect:
         serializedVersion: 2
-        x: 1174
-        y: 1077
-        width: 574
-        height: 1040
+        x: 1162
+        y: 1071
+        width: 581
+        height: 1067
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,10 +255,10 @@ TextureImporter:
       name: KevinPaint_3
       rect:
         serializedVersion: 2
-        x: 1757
-        y: 1077
-        width: 562
-        height: 1040
+        x: 1743
+        y: 1071
+        width: 581
+        height: 1067
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,10 +276,10 @@ TextureImporter:
       name: KevinPaint_4
       rect:
         serializedVersion: 2
-        x: 2313
-        y: 1747
-        width: 14
-        height: 14
+        x: 2324
+        y: 1071
+        width: 581
+        height: 1067
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,10 +297,10 @@ TextureImporter:
       name: KevinPaint_5
       rect:
         serializedVersion: 2
-        x: 2340
-        y: 1077
-        width: 559
-        height: 1040
+        x: 0
+        y: 4
+        width: 581
+        height: 1067
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,10 +318,10 @@ TextureImporter:
       name: KevinPaint_6
       rect:
         serializedVersion: 2
-        x: 558
-        y: 1339
-        width: 10
-        height: 8
+        x: 581
+        y: 4
+        width: 581
+        height: 1067
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -339,10 +339,10 @@ TextureImporter:
       name: KevinPaint_7
       rect:
         serializedVersion: 2
-        x: 2890
-        y: 1339
-        width: 10
-        height: 8
+        x: 1162
+        y: 4
+        width: 581
+        height: 1067
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -360,10 +360,10 @@ TextureImporter:
       name: KevinPaint_8
       rect:
         serializedVersion: 2
-        x: 8
-        y: 8
-        width: 563
-        height: 1040
+        x: 1743
+        y: 4
+        width: 581
+        height: 1067
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,111 +373,6 @@ TextureImporter:
       bones: []
       spriteID: 54e57b35ec4e305d0800000000000000
       internalID: -3097380543881847227
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KevinPaint_9
-      rect:
-        serializedVersion: 2
-        x: 591
-        y: 8
-        width: 556
-        height: 1040
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5fdf874bd7d1c340800000000000000
-      internalID: 4882420807844749151
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KevinPaint_10
-      rect:
-        serializedVersion: 2
-        x: 1141
-        y: 270
-        width: 10
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8f439dda240d6aec0800000000000000
-      internalID: -3555925870959315720
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KevinPaint_11
-      rect:
-        serializedVersion: 2
-        x: 1174
-        y: 8
-        width: 558
-        height: 1040
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f95f25c4c319cd640800000000000000
-      internalID: 5106115765695870367
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KevinPaint_12
-      rect:
-        serializedVersion: 2
-        x: 1724
-        y: 270
-        width: 10
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1981798173b5f0220800000000000000
-      internalID: 2454280614134093969
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KevinPaint_13
-      rect:
-        serializedVersion: 2
-        x: 1757
-        y: 8
-        width: 561
-        height: 1040
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 696b8e9de21e8bd60800000000000000
-      internalID: 7906316737189557910
       vertices: []
       indices: 
       edges: []
