@@ -12,6 +12,7 @@ public class insArteManager : MonoBehaviour
     {
         GameEvents.current.kevinArtSupplies += PickUpMaterials;
         GameEvents.current.needScaring += ScareStudents;
+        ScareStudents();
     }
 
     // Update is called once per frame
