@@ -76,7 +76,7 @@ public class Movement : MonoBehaviour
             
             if(Input.GetKeyDown(KeyCode.Space)){
                 directionY = jumpSpeed;
-                //AudioManager.GetComponent<AudioManager>().Play("Jump");
+                AudioManager.GetComponent<AudioManager>().Play("Jump");
                 jumping = true;
             } 
         }

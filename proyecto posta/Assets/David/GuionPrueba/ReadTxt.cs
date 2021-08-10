@@ -19,10 +19,16 @@ public class ReadTxt : MonoBehaviour
     public int LineafinWW = 0;
     public int lineatfin = 1;
     public bool cambiaDialogo = false;
+    float countPitch = 2f; 
+    public GameObject AudioManager;
+    AudioManager script;
+    public bool sentTrue = false;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        script = AudioManager.GetComponent<AudioManager>();
         estaPresente = false;
     }
 
@@ -53,7 +59,6 @@ public class ReadTxt : MonoBehaviour
 
     public void StartDialogue(string name, int lineaprinc, int lineaFin){
         //gameManager.instance.UpdateGameState(GameState.Dialogue); eu tenemos que hacer un script alternativo para dialogo que no interrumpa el gameplay
-        Debug.Log("Empieza");
         x = true;
         string dataPath = Application.dataPath + "/TXT/" + name;
         textito = File.ReadAllLines(dataPath);
@@ -73,7 +78,6 @@ public class ReadTxt : MonoBehaviour
     public void NextDialogue(int lineafin){
         if (cantPal == lineafin) EndDialogue();
         else{
-            Debug.Log("nexto");
             if (textito[cantPal] == "FIN")
             {
                 texto.text = "";
@@ -124,12 +128,15 @@ public class ReadTxt : MonoBehaviour
     }
 
     IEnumerator TypeSentence(string sentence){
+        StartCoroutine(PlayLetter());
+        sentTrue = true;
         Tex.SetActive(true);
         texto.text = "";
         foreach(char letter in sentence.ToCharArray()){
             texto.text += letter;
             yield return null;
         }
+        sentTrue = false;
     }
 
     IEnumerator waitTime(float tiempo, int lineaFin){
@@ -155,8 +162,38 @@ public class ReadTxt : MonoBehaviour
     public IEnumerator waitTen(){
         yield return new WaitForSeconds(5f);
         Tex.SetActive(false);
-        Debug.Log("Teoricamente apagafo");
-       
+    }
+
+    IEnumerator PlayLetter(){
+        AudioSounds[] sounds = script.sounds;
+        AudioSounds s = sounds[3];
+        s.source.pitch = countPitch;
+        switch(countPitch){
+	        case 2f:
+		        countPitch = 0.5f;
+
+		        break;
+	        case 1.5f:
+	        	countPitch = 1f;
+	        	break;
+        	case 0.5f:
+	        	countPitch = 1.5f;
+	        	break;
+	        case  3f:
+		        countPitch = 2f;
+        		break;
+            case 1f:
+                countPitch = 2.5f;
+                break;  
+            case 2.5f:
+                countPitch = 3f;
+                break;          
+        }
+        script.Play("Letra");
+        Debug.Log(countPitch);
+        yield return new WaitForSeconds(0.1f);
+        if(sentTrue) StartCoroutine(PlayLetter());
+
     }
 
     /* IEnumerator popUP(int lineaFin){

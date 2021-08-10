@@ -802,7 +802,7 @@ PrefabInstance:
     - target: {fileID: 4788681959534948181, guid: 0eb06dd6c096bc841a3f5329636ae08e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.03932857
+      value: -0.039328355
       objectReference: {fileID: 0}
     - target: {fileID: 4788681959534948181, guid: 0eb06dd6c096bc841a3f5329636ae08e,
         type: 3}
@@ -1736,6 +1736,7 @@ MonoBehaviour:
   LineafinWW: 0
   lineatfin: 1
   cambiaDialogo: 0
+  AudioManager: {fileID: 2033098736}
 --- !u!4 &1852877943323905905
 Transform:
   m_ObjectHideFlags: 0
@@ -14912,8 +14913,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d238c52cdcd425941800530a1aaaeec3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Door: {fileID: 3350131154442025272}
-  Kevin: {fileID: 2389644465948097148}
 --- !u!1 &8975219066445114741
 GameObject:
   m_ObjectHideFlags: 0
@@ -17912,6 +17911,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasTalkedToKevin: 0
+  scaredStudent: 0
 --- !u!1 &8975219067683648500
 GameObject:
   m_ObjectHideFlags: 0
