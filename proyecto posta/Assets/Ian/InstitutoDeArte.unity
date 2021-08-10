@@ -302,6 +302,10 @@ MonoBehaviour:
   - {fileID: 787122033}
   - {fileID: 268494878}
   - {fileID: 1423861402}
+  possesables:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!4 &170401303
 Transform:
   m_ObjectHideFlags: 0
@@ -4393,9 +4397,13 @@ GameObject:
   - component: {fileID: 878135298}
   - component: {fileID: 878135300}
   - component: {fileID: 878135299}
+  - component: {fileID: 878135301}
+  - component: {fileID: 878135302}
+  - component: {fileID: 878135303}
+  - component: {fileID: 878135304}
   m_Layer: 0
   m_Name: banquito (5)
-  m_TagString: Untagged
+  m_TagString: Possesable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4461,6 +4469,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878135297}
   m_Mesh: {fileID: 3204979713341462489, guid: 42609fd51216a37479ce016ac6dcc975, type: 3}
+--- !u!114 &878135301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878135297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3849c9000767ac34db9c3b829b86da8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionType: 0
+  luz: {fileID: 0}
+  fuerza: 200
+--- !u!54 &878135302
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878135297}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!65 &878135303
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878135297}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0025536516, y: 0.002549906, z: 0.0033749104}
+  m_Center: {x: -1.5550257e-11, y: 0.0000037486777, z: 0.0016874562}
+--- !u!114 &878135304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878135297}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0.15566039, g: 1, b: 0.8262409, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &956684992
 GameObject:
   m_ObjectHideFlags: 0

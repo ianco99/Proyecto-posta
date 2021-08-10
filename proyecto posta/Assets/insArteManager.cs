@@ -6,6 +6,7 @@ public class insArteManager : MonoBehaviour
 {
     public GameObject[] artSupplies;
     public GameObject[] students;
+    public GameObject[] possesables;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +36,7 @@ public class insArteManager : MonoBehaviour
         foreach(GameObject student in students)
         {
             student.GetComponent<Outline>().enabled = true;
+            
         }
     }
 }
