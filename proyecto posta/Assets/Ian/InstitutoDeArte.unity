@@ -501,6 +501,7 @@ GameObject:
   - component: {fileID: 262060547}
   - component: {fileID: 262060549}
   - component: {fileID: 262060548}
+  - component: {fileID: 262060550}
   m_Layer: 0
   m_Name: lienzo (3)
   m_TagString: Untagged
@@ -570,6 +571,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 262060546}
   m_Mesh: {fileID: -6218613192485846863, guid: 42609fd51216a37479ce016ac6dcc975, type: 3}
+--- !u!114 &262060550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262060546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f285dff24c5c774ba8370372731af90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &268494878
 GameObject:
   m_ObjectHideFlags: 0
@@ -4484,6 +4497,7 @@ MonoBehaviour:
   interactionType: 0
   luz: {fileID: 0}
   fuerza: 200
+  student: {fileID: 268494878}
 --- !u!54 &878135302
 Rigidbody:
   m_ObjectHideFlags: 0

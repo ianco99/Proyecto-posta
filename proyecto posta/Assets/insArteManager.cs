@@ -35,6 +35,7 @@ public class insArteManager : MonoBehaviour
     {
         foreach(GameObject student in students)
         {
+            
             student.GetComponent<Outline>().enabled = true;
             
         }
