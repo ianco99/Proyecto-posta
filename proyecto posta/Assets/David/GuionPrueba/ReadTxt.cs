@@ -101,10 +101,10 @@ public class ReadTxt : MonoBehaviour
                     switch (nomb[0])
                     {
                         case "Finn":
-                            panel.GetComponent<Image>().material.color = new Color(255, 255, 0);
+                           // panel.GetComponent<Image>().material.color = new Color(255, 255, 0);
                             break;
                          case  "TFinn": 
-                            panel.GetComponent<Image>().material.color = new Color(255, 255, 0);
+                           // panel.GetComponent<Image>().material.color = new Color(255, 255, 0);
                             nomb[0] = " Dialogo de Finn";
                             break;
                         case "Kevin":

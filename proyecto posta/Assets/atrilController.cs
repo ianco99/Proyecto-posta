@@ -31,12 +31,12 @@ public class atrilController : Interactable1
         return "Apreta la " + "E" + " para apagar/prender la luz.";
     }
 
-    IEnumerator moverAtril(bool on)
-    {
-        while (on)
-        {
-            //sinwaves eoeoeo
-        }
+    // IEnumerator moverAtril(bool on)
+    // {
+    //     while (on)
+    //     {
+    //         //sinwaves eoeoeo
+    //     }
 
-    }
+    // }
 }

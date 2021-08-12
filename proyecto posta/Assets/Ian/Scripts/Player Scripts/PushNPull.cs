@@ -14,9 +14,12 @@ public class PushNPull : MonoBehaviour
     float initialDrag;
     float initialAngularDrag;
     Animator anim;
+    public GameObject AudioManager;
+    AudioManager script;
 
     void Start()
     {
+        script = AudioManager.GetComponent<AudioManager>();
         anim = GetComponentInChildren<Animator>();
     }
     void Update()
@@ -36,7 +39,7 @@ public class PushNPull : MonoBehaviour
             {
                 
                 interacting = true;
-
+                script.Play("Push");
                 player.GetComponent<Movement>().speed = 2f;
                 interacted = hit.transform.gameObject;
                 initialAngularDrag = interacted.GetComponent<Rigidbody>().angularDrag;
@@ -68,6 +71,7 @@ public class PushNPull : MonoBehaviour
             interacted.GetComponent<Rigidbody>().drag = initialDrag;
             interacted.GetComponent<Rigidbody>().angularDrag = initialAngularDrag;
             interacting = false;
+            script.Stop("Push");
             interacted = null;
             player.GetComponent<Movement>().speed = 6f;
             anim.SetBool("Pushing", false);

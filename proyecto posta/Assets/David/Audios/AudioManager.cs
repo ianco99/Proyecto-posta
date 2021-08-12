@@ -19,9 +19,18 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void setVolume(float Vol){
+        volume = Vol;
+    }
+
     public void Play(string name){
         AudioSounds s = Array.Find(sounds, AudioSounds => AudioSounds.name == name);
         s.source.Play();
+    }
+
+    public void Stop(string name){
+        AudioSounds s = Array.Find(sounds, AudioSounds => AudioSounds.name == name);
+        s.source.Stop();
     }
 
     // Update is called once per frame
