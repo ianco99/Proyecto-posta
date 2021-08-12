@@ -14,11 +14,11 @@ public class Menues : MonoBehaviour
     public GameObject MainMenu;
     public Slider slider;
     public Text VolumeCounter;
-
+    AudioManager script;
     // Start is called before the first frame update
     void Start()
     {
-        AudioManager script = audioManager.GetComponent<AudioManager>();
+        script = audioManager.GetComponent<AudioManager>();
         slider.onValueChanged.AddListener((v) =>{
             script.setVolume(v);
             float  f = v * 100;
@@ -73,6 +73,7 @@ public class Menues : MonoBehaviour
     }
 
     public void IrMenuConfiguracion(string name){
+        slider.value = script.getVolume();
         switch(name){
             case "Main":
                 MainMenu.SetActive(false);
