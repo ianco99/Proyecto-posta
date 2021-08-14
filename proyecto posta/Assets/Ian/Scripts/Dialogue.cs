@@ -83,6 +83,7 @@ public class Dialogue : Interactable1
                 {
                     anim.Play("KevinDraw");
                     Debug.Log("Garcias, me espantas a los boludos del medio que me tapan la vista?");
+                    GameEvents.current.KevinNeedsScaring();
                   
                 }
                 break;

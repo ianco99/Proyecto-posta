@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class pizarraManager : Interactable1
 {
-    [SerializeField] GameObject luz;
     bool on = false;
     GameObject player;
     int movimiento;

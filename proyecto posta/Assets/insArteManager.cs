@@ -13,13 +13,7 @@ public class insArteManager : MonoBehaviour
     {
         GameEvents.current.kevinArtSupplies += PickUpMaterials;
         GameEvents.current.needScaring += ScareStudents;
-        ScareStudents();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        GameEvents.current.needScaring += preparePossesables;
     }
 
     void PickUpMaterials()
@@ -38,6 +32,17 @@ public class insArteManager : MonoBehaviour
             
             student.GetComponent<Outline>().enabled = true;
             
+        }
+    }
+
+    void preparePossesables()
+    {
+        Debug.Log("Funcion");
+        foreach(GameObject possesable in possesables)
+        {
+            Debug.Log("Foreach");
+            possesable.tag = "Possesable";
+            Debug.Log("Terminó el foreach");
         }
     }
 }

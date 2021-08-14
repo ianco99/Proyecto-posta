@@ -81,12 +81,14 @@ public class Possess : MonoBehaviour
 
     void Detect()
     {
+        
         GameObject possesable;
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
             try
             {
+                enemiesList = GameObject.FindGameObjectsWithTag("Possesable");
                 possesable = GetClosestEnemy(enemiesList).gameObject;
 
                 if (Vector3.Distance(possesable.transform.position, transform.position) <= 10)
