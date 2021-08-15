@@ -58,7 +58,7 @@ public class ReadTxt : MonoBehaviour
     }
 
     public void StartDialogue(string name, int lineaprinc, int lineaFin){
-        //gameManager.instance.UpdateGameState(GameState.Dialogue); eu tenemos que hacer un script alternativo para dialogo que no interrumpa el gameplay
+        if(gameManager.instance.level != 0) gameManager.instance.UpdateGameState(GameState.Dialogue);
         x = true;
         string dataPath = Application.dataPath + "/TXT/" + name;
         textito = File.ReadAllLines(dataPath);
@@ -71,6 +71,7 @@ public class ReadTxt : MonoBehaviour
 
     void EndDialogue(){ 
         x = false;
+        GameEvents.current.StoppedTalking();
         gameManager.instance.UpdateGameState(GameState.Playing);
        Tex.SetActive(false);
     }

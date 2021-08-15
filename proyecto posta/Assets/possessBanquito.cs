@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class possessBanquito : Interactable1
 {
-    [SerializeField] GameObject luz;
     Rigidbody rb;
     bool on = false;
     GameObject player;
     int movimiento;
+    bool used = false;
     public float fuerza;
     [SerializeField] GameObject student;
 
@@ -20,11 +20,15 @@ public class possessBanquito : Interactable1
 
     public override void Interact()
     {
-        
-        Debug.Log("moviendo banquito ayeee");
-        on = !on;
-        StartCoroutine("moverBanquito", on);
-        student.gameObject.SetActive(false);
+        if (!used)
+        {
+            Debug.Log("moviendo banquito ayeee");
+            on = !on;
+            StartCoroutine("moverBanquito", on);
+            student.gameObject.SetActive(false);
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles++;
+            used = !used;
+        }   
     }
 
     public override string GetDescription()

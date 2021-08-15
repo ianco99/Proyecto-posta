@@ -2,11 +2,10 @@ Profesor: Buen día, estamos llenos. ¡Gracias por venir!
 Finn: Eso fue rápido.
 Kevin: Disculpe, ¿no hay un lugar en donde pueda sentarme para unirme a la clase?
 Profesor: Como dije, todos los lugares están ocupados. A menos que quieras esperar hasta que alguno se vaya por una emergencia familiar, te ofrezco que vuelvas cualquier otro día.
-Bool: 5
 Finn: Dame un minuto, voy a intentar solucionar esto.
 Kevin: Todo tuyo.
 Bool: 5 
-Kevin: Wow, eso fue, ¿Vos hiciste eso?
+Kevin: Wow, eso fue.. ¿Vos hiciste eso?
 Finn: Si, no fue tan difícil como pensaba, pero pobrecito parecía re asustado
 Kevin: Como ahora se fue un alumno, ¿Puedo entrar yo?
 Profesor: Hmm, tuviste suerte. te voy a dejar entrar. Pero no esperes mi ayuda porque ese lugar no es tuyo.
@@ -26,8 +25,7 @@ Finn: Ahora te las traigo.
 Bool: 5
 Kevin: ¡Gracias! Creo que eso es todo lo que necesito
 Finn: Perfecto, ¿Ya sabes lo que tienes que dibujar?
-Kevin: Creo que tengo que dibujar esa estatua…
-Bool: 5
+Kevin: Creo que tengo que dibujar ese bowl…
 Finn: Vos tampoco la podés ver, ¿verdad?
 Kevin: No…
 Finn: Bueno esperame que ayudo para que la puedas ver

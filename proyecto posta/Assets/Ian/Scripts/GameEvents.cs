@@ -53,4 +53,14 @@ public class GameEvents : MonoBehaviour
             needScaring();
         }
     }
+
+    public event Action kevinStoppedTalking;
+
+    public void StoppedTalking()
+    {
+        if (kevinStoppedTalking != null)
+        {
+            kevinStoppedTalking();
+        }
+    }
 }

@@ -5,10 +5,19 @@ using UnityEngine;
 public class WardrobeController : Interactable1
 {
     [SerializeField] GameObject student;
+    bool used = false;
     public override void Interact()
     {
-        GetComponent<Animator>().enabled = true;
-        GetComponent<BoxCollider>().enabled = false;
+        
+        if (!used)
+        {
+            GetComponent<Animator>().enabled = true;
+            GetComponent<BoxCollider>().enabled = false;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles++;
+            used = !used;
+        }
+        
+
         Debug.Log("Moviendo wardrobe eyyy");
     }
 

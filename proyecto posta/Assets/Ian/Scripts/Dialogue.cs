@@ -65,26 +65,35 @@ public class Dialogue : Interactable1
                 {
                     Talk("Biblioteca.txt", 7, 14);
                     alreadyTalked = !alreadyTalked;
+                    
                 }
                 break;
             case 2:
                 Debug.Log("DAALE");
                 if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles == 0){
                     Debug.Log("El gordo");
+                    
                     alreadyTalked = !alreadyTalked;
                     //talk "aaa finn ayuda quiero entrar"
                 }
                 else if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles == 2)
                 {
                     Debug.Log("juntame las temperas querido");
+                    script.StartDialogue("InstitutoArte.txt", 14, 19);
                     GameEvents.current.KevinArtSupplies();
                 }
-                else if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles == 5)
+                else if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles == 6)
                 {
                     anim.Play("KevinDraw");
+                    script.StartDialogue("InstitutoArte.txt", 26, 31);
                     Debug.Log("Garcias, me espantas a los boludos del medio que me tapan la vista?");
                     GameEvents.current.KevinNeedsScaring();
                   
+                }
+                else if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles == 10)
+                {
+                    script.StartDialogue("InstitutoArte.txt", 35, 44);
+
                 }
                 break;
         }
