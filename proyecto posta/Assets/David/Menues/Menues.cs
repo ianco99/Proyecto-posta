@@ -8,7 +8,6 @@ public class Menues : MonoBehaviour
 {
     public GameObject audioManager;
     public GameObject PauseMenu;
-    public GameObject PauseButton;
     public bool isPaused = false;
     public GameObject ConfigurationMenu;
     public GameObject MainMenu;
@@ -30,7 +29,8 @@ public class Menues : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+         if (Input.GetKey(KeyCode.Escape) && isPaused) DePause();
+         else if(Input.GetKey(KeyCode.Escape) && !isPaused) OnPause(); 
     }
 
     public void SetVolume(float volume){
@@ -49,14 +49,12 @@ public class Menues : MonoBehaviour
     public void OnPause(){
     	Time.timeScale = 0f;
 	    PauseMenu.SetActive(true);
-    	PauseButton.SetActive(false);
         isPaused = true;
     }
 
     public void DePause(){
     	Time.timeScale = 1f;
     	PauseMenu.SetActive(false);
-    	PauseButton.SetActive(true);
     	isPaused = false;
     }
 
