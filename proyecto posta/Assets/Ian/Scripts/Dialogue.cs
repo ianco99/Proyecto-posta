@@ -66,6 +66,7 @@ public class Dialogue : Interactable1
                 if (!alreadyTalked)
                 {
                     Talk("Biblioteca.txt", 7, 14);
+                    this.gameObject.tag = "Untagged";
                     alreadyTalked = !alreadyTalked;
                     
                 }
