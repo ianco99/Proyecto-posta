@@ -109,10 +109,10 @@ public class ReadTxt : MonoBehaviour
                             nomb[0] = " Dialogo de Finn";
                             break;
                         case "Kevin":
-                            panel.GetComponent<Image>().material.color = new Color(0, 255, 255);
+                           // panel.GetComponent<Image>().material.color = new Color(0, 255, 255);
                             break;
                         case "Profesor":
-                            panel.GetComponent<Image>().material.color = new Color(255, 0, 255);
+                            //panel.GetComponent<Image>().material.color = new Color(255, 0, 255);
                             break;
                     }
                     StartCoroutine(TypeSentence(nomb[1]));
