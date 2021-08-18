@@ -11,7 +11,7 @@ public class TriggerArea : MonoBehaviour
         if (other.transform.tag == "Player")
         {
             Debug.Log("RAKTATAT");
-            SceneManager.LoadScene("Mecanicas");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }

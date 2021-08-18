@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Dialogue : Interactable1
 {
@@ -16,6 +17,7 @@ public class Dialogue : Interactable1
         TextDialogue = GameObject.FindWithTag("Text");
         script = TextDialogue.GetComponent<ReadTxt>();
         player = GameObject.FindGameObjectWithTag("Player");
+        GameEvents.current.kevinStoppedTalking += EndLevel;
     }
 
     // Update is called once per frame
@@ -93,9 +95,18 @@ public class Dialogue : Interactable1
                 else if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles == 10)
                 {
                     script.StartDialogue("InstitutoArte.txt", 35, 44);
-
+                    
                 }
                 break;
         }
+    }
+
+    void EndLevel()
+    {
+        if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles == 10)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+        
     }
 }
