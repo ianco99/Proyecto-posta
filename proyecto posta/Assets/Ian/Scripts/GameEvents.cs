@@ -18,7 +18,6 @@ public class GameEvents : MonoBehaviour
         Debug.Log("Sumbini");
         if(TalkedToKevin != null)
         {
-            Debug.Log("TAX");
             TalkedToKevin();
         }
     }

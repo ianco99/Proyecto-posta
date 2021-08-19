@@ -6,6 +6,7 @@ public class WardrobeController : Interactable1
 {
     [SerializeField] GameObject student;
     bool used = false;
+    [SerializeField] Transform runToPosition;
     public override void Interact()
     {
         
@@ -23,11 +24,11 @@ public class WardrobeController : Interactable1
 
     public override string GetDescription()
     {
-        return "Apreta la " + "E" + " para apagar/prender la luz.";
+        return "Apreta la " + "E" + " para poseer el armario.";
     }
 
     public void shooStudent()
     {
-        student.gameObject.SetActive(false);
+        student.GetComponent<scriptDeSanti>().MoveToDestination(runToPosition.position);
     }
 }

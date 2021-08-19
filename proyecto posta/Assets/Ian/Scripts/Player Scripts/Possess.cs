@@ -24,6 +24,7 @@ public class Possess : MonoBehaviour
         if (isPossesing)
         {
             interactionText.text = found.GetComponent<Interactable1>().GetDescription();
+            Debug.Log(interactionText.text);
             if (Input.GetKeyDown(KeyCode.E))
             {
                 found.GetComponent<Interactable1>().Interact();
@@ -60,6 +61,7 @@ public class Possess : MonoBehaviour
     public void Possesing()
     {
         Debug.Log("LOCO SE ESTA HACIENDO");
+        found.tag = "Interactable";
         isPossesing = true;
         prevPos = this.transform.position;
         this.transform.position = found.transform.position;

@@ -11,6 +11,7 @@ public class possessBanquito : Interactable1
     bool used = false;
     public float fuerza;
     [SerializeField] GameObject student;
+    [SerializeField] Transform runToPosition;
 
     private void Start()
     {
@@ -25,7 +26,7 @@ public class possessBanquito : Interactable1
             Debug.Log("moviendo banquito ayeee");
             on = !on;
             StartCoroutine("moverBanquito", on);
-            student.gameObject.SetActive(false);
+            student.GetComponent<scriptDeSanti>().MoveToDestination(runToPosition.position);
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles++;
             used = !used;
         }   
@@ -33,7 +34,7 @@ public class possessBanquito : Interactable1
 
     public override string GetDescription()
     {
-        return "Apreta la " + "E" + " para apagar/prender la luz.";
+        return "Apreta la " + "E" + " para poseer al banquito.";
     }
     
     IEnumerator moverBanquito(bool on)

@@ -45,6 +45,7 @@ public class TriggerInicio : MonoBehaviour
     {
         if (on)
         {
+            on = false;
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles++;
             Debug.Log("Asheee");
             mover.MoveToDestination(proxPosKevin.position);

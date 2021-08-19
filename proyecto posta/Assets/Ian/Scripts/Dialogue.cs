@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class Dialogue : Interactable1
 {
@@ -11,6 +12,11 @@ public class Dialogue : Interactable1
     GameObject player;
     [SerializeField] Animator anim;
     int scene;
+    public scriptDeSanti mover;
+    public Transform proxPos;
+    int i = 0;
+    public Transform salida;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +29,7 @@ public class Dialogue : Interactable1
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log(alreadyTalked);
     }
 
     public void Talk(string nameFile, int lineaprinc, int lineaFin)
@@ -36,39 +42,29 @@ public class Dialogue : Interactable1
     }
     public override string GetDescription()
     {
-        switch (gameManager.instance.level)
-        {
-            case 1:
-                if (alreadyTalked)
-                {
-                    return "Andá a la <color=red>puerta</color>";
-                }
-                else
-                {
-                    return "Apretá [E] para hablar con <color=green>Kevin</color>";
-                }
-            case 2:
-                {
-                    return "hablá con Kevin";
-                }
-            default:
-                return "Apretá [E] para hablar con Kevin";
-        }
-        
+        return "Apretá [E] para hablar con <color=green>Kevin</color>";  
     }
 
     public override void Interact()
     {
+        anim.SetBool("Action", false);
         switch (gameManager.instance.level)
         {
             case 1:
                 Debug.Log("DAALE");
                 if (!alreadyTalked)
                 {
-                    Talk("Biblioteca.txt", 7, 14);
-                    this.gameObject.tag = "Untagged";
-                    alreadyTalked = !alreadyTalked;
+                    Talk("Biblioteca.txt", 5, 7);
+                    i++;
                     
+                    
+                }
+                if (alreadyTalked && i == 1)
+                {
+                    i++;
+                    this.GetComponent<SpriteRenderer>().flipX = true;
+                    Talk("Biblioteca.txt", 9, 16);
+                    StartCoroutine("Hardcodeado");
                 }
                 break;
             case 2:
@@ -85,7 +81,7 @@ public class Dialogue : Interactable1
                     script.StartDialogue("InstitutoArte.txt", 14, 19);
                     GameEvents.current.KevinArtSupplies();
                 }
-                else if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles == 6)
+                else if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles == 5)
                 {
                     anim.Play("KevinDraw");
                     script.StartDialogue("InstitutoArte.txt", 26, 31);
@@ -93,7 +89,7 @@ public class Dialogue : Interactable1
                     GameEvents.current.KevinNeedsScaring();
                   
                 }
-                else if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles == 10)
+                else if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles == 8)
                 {
                     script.StartDialogue("InstitutoArte.txt", 35, 44);
                     
@@ -101,13 +97,35 @@ public class Dialogue : Interactable1
                 break;
         }
     }
-
+    public void Acting(bool active)
+    {
+        anim.SetBool("Action", active);
+    }
     void EndLevel()
     {
-        if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles == 10)
+        switch (gameManager.instance.level)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            case 1:
+                if (!alreadyTalked && i == 1)
+                {
+                    mover.MoveToDestination(proxPos.position);
+                    alreadyTalked = !alreadyTalked;
+                }
+                
+                break;
+            case 2:
+                if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles == 8)
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                }
+                break;
         }
         
+    }
+
+    IEnumerator Hardcodeado()
+    {
+        yield return new WaitForSeconds(2);
+        mover.MoveToDestination(salida.position);
     }
 }

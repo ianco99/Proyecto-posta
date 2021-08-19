@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
+
 public class ReadTxt : MonoBehaviour
 {
     public Text texto;
@@ -12,6 +13,8 @@ public class ReadTxt : MonoBehaviour
     string[] textito; 
     bool x = false;
     bool cor = true;
+    
+    
     public int cantPal = 0;
     public bool estaPresente; 
     public string nombFile;
@@ -60,7 +63,11 @@ public class ReadTxt : MonoBehaviour
     public void StartDialogue(string name, int lineaprinc, int lineaFin){
         if(gameManager.instance.level != 0) gameManager.instance.UpdateGameState(GameState.Dialogue);
         x = true;
-        string dataPath = Application.dataPath + "/TXT/" + name;
+        var textFile = Resources.Load<TextAsset>(name);
+        //string txtContents = new StreamReader("Assets/Resources/" + name).ReadToEnd();
+        //string[] lines = txtContents.Split("\n"[0]);
+        //string dataPath = Directory.GetCurrentDirectory() + "/Assets/TXT/" + name;
+        string dataPath = Application.streamingAssetsPath + "/" + name;
         textito = File.ReadAllLines(dataPath);
         if (lineaFin <= 0) lineaFin = textito.Length - 1;        
         LineafinWW = lineaFin;

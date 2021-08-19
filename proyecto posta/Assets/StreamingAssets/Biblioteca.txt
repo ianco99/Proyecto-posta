@@ -5,8 +5,6 @@ Kevin: ¡Aja! Cinematografía 101, aca estas
 Bool: 5
 Finn: Ese libro me encantó cuando lo leí, ¿a este chico le gusta el tema?
 Finn: ¿Cuántos años tendrá? Se ve como un adolescente..
-Bool: 5
-Tiempo: 1
 Kevin:  Me llevo este.
 Finn: A su edad me interesaba la cinematografía. me hace acordar mucho a mi de joven.
 Kevin: ¡Bueno, gracias hasta luego!

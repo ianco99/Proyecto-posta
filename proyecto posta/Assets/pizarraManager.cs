@@ -35,7 +35,7 @@ public class pizarraManager : Interactable1
 
     public override string GetDescription()
     {
-        return "Apreta la " + "E" + " para apagar/prender la luz.";
+        return "Apreta la " + "E" + " para dibujar en la pizarra.";
     }
 
     IEnumerator Dibujo ( SpriteRenderer _sprite, bool isOn)

@@ -8,6 +8,7 @@ public class RoofLamp : Interactable1
     bool on = true;
     GameObject player;
     [SerializeField] GameObject student;
+    [SerializeField] Transform runToPosition;
 
     private void Start()
     {
@@ -20,12 +21,12 @@ public class RoofLamp : Interactable1
         if(player.GetComponent<PlayerManager>().bibliotecaPuzzles == 0)
         {
             player.GetComponent<PlayerManager>().bibliotecaPuzzles++;
-            student.SetActive(false);
+            student.GetComponent<scriptDeSanti>().MoveToDestination(runToPosition.position);
             GameEvents.current.ScaringStudent();
         }
     }
     public override string GetDescription()
     {
-        return "Apreta la " + "E" +" para apagar/prender la luz.";
+        return "Apreta la E para apagar/prender la luz y la F para salir del objeto.";
     }
 }

@@ -48,7 +48,7 @@ public class Interactions : MonoBehaviour
 
         if (!successfulHit)
         {
-            interactionText.text = "";
+            //interactionText.text = "";
             interactionHoldGO.SetActive(false);
         }
     }
@@ -72,7 +72,7 @@ public class Interactions : MonoBehaviour
 
         if (!successfulHit)
         {
-            interactionText.text = "";
+            //interactionText.text = "";
             interactionHoldGO.SetActive(false);
         }
     }
