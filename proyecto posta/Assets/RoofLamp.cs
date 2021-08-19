@@ -7,6 +7,7 @@ public class RoofLamp : Interactable1
     [SerializeField] GameObject luz;
     bool on = true;
     GameObject player;
+    [SerializeField] GameObject student;
 
     private void Start()
     {
@@ -19,6 +20,7 @@ public class RoofLamp : Interactable1
         if(player.GetComponent<PlayerManager>().bibliotecaPuzzles == 0)
         {
             player.GetComponent<PlayerManager>().bibliotecaPuzzles++;
+            student.SetActive(false);
             GameEvents.current.ScaringStudent();
         }
     }

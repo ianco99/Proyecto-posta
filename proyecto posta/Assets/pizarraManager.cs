@@ -11,6 +11,7 @@ public class pizarraManager : Interactable1
     [SerializeField] GameObject student;
     [SerializeField] float fadeOutTime = 1f;
     [SerializeField] SpriteRenderer sprite;
+    [SerializeField] Transform runToPosition;
     bool used = false;
 
     private void Start()
@@ -25,7 +26,7 @@ public class pizarraManager : Interactable1
         {
             on = !on;
             StartCoroutine(Dibujo(sprite, on));
-            student.gameObject.SetActive(false);
+            student.GetComponent<scriptDeSanti>().MoveToDestination(runToPosition.position);
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles++;
             used = !used;
         }

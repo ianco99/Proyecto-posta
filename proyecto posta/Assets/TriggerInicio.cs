@@ -9,6 +9,7 @@ public class TriggerInicio : MonoBehaviour
     public GameObject dialogueManager;
     ReadTxt script;
     bool on = true;
+    public scriptDeSanti mover;
 
     private void Start()
     {
@@ -45,7 +46,9 @@ public class TriggerInicio : MonoBehaviour
         if (on)
         {
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles++;
-            kevin.position = proxPosKevin.position;
+            Debug.Log("Asheee");
+            mover.MoveToDestination(proxPosKevin.position);
+            //kevin.position = proxPosKevin.position;
         }
         
     }
