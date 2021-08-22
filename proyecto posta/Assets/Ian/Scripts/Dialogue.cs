@@ -12,7 +12,8 @@ public class Dialogue : Interactable1
     GameObject player;
     [SerializeField] Animator anim;
     int scene;
-    public scriptDeSanti mover;
+    //public scriptDeSanti mover;
+     KevinMOv mover;
     public Transform proxPos;
     int i = 0;
     public Transform salida;
@@ -24,6 +25,7 @@ public class Dialogue : Interactable1
         script = TextDialogue.GetComponent<ReadTxt>();
         player = GameObject.FindGameObjectWithTag("Player");
         GameEvents.current.kevinStoppedTalking += EndLevel;
+        mover = this.GetComponent<KevinMOv>();
     }
 
     // Update is called once per frame
@@ -62,7 +64,6 @@ public class Dialogue : Interactable1
                 if (alreadyTalked && i == 1)
                 {
                     i++;
-                    this.GetComponent<SpriteRenderer>().flipX = true;
                     Talk("Biblioteca.txt", 9, 16);
                     StartCoroutine("Hardcodeado");
                 }
@@ -108,7 +109,7 @@ public class Dialogue : Interactable1
             case 1:
                 if (!alreadyTalked && i == 1)
                 {
-                    mover.MoveToDestination(proxPos.position);
+                    mover.MoveToThisPoint(proxPos.position);
                     alreadyTalked = !alreadyTalked;
                 }
                 
@@ -126,6 +127,6 @@ public class Dialogue : Interactable1
     IEnumerator Hardcodeado()
     {
         yield return new WaitForSeconds(2);
-        mover.MoveToDestination(salida.position);
+        mover.MoveToThisPoint(salida.position);
     }
 }

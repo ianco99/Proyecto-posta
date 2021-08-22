@@ -13,6 +13,8 @@ public class KevinMOv : MonoBehaviour
     float turnSmoothTime = 0.1f;
     public Transform cam;
     bool move = false;
+    public float velocity;
+    float percent;
     float movX;
     float movZ;
     int estadoMov = 1;
@@ -26,45 +28,50 @@ public class KevinMOv : MonoBehaviour
     }
 
     void Update(){
-        if(move){
+        percent = velocity + (0.1f * velocity);
+        if (move){
+            anim.SetBool("Idle", false);
             float z = direction.z - transform.position.z;
             float x = direction.x - transform.position.x;
+           // Debug.Log("x: " + x + ", z:" + z);
             if( estadoMov == 1){
-                anim.SetBool("walkfront", true);
-                anim.SetBool("walkside", false);
-                if(z >= 0.25f){
+                Debug.Log("Cambiando");
+                anim.SetBool("MovingX", true);
+                anim.SetBool("MovingZ", false);
+                movX = 0;
+                if (z >= -percent && z <= percent){
                     movZ = 0; 
                     estadoMov = 2;
                 }
-                if(z > -0.25f){
-                    movZ = 0.25f;
+                if(z > percent){
+                    movZ = velocity;
                     transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, -0.831433f);
-                    anim.SetBool("walkFoB", true);
                 }
-                if(z < 0.25f){
-                    movZ = -0.25f;
+                if(z < -percent){
+                    movZ = -velocity;
                     transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, 0.831433f);
-                    anim.SetBool("walkFoB", false);
                 }
+                Debug.Log("z: " + z);
             }
             if(estadoMov == 2){
-                anim.SetBool("walkfront", false);
-                anim.SetBool("walkside", true);
+                anim.SetBool("MovingZ", true);
+                anim.SetBool("MovingX", false);
                 movZ = 0;
-                if(x >= 0.25f) movX = 0;
-                if(x > -0.25f){
-                  movX = 0.25f;
+                if(x >= percent) movX = 0;
+                if(x > -percent){
+                  movX = velocity;
                   transform.localScale = new Vector3(0.8314339f, transform.localScale.y, transform.localScale.z);
                 }
-                if(x < 0.25f) {
-                    movX = -0.25f;
+                if (x < percent) {
+                    movX = -velocity;
                     transform.localScale = new Vector3(-0.8314339f, transform.localScale.y, transform.localScale.z);
                 }
             }
-            if(z <= 0.3f && x <= 0.3f && z>= -0.3f && x >= -0.3f){
+            if(z <= 0.5f && x <= 0.5f && z>= -0.5f && x >= -0.5f){
                 move = false;
-                anim.SetBool("walkfront", false);
-                anim.SetBool("walkside", false);
+                anim.SetBool("MovingZ", false);
+                anim.SetBool("MovingX", false);
+                anim.SetBool("Idle", true);
             }
             transform.Translate(movX,0,movZ);
             Debug.Log("adentro");
@@ -84,5 +91,13 @@ public class KevinMOv : MonoBehaviour
         moveDir.y = 0;
         controller.Move(moveDir * speed * Time.deltaTime);
         */
+    }
+
+    public IEnumerator points(Vector3[] vectors){
+        foreach (Vector3 v in vectors){
+        Debug.Log(v);
+            MoveToThisPoint(v);
+            yield return new WaitUntil(() => !move);
+        } 
     }
 }

@@ -198,7 +198,6 @@ public class ReadTxt : MonoBehaviour
                 break;          
         }
         script.Play("Letra");
-        Debug.Log(countPitch);
         yield return new WaitForSeconds(0.1f);
         if(sentTrue) StartCoroutine(PlayLetter());
 
