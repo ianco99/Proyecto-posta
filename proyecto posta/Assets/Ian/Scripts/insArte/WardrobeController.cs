@@ -15,6 +15,7 @@ public class WardrobeController : Interactable1
             GetComponent<Animator>().enabled = true;
             GetComponent<BoxCollider>().enabled = false;
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles++;
+            //Cinematica para el objeto (cambias el gamestate y no se man cambias la camara)
             used = !used;
         }
         

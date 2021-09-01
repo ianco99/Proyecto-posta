@@ -54,6 +54,7 @@ public class gameManager : MonoBehaviour
                 HandleDialogue();
                 break;
             case GameState.Cinematic:
+                HandleCinematic();
                 break;
         }
 
@@ -80,6 +81,13 @@ public class gameManager : MonoBehaviour
         player.GetComponent<Possess>().enabled = true;
         player.GetComponent<PushNPull>().enabled = true;
         player.GetComponentInChildren<Interactions>().enabled = true;
+    }
+    private void HandleCinematic()
+    {
+        player.GetComponent<Movement>().enabled = false;
+        player.GetComponent<Possess>().enabled = false;
+        player.GetComponent<PushNPull>().enabled = false;
+        player.GetComponentInChildren<Interactions>().enabled = false;
     }
     //private void OnPuzzleSolved()
     //{

@@ -20,11 +20,6 @@ public class scriptDeSanti : MonoBehaviour
             estadoMov = 2;
         }
     }
-
-    private void Start()
-    {
-        
-    }
     void Update()
     {
         
