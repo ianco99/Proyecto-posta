@@ -31633,7 +31633,7 @@ GameObject:
   - component: {fileID: 8843066213486886759}
   - component: {fileID: 8843066213486886752}
   - component: {fileID: 8843066213486886753}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Cylinder (3)
   m_TagString: Pushable
   m_Icon: {fileID: 0}

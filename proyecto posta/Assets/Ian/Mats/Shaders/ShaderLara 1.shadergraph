@@ -46,19 +46,19 @@
             "typeInfo": {
                 "fullName": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty"
             },
-            "JSONnodeData": "{\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"894d6957-a5de-4cc4-a908-efbfdd363525\"\n    },\n    \"m_Name\": \"Cutout Size\",\n    \"m_DefaultReferenceName\": \"Vector1_84822B95\",\n    \"m_OverrideReferenceName\": \"_CutoutSize\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Precision\": 0,\n    \"m_GPUInstanced\": false,\n    \"m_Hidden\": false,\n    \"m_Value\": 0.10000000149011612,\n    \"m_FloatType\": 0,\n    \"m_RangeValues\": {\n        \"x\": 0.0,\n        \"y\": 1.0\n    }\n}"
+            "JSONnodeData": "{\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"894d6957-a5de-4cc4-a908-efbfdd363525\"\n    },\n    \"m_Name\": \"Cutout Size\",\n    \"m_DefaultReferenceName\": \"Vector1_84822B95\",\n    \"m_OverrideReferenceName\": \"_CutoutSize\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Precision\": 0,\n    \"m_GPUInstanced\": false,\n    \"m_Hidden\": false,\n    \"m_Value\": 0.0,\n    \"m_FloatType\": 0,\n    \"m_RangeValues\": {\n        \"x\": 0.0,\n        \"y\": 1.0\n    }\n}"
         },
         {
             "typeInfo": {
                 "fullName": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty"
             },
-            "JSONnodeData": "{\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"eec48702-1499-451e-baff-a80d408db2b5\"\n    },\n    \"m_Name\": \"Falloff Size\",\n    \"m_DefaultReferenceName\": \"Vector1_1F14AEA2\",\n    \"m_OverrideReferenceName\": \"_FalloffSize\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Precision\": 0,\n    \"m_GPUInstanced\": false,\n    \"m_Hidden\": false,\n    \"m_Value\": 0.05000000074505806,\n    \"m_FloatType\": 0,\n    \"m_RangeValues\": {\n        \"x\": 0.0,\n        \"y\": 1.0\n    }\n}"
+            "JSONnodeData": "{\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"eec48702-1499-451e-baff-a80d408db2b5\"\n    },\n    \"m_Name\": \"Falloff Size\",\n    \"m_DefaultReferenceName\": \"Vector1_1F14AEA2\",\n    \"m_OverrideReferenceName\": \"_FalloffSize\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Precision\": 0,\n    \"m_GPUInstanced\": false,\n    \"m_Hidden\": false,\n    \"m_Value\": 0.0,\n    \"m_FloatType\": 0,\n    \"m_RangeValues\": {\n        \"x\": 0.0,\n        \"y\": 1.0\n    }\n}"
         },
         {
             "typeInfo": {
                 "fullName": "UnityEditor.ShaderGraph.Internal.Vector2ShaderProperty"
             },
-            "JSONnodeData": "{\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"6139d778-d32d-4662-a13f-35ebb3f13984\"\n    },\n    \"m_Name\": \"Cutout Position\",\n    \"m_DefaultReferenceName\": \"Vector2_28A50C9E\",\n    \"m_OverrideReferenceName\": \"_CutoutPos\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Precision\": 0,\n    \"m_GPUInstanced\": false,\n    \"m_Hidden\": false,\n    \"m_Value\": {\n        \"x\": 0.5,\n        \"y\": 0.25,\n        \"z\": 0.0,\n        \"w\": 0.0\n    }\n}"
+            "JSONnodeData": "{\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"6139d778-d32d-4662-a13f-35ebb3f13984\"\n    },\n    \"m_Name\": \"Cutout Position\",\n    \"m_DefaultReferenceName\": \"Vector2_28A50C9E\",\n    \"m_OverrideReferenceName\": \"_CutoutPos\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Precision\": 0,\n    \"m_GPUInstanced\": false,\n    \"m_Hidden\": false,\n    \"m_Value\": {\n        \"x\": 0.0,\n        \"y\": 0.0,\n        \"z\": 0.0,\n        \"w\": 0.0\n    }\n}"
         }
     ],
     "m_SerializedKeywords": [],
