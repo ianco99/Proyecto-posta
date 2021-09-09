@@ -9,9 +9,11 @@ public class CameraWallSeeThrough : MonoBehaviour
     [SerializeField]
     private LayerMask wallMask;
 
+    [SerializeField] float fade = 0.065f;
+    [SerializeField] float cutoutSize = 0.15f;
+
     private Camera mainCamera;
 
-    [SerializeField] Material cutout;
     RaycastHit[] hitObjects;
     RaycastHit[] pastHits;
 
@@ -28,7 +30,7 @@ public class CameraWallSeeThrough : MonoBehaviour
         hitObjects = Physics.RaycastAll(transform.position, offset, offset.magnitude, wallMask);
         Debug.DrawRay(transform.position, offset, Color.green);
         Debug.Log(hitObjects.Length);
-        if(hitObjects.Length > 0)
+        if(hitObjects.Length > 0 && pastHits.Length > 0)
         {
             pastHits = hitObjects;
             for (int i = 0; i < hitObjects.Length; ++i)
@@ -38,8 +40,8 @@ public class CameraWallSeeThrough : MonoBehaviour
                 for (int m = 0; m < materials.Length; ++m)
                 {
                     materials[m].SetVector("_CutoutPos", cutoutPos);
-                    materials[m].SetFloat("_CutoutSize", 0.1f);
-                    materials[m].SetFloat("_FalloffSize", 0.05f);
+                    materials[m].SetFloat("_CutoutSize", cutoutSize);
+                    materials[m].SetFloat("_FalloffSize", fade);
                 }
             }
         } 
