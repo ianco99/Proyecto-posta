@@ -23,8 +23,8 @@ public class Possess : MonoBehaviour
     {
         if (isPossesing)
         {
-            interactionText.text = found.GetComponent<Interactable1>().GetDescription();
-            Debug.Log(interactionText.text);
+            //interactionText.text = found.GetComponent<Interactable1>().GetDescription();
+            //Debug.Log(interactionText.text);
             if (Input.GetKeyDown(KeyCode.E))
             {
                 found.GetComponent<Interactable1>().Interact();
@@ -38,13 +38,12 @@ public class Possess : MonoBehaviour
                 sprite.GetComponent<SpriteRenderer>().enabled = true;
                 anim.SetBool("BackFromPossess", true);
                 anim.SetBool("Possessing", false);
-                //goBackToNormal();
+                goBackToNormal();
                 isPossesing = false;
             }
         }
         else
         {
-            interactionText.text = "";
             doPossess();
             Detect();
         }
@@ -78,7 +77,7 @@ public class Possess : MonoBehaviour
         this.GetComponent<PushNPull>().enabled = true;
         anim.SetBool("BackFromPossess", false);
         //sprite.GetComponent<SpriteRenderer>().enabled = true;
-        //anim.SetBool("Possessing", false);
+        anim.SetBool("Possessing", false);
     }
 
     void Detect()

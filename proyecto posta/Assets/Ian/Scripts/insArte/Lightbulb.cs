@@ -2,8 +2,9 @@
 
 public class Lightbulb : Interactable1
 {
-    public Light m_light;
+    public GameObject[] m_light;
     public bool isOn;
+    public bool inverter = false;
 
     private void Start()
     {
@@ -12,7 +13,19 @@ public class Lightbulb : Interactable1
 
     void UpdateLight()
     {
-        m_light.enabled = isOn;
+        
+        foreach (GameObject light in m_light)
+        {
+            light.SetActive(isOn);
+        }
+    }
+
+    void InvertLight()
+    {
+        foreach (GameObject light in m_light)
+        {
+            light.SetActive(!light.activeSelf);
+        }
     }
 
     public override string GetDescription()
@@ -24,6 +37,10 @@ public class Lightbulb : Interactable1
     public override void Interact()
     {
         isOn = !isOn;
-        UpdateLight();
+        if (!inverter)
+            UpdateLight();
+        else
+            InvertLight();
+
     }
 }
