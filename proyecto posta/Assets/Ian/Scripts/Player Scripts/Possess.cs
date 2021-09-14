@@ -75,6 +75,7 @@ public class Possess : MonoBehaviour
         //this.gameObject.transform.position = prevPos;
         this.GetComponent<CharacterController>().enabled = true;
         this.GetComponent<PushNPull>().enabled = true;
+        anim.Play("BackFromPosses");
         anim.SetBool("BackFromPossess", false);
         //sprite.GetComponent<SpriteRenderer>().enabled = true;
         anim.SetBool("Possessing", false);

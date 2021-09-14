@@ -30,7 +30,7 @@ public class CameraWallSeeThrough : MonoBehaviour
         hitObjects = Physics.RaycastAll(transform.position, offset, offset.magnitude, wallMask);
         Debug.DrawRay(transform.position, offset, Color.green);
         Debug.Log(hitObjects.Length);
-        if(hitObjects.Length > 0 && pastHits.Length > 0)
+        if(hitObjects.Length > 0)
         {
             pastHits = hitObjects;
             for (int i = 0; i < hitObjects.Length; ++i)
@@ -47,17 +47,26 @@ public class CameraWallSeeThrough : MonoBehaviour
         } 
         else
         {
-            for (int i = 0; i < pastHits.Length; ++i)
+            if(pastHits == null)
             {
-                Material[] materials = pastHits[i].transform.GetComponent<Renderer>().materials;
-
-                for (int m = 0; m < materials.Length; ++m)
+                Debug.Log("ara negro");
+            }
+            else
+            {
+                for (int i = 0; i < pastHits.Length; ++i)
                 {
-                    materials[m].SetVector("_CutoutPos", Vector2.zero);
-                    materials[m].SetFloat("_CutoutSize", 0);
-                    materials[m].SetFloat("_FalloffSize", 0);
+
+                    Material[] materials = pastHits[i].transform.GetComponent<Renderer>().materials;
+
+                    for (int m = 0; m < materials.Length; ++m)
+                    {
+                        materials[m].SetVector("_CutoutPos", Vector2.zero);
+                        materials[m].SetFloat("_CutoutSize", 0);
+                        materials[m].SetFloat("_FalloffSize", 0);
+                    }
                 }
             }
+            
         }
     }
 }

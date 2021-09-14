@@ -11,11 +11,6 @@ public class Interactions : MonoBehaviour
     public float holdTime;
     [SerializeField] Transform raycastOrigin;
     [SerializeField] float raycastDistance;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -72,10 +67,11 @@ public class Interactions : MonoBehaviour
 
         if (!successfulHit)
         {
-            //interactionText.text = "";
+            interactionText.text = "";
             interactionHoldGO.SetActive(false);
         }
     }
+    
     void HandleInteraction(Interactable1 interactable)
     {
         KeyCode key = KeyCode.E;
