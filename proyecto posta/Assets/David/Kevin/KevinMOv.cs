@@ -19,6 +19,7 @@ public class KevinMOv : MonoBehaviour
     float movZ;
     int estadoMov = 1;
 
+
     Animator anim; 
     // Start is called before the first frame update
     void Start()
