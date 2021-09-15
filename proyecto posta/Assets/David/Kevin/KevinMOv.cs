@@ -36,7 +36,6 @@ public class KevinMOv : MonoBehaviour
             float x = direction.x - transform.position.x;
            // Debug.Log("x: " + x + ", z:" + z);
             if( estadoMov == 1){
-                Debug.Log("Cambiando");
                 anim.SetBool("MovingX", true);
                 anim.SetBool("MovingZ", false);
                 movX = 0;
@@ -52,7 +51,7 @@ public class KevinMOv : MonoBehaviour
                     movZ = -velocity;
                     transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, 0.831433f);
                 }
-                Debug.Log("z: " + z);
+                
             }
             if(estadoMov == 2){
                 anim.SetBool("MovingZ", true);
@@ -75,7 +74,7 @@ public class KevinMOv : MonoBehaviour
                 anim.SetBool("Idle", true);
             }
             transform.Translate(movX,0,movZ);
-            Debug.Log("adentro");
+            
         }
     }
 
@@ -96,7 +95,7 @@ public class KevinMOv : MonoBehaviour
 
     public IEnumerator points(Vector3[] vectors){
         foreach (Vector3 v in vectors){
-        Debug.Log(v);
+        //Debug.Log(v);
             MoveToThisPoint(v);
             yield return new WaitUntil(() => !move);
         } 

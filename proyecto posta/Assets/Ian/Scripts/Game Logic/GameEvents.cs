@@ -26,7 +26,6 @@ public class GameEvents : MonoBehaviour
 
     public void ScaringStudent()
     {
-        Debug.Log("Scaring");
         if(StudentScared != null)
         {
             StudentScared();

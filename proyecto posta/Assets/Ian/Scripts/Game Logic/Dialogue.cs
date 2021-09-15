@@ -28,12 +28,6 @@ public class Dialogue : Interactable1
         mover = this.GetComponent<KevinMOv>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        Debug.Log(alreadyTalked);
-    }
-
     public void Talk(string nameFile, int lineaprinc, int lineaFin)
     {
         script.StartDialogue(nameFile, lineaprinc, lineaFin);

@@ -29,7 +29,6 @@ public class CameraWallSeeThrough : MonoBehaviour
         Vector3 offset = targetObject.position - transform.position;
         hitObjects = Physics.RaycastAll(transform.position, offset, offset.magnitude, wallMask);
         Debug.DrawRay(transform.position, offset, Color.green);
-        Debug.Log(hitObjects.Length);
         if(hitObjects.Length > 0)
         {
             pastHits = hitObjects;
@@ -49,7 +48,6 @@ public class CameraWallSeeThrough : MonoBehaviour
         {
             if(pastHits == null)
             {
-                Debug.Log("ara negro");
             }
             else
             {

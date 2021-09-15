@@ -59,7 +59,6 @@ public class Possess : MonoBehaviour
     }
     public void Possesing()
     {
-        Debug.Log("LOCO SE ESTA HACIENDO");
         found.tag = "Interactable";
         isPossesing = true;
         prevPos = this.transform.position;

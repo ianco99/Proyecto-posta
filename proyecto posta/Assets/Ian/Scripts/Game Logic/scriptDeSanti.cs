@@ -23,7 +23,6 @@ public class scriptDeSanti : MonoBehaviour
     void Update()
     {
         
-        Debug.Log(movement);
         if (move == true)
         {
             anim.SetBool("Idle", false);
@@ -39,7 +38,6 @@ public class scriptDeSanti : MonoBehaviour
                     estadoMov = 2;
                     if (Mathf.Abs(movement.z) < stepSize * Time.deltaTime)
                     {
-                        Debug.Log("ereneshe");
                         move = false;
                     }
                     movement.x = 0;
@@ -50,7 +48,6 @@ public class scriptDeSanti : MonoBehaviour
             {
                 anim.SetBool("MovingZ", true);
                 anim.SetBool("MovingX", false);
-                Debug.Log("Algo");
                 float moveStep = (movement.z > 0 ? 1 : -1) * stepSize * Time.deltaTime;
                 transform.Translate(new Vector3(0, 0, moveStep));
                 movement.z -= moveStep;
