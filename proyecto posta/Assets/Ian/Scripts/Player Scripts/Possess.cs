@@ -136,7 +136,6 @@ public class Possess : MonoBehaviour
                 bestTarget = potentialTarget.transform;
             }
         }
-        Debug.Log(bestTarget + "diush");
         return bestTarget;
     }
 

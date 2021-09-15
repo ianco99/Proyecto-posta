@@ -974,12 +974,12 @@ AnimatorStateTransition:
   - m_ConditionMode: 2
     m_ConditionEvent: BackFromPossess
     m_EventTreshold: 0
+  - m_ConditionMode: 4
+    m_ConditionEvent: velocidadY
+    m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: IsGrounded
     m_EventTreshold: 0
-  - m_ConditionMode: 4
-    m_ConditionEvent: velocidadX
-    m_EventTreshold: -0.01
   - m_ConditionMode: 1
     m_ConditionEvent: Sided
     m_EventTreshold: 0
@@ -2200,9 +2200,6 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: IsGrounded
     m_EventTreshold: 0
-  - m_ConditionMode: 3
-    m_ConditionEvent: velocidadX
-    m_EventTreshold: 0.01
   - m_ConditionMode: 1
     m_ConditionEvent: Sided
     m_EventTreshold: 0
