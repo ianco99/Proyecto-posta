@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -311,7 +311,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 145791559}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -16.16, y: 0, z: 5.79}
   m_LocalScale: {x: 1, y: 0.51365715, z: 1}
   m_Children: []
   m_Father: {fileID: 1692859260}
@@ -5131,6 +5131,12 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &254464836 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7262776403566532151, guid: e809d3a4220fc694a9dd57c034b76ef6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7262776403683982017}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &466449291
 Mesh:
   m_ObjectHideFlags: 0
@@ -11271,6 +11277,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3433c9d00c72d26429b2eb76e2cb1ddd, type: 3}
+--- !u!1 &1343276949 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7262776403321408279, guid: e809d3a4220fc694a9dd57c034b76ef6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7262776403683982017}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1441407735 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7262776403964080713, guid: e809d3a4220fc694a9dd57c034b76ef6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7262776403683982017}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1526366427
 GameObject:
   m_ObjectHideFlags: 0
@@ -11594,6 +11612,12 @@ MonoBehaviour:
   interactionType: 0
   Particle1: {fileID: 201567732}
   Particle2: {fileID: 909934386}
+--- !u!1 &1805970783 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7262776403703591618, guid: e809d3a4220fc694a9dd57c034b76ef6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7262776403683982017}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1864752126
 GameObject:
   m_ObjectHideFlags: 0
@@ -14230,7 +14254,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionType: 0
-  m_light: []
+  light1: {fileID: 0}
+  light2: {fileID: 0}
+  light3: {fileID: 0}
+  light4: {fileID: 0}
   isOn: 0
   inverter: 0
 --- !u!1 &8843066212518092312
@@ -41859,7 +41886,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8843066213623619600}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.97, y: 4.39, z: 0.03}
+  m_LocalPosition: {x: 11.72, y: 4.39, z: 0.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2213698830479012804}
@@ -41878,6 +41905,7 @@ GameObject:
   - component: {fileID: 8843066213623619605}
   - component: {fileID: 8843066213623619606}
   - component: {fileID: 8843066213623619607}
+  - component: {fileID: 8843066213623619601}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Possesable
@@ -41885,6 +41913,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8843066213623619601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8843066213623619600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe5fa0016c1f094395e62dffadd1645, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionType: 0
+  light1: {fileID: 254464836}
+  light2: {fileID: 1441407735}
+  light3: {fileID: 1805970783}
+  light4: {fileID: 1343276949}
+  isOn: 0
+  inverter: 0
 --- !u!33 &8843066213623619604
 MeshFilter:
   m_ObjectHideFlags: 0

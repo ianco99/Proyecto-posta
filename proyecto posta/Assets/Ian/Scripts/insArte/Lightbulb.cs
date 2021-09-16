@@ -2,30 +2,25 @@
 
 public class Lightbulb : Interactable1
 {
-    public GameObject[] m_light;
+    public GameObject light1, light2, light3, light4;
     public bool isOn;
     public bool inverter = false;
 
-    private void Start()
+    void UpdateLight1()
     {
-        UpdateLight();
+        light1.SetActive(!light1.activeSelf);
     }
-
-    void UpdateLight()
+    void UpdateLight2()
     {
-        
-        foreach (GameObject light in m_light)
-        {
-            light.SetActive(isOn);
-        }
+        light1.SetActive(!light1.activeSelf);
+        light4.SetActive(!light4.activeSelf);
     }
-
-    void InvertLight()
+    void UpdateLight3()
     {
-        foreach (GameObject light in m_light)
-        {
-            light.SetActive(!light.activeSelf);
-        }
+        light1.SetActive(!light1.activeSelf);
+        light2.SetActive(!light2.activeSelf);
+        light3.SetActive(!light3.activeSelf);
+        light4.SetActive(!light4.activeSelf);
     }
 
     public override string GetDescription()
@@ -36,11 +31,19 @@ public class Lightbulb : Interactable1
 
     public override void Interact()
     {
-        isOn = !isOn;
-        if (!inverter)
-            UpdateLight();
-        else
-            InvertLight();
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            Debug.Log("Sas");
+            UpdateLight1();
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            UpdateLight2();
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            UpdateLight3();
+        }
 
     }
 }
