@@ -26,10 +26,7 @@ public class Possess : MonoBehaviour
             Debug.Log("eueue");
             //interactionText.text = found.GetComponent<Interactable1>().GetDescription();
             //Debug.Log(interactionText.text);
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                found.GetComponent<Interactable1>().Interact();
-            }
+            found.GetComponent<Interactable1>().Interact();
 
             if (Input.GetKeyDown(KeyCode.F))
             {

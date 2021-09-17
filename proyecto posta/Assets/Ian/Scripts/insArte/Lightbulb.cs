@@ -33,7 +33,6 @@ public class Lightbulb : Interactable1
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            Debug.Log("Sas");
             UpdateLight1();
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
