@@ -28,7 +28,7 @@ public class PushNPull : MonoBehaviour
     }
     void PushAndPull()
     {
-        if (Input.GetKeyDown(KeyCode.R) && !interacting && controller.isGrounded)
+        if (Input.GetKey(KeyCode.R) && !interacting && controller.isGrounded)
         {
 
             Vector3 origin = new Vector3(raycastOrigin.transform.position.x, raycastOrigin.transform.position.y, raycastOrigin.transform.position.z);
