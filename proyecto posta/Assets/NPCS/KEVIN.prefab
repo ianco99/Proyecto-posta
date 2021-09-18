@@ -189,6 +189,7 @@ MonoBehaviour:
   Fin: {fileID: 0}
   cam: {fileID: 0}
   velocity: 0.15
+  NPC: 1
 --- !u!114 &5652179761196046968
 MonoBehaviour:
   m_ObjectHideFlags: 0
