@@ -41,6 +41,10 @@ public class Dialogue : Interactable1
         return "Apretá [E] para hablar con <color=green>Kevin</color>";  
     }
 
+    public override void changeCamera()
+    {
+        
+    }
     public override void Interact()
     {
         anim.SetBool("Action", false);

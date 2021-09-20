@@ -11,8 +11,11 @@ public abstract class Interactable1 : MonoBehaviour
 
     float holdTime;
 
+    public Transform cameraPos;
+
     public InteractionType interactionType;
 
+    public abstract void changeCamera();
     public abstract string GetDescription();
     public abstract void Interact();
 

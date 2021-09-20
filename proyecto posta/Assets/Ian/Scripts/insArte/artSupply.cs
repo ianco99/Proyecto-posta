@@ -12,6 +12,10 @@ public class artSupply : Interactable1
         return descripcion;
     }
 
+    public override void changeCamera()
+    {
+        
+    }
     public override void Interact()
     {
         if (!alreadyTalked)

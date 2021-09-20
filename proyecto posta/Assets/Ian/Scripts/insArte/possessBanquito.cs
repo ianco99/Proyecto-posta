@@ -19,6 +19,11 @@ public class possessBanquito : Interactable1
         rb = GetComponent<Rigidbody>();
     }
 
+    public override void changeCamera()
+    {
+        throw new System.NotImplementedException();
+    }
+
     public override void Interact()
     {
         if (!used)

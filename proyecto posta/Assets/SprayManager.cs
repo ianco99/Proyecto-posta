@@ -24,6 +24,11 @@ public class SprayManager : Interactable1
         return "Apreta la " + "E" + " para dibujar en la pizarra.";
     }
 
+    public override void changeCamera()
+    {
+        throw new System.NotImplementedException();
+    }
+
     private void ActivateSpray()
     {
         Particle1.SetActive(true);

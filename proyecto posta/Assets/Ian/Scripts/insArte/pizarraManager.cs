@@ -33,6 +33,11 @@ public class pizarraManager : Interactable1
         
     }
 
+    public override void changeCamera()
+    {
+        throw new System.NotImplementedException();
+    }
+
     public override string GetDescription()
     {
         return "Apreta la " + "E" + " para dibujar en la pizarra.";

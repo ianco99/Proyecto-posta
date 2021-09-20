@@ -23,6 +23,10 @@ public class WardrobeController : Interactable1
         Debug.Log("Moviendo wardrobe eyyy");
     }
 
+    public override void changeCamera()
+    {
+        throw new System.NotImplementedException();
+    }
     public override string GetDescription()
     {
         return "Apreta la " + "E" + " para poseer el armario.";

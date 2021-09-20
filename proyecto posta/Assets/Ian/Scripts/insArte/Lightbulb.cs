@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
-
+using Cinemachine;
 public class Lightbulb : Interactable1
 {
     public GameObject light1, light2, light3, light4;
     public bool isOn;
     public bool inverter = false;
-
+    //hola soy blastermanmnmnmnmnmmm
     void UpdateLight1()
     {
         light1.SetActive(!light1.activeSelf);
@@ -29,6 +29,13 @@ public class Lightbulb : Interactable1
         return "Press [E] to turn <color=green>on</color> the light.";
     }
 
+    public override void changeCamera()
+    {
+        GameObject playCam = GameObject.Find("PlayCam");
+        playCam.GetComponent<CinemachineVirtualCamera>().Follow = cameraPos;
+        playCam.GetComponent<CinemachineVirtualCamera>().LookAt = cameraPos;
+        playCam.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachineFramingTransposer>().m_CameraDistance = 17;
+    }
     public override void Interact()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))

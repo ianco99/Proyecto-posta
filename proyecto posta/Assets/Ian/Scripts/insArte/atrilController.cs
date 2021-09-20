@@ -26,6 +26,11 @@ public class atrilController : Interactable1
         student.gameObject.SetActive(false);
     }
 
+    public override void changeCamera()
+    {
+        throw new System.NotImplementedException();
+    }
+
     public override string GetDescription()
     {
         return "Apreta la " + "E" + " para apagar/prender la luz.";

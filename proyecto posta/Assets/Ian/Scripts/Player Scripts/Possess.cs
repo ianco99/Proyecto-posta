@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class Possess : MonoBehaviour
 {
@@ -13,11 +14,13 @@ public class Possess : MonoBehaviour
     Animator anim;
     public GameObject AudioManager;
     [SerializeField] TMPro.TextMeshProUGUI interactionText;
+    [SerializeField] GameObject playCam;
 
     private void Start()
     {
         anim = GetComponentInChildren<Animator>();
         enemiesList = GameObject.FindGameObjectsWithTag("Possesable");
+        playCam = GameObject.Find("PlayCam");
     }
     void Update()
     {
@@ -57,6 +60,7 @@ public class Possess : MonoBehaviour
     }
     public void Possesing()
     {
+        found.GetComponent<Interactable1>().changeCamera();
         found.tag = "Interactable";
         isPossesing = true;
         prevPos = this.transform.position;
@@ -66,6 +70,12 @@ public class Possess : MonoBehaviour
         sprite.GetComponent<SpriteRenderer>().enabled = false;
         this.GetComponent<Movement>().enabled = false;
     }
+
+    //void changeCamera()
+    //{
+    //    playCam.GetComponent<CinemachineVirtualCamera>().Follow = found.GetComponent<Interactable1>().cameraPos;
+    //    playCam.GetComponent<CinemachineVirtualCamera>().LookAt = found.GetComponent<Interactable1>().cameraPos;
+    //}
 
     public void goBackToNormal()
     {

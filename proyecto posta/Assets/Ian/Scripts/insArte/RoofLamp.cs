@@ -25,6 +25,12 @@ public class RoofLamp : Interactable1
             GameEvents.current.ScaringStudent();
         }
     }
+
+    public override void changeCamera()
+    {
+        throw new System.NotImplementedException();
+    }
+
     public override string GetDescription()
     {
         return "Apreta la E para apagar/prender la luz y la F para salir del objeto.";
