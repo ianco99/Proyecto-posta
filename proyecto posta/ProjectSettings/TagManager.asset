@@ -9,6 +9,7 @@ TagManager:
   - Interactable
   - Possesable
   - Wall
+  - DialogueText
   layers:
   - Default
   - TransparentFX

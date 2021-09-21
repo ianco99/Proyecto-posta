@@ -19,14 +19,25 @@ public class KevinMOv : MonoBehaviour
     float movZ;
     int estadoMov = 1;
     public int NPC;
+    public Animator anim; 
+    public ReadTxt read;
+    public int[] lineaCodPrinc;
+    public int[] lineaCodFin;
+    public string[] text;
+    private int arrnum;
+    
 
+    public void sumArrnum(){
+        arrnum++;
+    }
 
-    Animator anim; 
     // Start is called before the first frame update
     void Start()
     {
+        GameObject obj = GameObject.FindGameObjectWithTag("DialogueText");
+        read = obj.GetComponent<ReadTxt>();
        // MoveToThisPoint(new Vector3(Fin.transform.position.x, Fin.transform.position.y, Fin.transform.position.z));
-        anim = this.GetComponent<Animator>();
+       // anim = this.GetComponent<Animator>();
         anim.SetInteger("NPC", NPC);
     }
 
@@ -104,5 +115,9 @@ public class KevinMOv : MonoBehaviour
             MoveToThisPoint(v);
             yield return new WaitUntil(() => !move);
         } 
+    }
+
+    public void StartDialogueEsp(){
+        read.StartDialogue(text[arrnum], lineaCodPrinc[arrnum], lineaCodFin[arrnum]);
     }
 }

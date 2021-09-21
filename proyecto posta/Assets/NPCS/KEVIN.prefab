@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79c389e23c4ace64e8eb01a232a816e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraPos: {fileID: 0}
   interactionType: 1
   alreadyTalked: 0
   anim: {fileID: 8922783349855287419}
@@ -189,7 +190,11 @@ MonoBehaviour:
   Fin: {fileID: 0}
   cam: {fileID: 0}
   velocity: 0.15
-  NPC: 1
+  NPC: 0
+  read: {fileID: 0}
+  lineaCodPrinc: 
+  lineaCodFin: 
+  text: []
 --- !u!114 &5652179761196046968
 MonoBehaviour:
   m_ObjectHideFlags: 0

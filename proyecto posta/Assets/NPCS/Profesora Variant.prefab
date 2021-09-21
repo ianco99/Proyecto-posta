@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 2770772488796479645, guid: c695b3338d79b454a857d8cadd56b25e,
         type: 3}
       propertyPath: NPC
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8922783349855287416, guid: c695b3338d79b454a857d8cadd56b25e,
         type: 3}
@@ -82,6 +82,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 2e8ce4cab02188943873725c72d0a1ea, type: 2}
+      objectReference: {fileID: 9100000, guid: f30ce3b5829ba3640b8c3811658c1e23, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c695b3338d79b454a857d8cadd56b25e, type: 3}
