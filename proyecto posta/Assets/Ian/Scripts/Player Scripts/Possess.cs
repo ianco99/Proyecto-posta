@@ -39,7 +39,9 @@ public class Possess : MonoBehaviour
                 sprite.GetComponent<SpriteRenderer>().enabled = true;
                 anim.SetBool("BackFromPossess", true);
                 anim.SetBool("Possessing", false);
-                goBackToNormal();
+                playCam.GetComponent<CinemachineVirtualCamera>().Follow = this.gameObject.transform;
+                playCam.GetComponent<CinemachineVirtualCamera>().LookAt = this.gameObject.transform;
+                //goBackToNormal();
                 isPossesing = false;
             }
         }
@@ -80,12 +82,11 @@ public class Possess : MonoBehaviour
     public void goBackToNormal()
     {
         //this.gameObject.transform.position = prevPos;
+        
         this.GetComponent<CharacterController>().enabled = true;
         this.GetComponent<PushNPull>().enabled = true;
-        anim.Play("BackFromPosses");
         anim.SetBool("BackFromPossess", false);
         //sprite.GetComponent<SpriteRenderer>().enabled = true;
-        anim.SetBool("Possessing", false);
     }
 
     void Detect()

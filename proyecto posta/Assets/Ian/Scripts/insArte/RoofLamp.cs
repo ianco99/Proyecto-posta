@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class RoofLamp : Interactable1
 {
@@ -16,19 +17,25 @@ public class RoofLamp : Interactable1
     }
     public override void Interact()
     {
-        on = !on;
-        luz.SetActive(on);
-        if(player.GetComponent<PlayerManager>().bibliotecaPuzzles == 0)
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            player.GetComponent<PlayerManager>().bibliotecaPuzzles++;
-            student.GetComponent<scriptDeSanti>().MoveToDestination(runToPosition.position);
-            GameEvents.current.ScaringStudent();
+            on = !on;
+            luz.SetActive(on);
+            if (player.GetComponent<PlayerManager>().bibliotecaPuzzles == 0)
+            {
+                player.GetComponent<PlayerManager>().bibliotecaPuzzles++;
+                student.GetComponent<scriptDeSanti>().MoveToDestination(runToPosition.position);
+                GameEvents.current.ScaringStudent();
+            }
         }
+        
     }
 
     public override void changeCamera()
     {
-        throw new System.NotImplementedException();
+        GameObject playCam = GameObject.Find("PlayCam");
+        playCam.GetComponent<CinemachineVirtualCamera>().Follow = cameraPos;
+        playCam.GetComponent<CinemachineVirtualCamera>().LookAt = cameraPos;
     }
 
     public override string GetDescription()

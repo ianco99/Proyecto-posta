@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: db62420e7a1ba6c4d96fd272d845c6f9,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -170,6 +170,7 @@ Transform:
   - {fileID: 240349092}
   - {fileID: 295094556}
   - {fileID: 1770035044}
+  - {fileID: 1092598019}
   m_Father: {fileID: 849195253}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -961,6 +962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5648215b45eb42f41adaa32c93071643, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraPos: {fileID: 1092598019}
   interactionType: 0
   fuerza: 0
   student: {fileID: 1165074921}
@@ -4056,6 +4058,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6eceaf9e6c922843a65ea141726cd85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraPos: {fileID: 0}
   interactionType: 1
   luz: {fileID: 37509537}
   student: {fileID: 623759232}
@@ -5889,6 +5892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d519767ceb519b4458676a58d117cd75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraPos: {fileID: 0}
   interactionType: 0
   alreadyTalked: 0
   descripcion: "Apret\xE1 la E para recoger las temperas."
@@ -6095,6 +6099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3849c9000767ac34db9c3b829b86da8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraPos: {fileID: 0}
   interactionType: 0
   fuerza: 200
   student: {fileID: 341968237}
@@ -6394,7 +6399,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 75
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -6420,7 +6425,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 956684992}
   m_LocalRotation: {x: 0, y: -0.000000014901161, z: 0, w: 1}
-  m_LocalPosition: {x: 13.012754, y: 3.9139686, z: -5.079104}
+  m_LocalPosition: {x: 13.012754, y: 4.2221146, z: -4.829104}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6509,6 +6514,36 @@ MonoBehaviour:
     m_Bits: 256
   fade: 0.065
   cutoutSize: 0.15
+--- !u!1 &960280407
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 960280408}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &960280408
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960280407}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.1112}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7599461291509451044}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &962346337
 GameObject:
   m_ObjectHideFlags: 0
@@ -6751,6 +6786,11 @@ PrefabInstance:
       propertyPath: m_LookAt
       value: 
       objectReference: {fileID: 5340484735125378900}
+    - target: {fileID: 4788681959534948178, guid: 0eb06dd6c096bc841a3f5329636ae08e,
+        type: 3}
+      propertyPath: m_Lens.FieldOfView
+      value: 75
+      objectReference: {fileID: 0}
     - target: {fileID: 4788681959534948179, guid: 0eb06dd6c096bc841a3f5329636ae08e,
         type: 3}
       propertyPath: m_BoundingVolume
@@ -6779,17 +6819,17 @@ PrefabInstance:
     - target: {fileID: 4788681959534948181, guid: 0eb06dd6c096bc841a3f5329636ae08e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.120671
+      value: 9.620672
       objectReference: {fileID: 0}
     - target: {fileID: 4788681959534948181, guid: 0eb06dd6c096bc841a3f5329636ae08e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.9139686
+      value: 4.2221146
       objectReference: {fileID: 0}
     - target: {fileID: 4788681959534948181, guid: 0eb06dd6c096bc841a3f5329636ae08e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.079104
+      value: -4.829104
       objectReference: {fileID: 0}
     - target: {fileID: 4788681959534948181, guid: 0eb06dd6c096bc841a3f5329636ae08e,
         type: 3}
@@ -6921,6 +6961,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0025536516, y: 0.002549906, z: 0.0033749104}
   m_Center: {x: -1.5550257e-11, y: 0.0000037472807, z: 0.0016874552}
+--- !u!1 &1092598018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1092598019}
+  m_Layer: 0
+  m_Name: cameraPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1092598019
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092598018}
+  m_LocalRotation: {x: 0.016780073, y: 0.4178291, z: -0.008743738, w: 0.9083286}
+  m_LocalPosition: {x: -30.6, y: 0.5228895, z: -0.626}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 34861854}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1120687173
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24888,6 +24958,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d519767ceb519b4458676a58d117cd75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraPos: {fileID: 0}
   interactionType: 0
   alreadyTalked: 0
   descripcion: "Apret\xE1 la E para recoger el lienzo."
@@ -28379,6 +28450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d519767ceb519b4458676a58d117cd75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraPos: {fileID: 0}
   interactionType: 0
   alreadyTalked: 0
   descripcion: "Apret\xE1 la E para recoger los pinceles"
@@ -29216,6 +29288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a7a3dbddde19ec4a939a92767adc6f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraPos: {fileID: 0}
   interactionType: 0
   student: {fileID: 1602056711}
   runToPosition: {fileID: 424426477}
@@ -30161,7 +30234,7 @@ PrefabInstance:
     - target: {fileID: 5917096859811601121, guid: 5904c8cd30847024896c3f55fedc3296,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.16
+      value: 9.66
       objectReference: {fileID: 0}
     - target: {fileID: 5917096859811601121, guid: 5904c8cd30847024896c3f55fedc3296,
         type: 3}
@@ -30171,7 +30244,7 @@ PrefabInstance:
     - target: {fileID: 5917096859811601121, guid: 5904c8cd30847024896c3f55fedc3296,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2
+      value: 2.25
       objectReference: {fileID: 0}
     - target: {fileID: 5917096859811601121, guid: 5904c8cd30847024896c3f55fedc3296,
         type: 3}
@@ -32235,10 +32308,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7599461291509451067}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 49.89, y: 10.86, z: 13.75}
+  m_LocalPosition: {x: 50, y: 11, z: 14}
   m_LocalScale: {x: 40.470833, y: 40.47082, z: 40.470818}
   m_Children:
   - {fileID: 154627490}
+  - {fileID: 960280408}
   m_Father: {fileID: 962346338}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
@@ -32352,6 +32426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6eceaf9e6c922843a65ea141726cd85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraPos: {fileID: 960280408}
   interactionType: 1
   luz: {fileID: 154627489}
   student: {fileID: 623759232}

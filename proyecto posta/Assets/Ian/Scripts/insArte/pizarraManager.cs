@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class pizarraManager : Interactable1
 {
@@ -35,7 +36,9 @@ public class pizarraManager : Interactable1
 
     public override void changeCamera()
     {
-        throw new System.NotImplementedException();
+        GameObject playCam = GameObject.Find("PlayCam");
+        playCam.GetComponent<CinemachineVirtualCamera>().Follow = cameraPos;
+        playCam.GetComponent<CinemachineVirtualCamera>().LookAt = player.transform;
     }
 
     public override string GetDescription()
