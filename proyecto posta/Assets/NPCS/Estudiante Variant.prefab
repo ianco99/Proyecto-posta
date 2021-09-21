@@ -72,5 +72,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Estudiante Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8922783349855287419, guid: c695b3338d79b454a857d8cadd56b25e,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e67de448af00266418b8394e64620066, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c695b3338d79b454a857d8cadd56b25e, type: 3}
