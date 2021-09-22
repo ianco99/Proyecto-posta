@@ -1,31 +1,38 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class WardrobeController : Interactable1
 {
     [SerializeField] GameObject student;
     bool used = false;
     [SerializeField] Transform runToPosition;
+    GameObject player;
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
     public override void Interact()
     {
-        
-        if (!used)
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            GetComponent<Animator>().enabled = true;
-            GetComponent<BoxCollider>().enabled = false;
-            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles++;
-            //Cinematica para el objeto (cambias el gamestate y no se man cambias la camara)
-            used = !used;
+            if (!used)
+            {
+                GetComponent<Animator>().enabled = true;
+                GetComponent<BoxCollider>().enabled = false;
+                GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles++;
+                //Cinematica para el objeto (cambias el gamestate y no se man cambias la camara)
+                used = !used;
+            }
         }
-        
-
-        Debug.Log("Moviendo wardrobe eyyy");
     }
 
     public override void changeCamera()
     {
-        throw new System.NotImplementedException();
+        GameObject playCam = GameObject.Find("PlayCam");
+        playCam.GetComponent<CinemachineVirtualCamera>().Follow = cameraPos;
+        playCam.GetComponent<CinemachineVirtualCamera>().LookAt = player.transform;
     }
     public override string GetDescription()
     {

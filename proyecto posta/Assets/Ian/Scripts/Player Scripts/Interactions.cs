@@ -22,7 +22,6 @@ public class Interactions : MonoBehaviour
     {
         bool successfulHit = false;
 
-        // if (Input.GetKeyDown(KeyCode.E)){
 
         Vector3 origin = new Vector3(raycastOrigin.transform.position.x, raycastOrigin.transform.position.y, raycastOrigin.transform.position.z);
         RaycastHit hit;

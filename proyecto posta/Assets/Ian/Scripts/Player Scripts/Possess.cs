@@ -27,7 +27,7 @@ public class Possess : MonoBehaviour
         if (isPossesing)
         {
             Debug.Log("eueue");
-            //interactionText.text = found.GetComponent<Interactable1>().GetDescription();
+            interactionText.text = found.GetComponent<Interactable1>().GetDescription();
             //Debug.Log(interactionText.text);
             found.GetComponent<Interactable1>().Interact();
 

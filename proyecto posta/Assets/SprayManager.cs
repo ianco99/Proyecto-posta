@@ -4,34 +4,58 @@ using UnityEngine;
 
 public class SprayManager : Interactable1
 {
-    [SerializeField] GameObject Particle1, Particle2;
+    [SerializeField] GameObject[] Particles;
     bool used = false;
     bool on = false;
-    public override void Interact()
+    [SerializeField] string descripcion;
+    //public override void Interact()
+    //{
+    //    Debug.Log("sas");
+
+    //    if (!used)
+    //    {
+    //        Debug.Log("ses");
+    //        on = !on;
+    //        ActivateSpray();
+    //        used = !used;
+    //    }
+
+    //}
+
+    //public override string GetDescription()
+    //{
+    //    return "Apreta la " + "E" + " para dibujar en la pizarra.";
+    //}
+
+    //public override void changeCamera()
+    //{
+    //    throw new System.NotImplementedException();
+    //}
+
+    private void ActivateSpray()
     {
-
-        if (!used)
+        foreach (GameObject spray in Particles)
         {
-            on = !on;
-            ActivateSpray();
-            used = !used;
+            spray.SetActive(true);
         }
-
     }
 
     public override string GetDescription()
     {
-        return "Apreta la " + "E" + " para dibujar en la pizarra.";
+        return "sas" + descripcion;
     }
 
     public override void changeCamera()
     {
-        throw new System.NotImplementedException();
+
+    }
+    public override void Interact()
+    {
+        if (!used)
+        {
+            ActivateSpray();
+            used = !used;
+        }
     }
 
-    private void ActivateSpray()
-    {
-        Particle1.SetActive(true);
-        Particle2.SetActive(true);
-    }
 }
