@@ -55,8 +55,10 @@ public class Interactions : MonoBehaviour
             Interactable1 interactable = other.GetComponent<Interactable1>();
             if (interactable != null)
             {
+                Debug.Log("Sasawsasas");
                 HandleInteraction(interactable);
                 interactionText.text = interactable.GetDescription();
+                Debug.Log("ewewe");
                 successfulHit = true;
 
                 interactionHoldGO.SetActive(interactable.interactionType == Interactable1.InteractionType.Hold);

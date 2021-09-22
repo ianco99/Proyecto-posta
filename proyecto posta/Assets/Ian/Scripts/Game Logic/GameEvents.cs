@@ -61,4 +61,13 @@ public class GameEvents : MonoBehaviour
             kevinStoppedTalking();
         }
     }
+
+    public event Action activatingSpray;
+    public void ActivateSpray()
+    {
+        if (activatingSpray != null)
+        {
+            activatingSpray();
+        }
+    }
 }

@@ -7,15 +7,7 @@ public class PlayerManager : MonoBehaviour
 {
     public bool hasTalkedToKevin;
 
-    public int bibliotecaPuzzles = 0;
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public int bibliotecaPuzzles = 0; //esto en realidad es de instituto de arte
+    public int jardinPuzzles = 0;
+    
 }
