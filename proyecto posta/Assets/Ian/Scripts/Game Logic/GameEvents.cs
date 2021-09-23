@@ -70,4 +70,13 @@ public class GameEvents : MonoBehaviour
             activatingSpray();
         }
     }
+
+    public event Action pickingFlowers;
+    public void ActivateFlowers()
+    {
+        if (activatingSpray != null)
+        {
+            pickingFlowers();
+        }
+    }
 }
