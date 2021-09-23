@@ -230,7 +230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f24103a0575b1e6468ebe1f055f44463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kevin: {fileID: 909468661}
+  kevin: {fileID: 1474496872}
   arrte: {fileID: 214030342}
 --- !u!4 &489342190
 Transform:
@@ -340,12 +340,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &909468661 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3815667576865436627, guid: 04099cce4cba44d439eb95541bf82af4,
-    type: 3}
-  m_PrefabInstance: {fileID: 5703775252113556268}
-  m_PrefabAsset: {fileID: 0}
 --- !u!95 &909468668 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3815667576865436626, guid: 04099cce4cba44d439eb95541bf82af4,
@@ -357,6 +351,12 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 8922783349855287419, guid: c695b3338d79b454a857d8cadd56b25e,
     type: 3}
   m_PrefabInstance: {fileID: 302339613}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1474496872 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7182526705161318879, guid: 7cd615838191c664c8afa478f2a6415b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1763561491948911070}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1522274620
 GameObject:

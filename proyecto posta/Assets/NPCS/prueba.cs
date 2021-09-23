@@ -13,7 +13,7 @@ public class prueba : MonoBehaviour
     void Start()
     {
         kev = kevin.GetComponent<KevinMOv>();
-          kev.MoveToThisPoint(new Vector3(arrte.transform.position.x, arrte.transform.position.y, arrte.transform.position.z));
+        kev.MoveToThisPoint(new Vector3(arrte.transform.position.x, arrte.transform.position.y, arrte.transform.position.z));
     }
 
     // Update is called once per frame
