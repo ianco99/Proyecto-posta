@@ -50,6 +50,10 @@ public class PushNPull : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.R) && interacting)
         {
+            if(Vector3.Distance(interacted.transform.position, this.transform.position) > 3f)
+            {
+                StopPushing(interacted);
+            }
             Vector3 moveObject = new Vector3(this.transform.position.x, interacted.transform.position.y, interacted.transform.position.z);
             interacted.GetComponent<Rigidbody>().velocity = player.GetComponent<Movement>().direction * player.GetComponent<Movement>().speed;
             interacted.GetComponent<Rigidbody>().drag = 0f;
@@ -67,15 +71,20 @@ public class PushNPull : MonoBehaviour
         }
         else if (Input.GetKeyUp(KeyCode.R) && interacting)
         {
-            interacted.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f, 0f);
-            interacted.GetComponent<Rigidbody>().drag = initialDrag;
-            interacted.GetComponent<Rigidbody>().angularDrag = initialAngularDrag;
-            interacting = false;
-            script.Stop("Push");
-            interacted = null;
-            player.GetComponent<Movement>().speed = 6f;
-            anim.SetBool("Pushing", false);
-            anim.SetBool("PushingVolteado", false);
+            StopPushing(interacted);
         }
+    }
+
+    void StopPushing(GameObject interacted)
+    {
+        interacted.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f, 0f);
+        interacted.GetComponent<Rigidbody>().drag = initialDrag;
+        interacted.GetComponent<Rigidbody>().angularDrag = initialAngularDrag;
+        interacting = false;
+        script.Stop("Push");
+        interacted = null;
+        player.GetComponent<Movement>().speed = 6f;
+        anim.SetBool("Pushing", false);
+        anim.SetBool("PushingVolteado", false);
     }
 }
