@@ -50,14 +50,23 @@ public class PushNPull : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.R) && interacting)
         {
-            if(Vector3.Distance(interacted.transform.position, this.transform.position) > 3f)
+            if(Vector3.Distance(interacted.transform.position, this.transform.position) > 2f)
             {
                 StopPushing(interacted);
+            }
+            if(!Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
+            {
+                interacted.GetComponent<Rigidbody>().isKinematic = true;
+            }
+            else
+            {
+                interacted.GetComponent<Rigidbody>().isKinematic = false;
             }
             Vector3 moveObject = new Vector3(this.transform.position.x, interacted.transform.position.y, interacted.transform.position.z);
             interacted.GetComponent<Rigidbody>().velocity = player.GetComponent<Movement>().direction * player.GetComponent<Movement>().speed;
             interacted.GetComponent<Rigidbody>().drag = 0f;
             interacted.GetComponent<Rigidbody>().angularDrag = 0f;
+
             if (player.GetComponent<Movement>().direction.x < -0.0001 || player.GetComponent<Movement>().direction.z < -0.0001)
             {
                 Debug.Log("ARRASTRANDO");
@@ -77,6 +86,7 @@ public class PushNPull : MonoBehaviour
 
     void StopPushing(GameObject interacted)
     {
+        interacted.GetComponent<Rigidbody>().isKinematic = false;
         interacted.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f, 0f);
         interacted.GetComponent<Rigidbody>().drag = initialDrag;
         interacted.GetComponent<Rigidbody>().angularDrag = initialAngularDrag;

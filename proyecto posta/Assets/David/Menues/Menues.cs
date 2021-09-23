@@ -92,7 +92,7 @@ public class Menues : MonoBehaviour
     }
 
     public void IrMenuConfiguracion(string name){
-        slider.value = script.getVolume();
+        
         switch(name){
             case "Main":
                 MainMenu.SetActive(false);
@@ -102,6 +102,7 @@ public class Menues : MonoBehaviour
                 break;
         }
         ConfigurationMenu.SetActive(true);
+        slider.value = script.getVolume();
     }
 
     public void SetResolution(int resolutionIndex){

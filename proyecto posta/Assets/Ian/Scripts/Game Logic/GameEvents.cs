@@ -79,4 +79,13 @@ public class GameEvents : MonoBehaviour
             pickingFlowers();
         }
     }
+
+    public event Action pickedFlower;
+    public void PickedFlowers()
+    {
+        if(pickedFlower != null)
+        {
+            pickedFlower();
+        }
+    }
 }
