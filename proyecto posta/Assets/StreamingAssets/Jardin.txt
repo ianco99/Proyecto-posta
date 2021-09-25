@@ -1,0 +1,36 @@
+Finn: No es mucho, pero es una cámara que solía tener antes.. Probala. Tal vez te termina interesando.
+Kevin: Creo que nunca tuve una cámara tan cara en mis manos. ¡Voy a probarla!
+Kevin agarra la cámara y se pone a pasear por el escenario. Cuando avanzan hasta cierta parte, Kevin admite:
+Kevin: ...Tengo un problema.
+Finn: ¿Qué pasa?
+Kevin: No sé a que sacarle foto..
+Finn: …(Tiene sentido.)
+Finn: Dejame que encuentre algo lindo y te aviso.
+Finn (a sí mismo): Creo recordar que habían unas rosas especialmente vistosas por alguna parte del jardín.
+Bool: 
+Kevin: Entonces, ¿le saco foto a esto?
+Finn: No, todavía no. Hay una ciencia detrás de la fotografía. Bueno.. no sé si una ciencia pero si hay una teoría y forma de hacer las cosas.
+Kevin: Entonces..
+Finn: Necesitamos una buena foto. Necesita un sujeto al cual enfocar la atención, un buen contraste, profundidad..
+Kevin: Una buena iluminación también es necesaria.
+Finn: ¡Exacto! ¿Por dónde empezamos?
+Kevin: Traeme unas flores para darle variedad a la imagen, van a dar un contraste entre tanto rojo de las rosas.
+(El jugador busca otras flores que encuentra resolviendo un par de puzzles de mover objetos. Se las lleva a Kevin.)
+Kevin: ¡Genial! Aunque, siento que le falta algo..
+Finn:Puedo usar los aspersores para darle un efecto arcoiris a la imagen.
+Kevin: Estaría increíble.
+Bool:
+Kevin: Por último, Finn, ¿Podés apagar las luces de alguna forma? O bajarles la intensidad por lo menos. Ayudaría muchísimo a la iluminación.
+Finn: ¡Enseguida!
+(El jugador hace el puzzle de la iluminación y regresa con Kevin)
+Kevin: Hmm… Esto sería un “plano detalle”, ¿no?
+Finn: ¿Cómo sabés eso?
+Kevin: Películas..
+Bool:
+Finn: Yo creo que hicimos un buen trabajo.
+Kevin: Si, se ve bien. Pero..
+Finn: ¿Pero?
+Kevin: Perdón, pero no se que tan entretenido se me hizo como para querer vivir de esto.
+Finn: Ah.. (Me quedé sin ideas.)
+Kevin: ¡Pero hay una charla interesante en una universidad a tan solo unas cuadras de acá! Podemos probar si hay algo que me llame la atención.
+Finn: ¡Perfecto entonces! Te acompaño.
