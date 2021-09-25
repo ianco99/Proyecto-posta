@@ -8,7 +8,7 @@ public class Dialogue : Interactable1
     public bool alreadyTalked = false;
 
     GameObject TextDialogue;
-    ReadTxt script;
+    public ReadTxt script;
     GameObject player;
     [SerializeField] Animator anim;
     int scene;
