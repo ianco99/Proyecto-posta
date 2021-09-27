@@ -80,7 +80,7 @@ public class ReadTxt : MonoBehaviour
         x = false;
         GameEvents.current.StoppedTalking();
         gameManager.instance.UpdateGameState(GameState.Playing);
-       Tex.SetActive(false);
+        Tex.SetActive(false);
     }
 
     public void NextDialogue(int lineafin){

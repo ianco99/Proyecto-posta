@@ -12,8 +12,7 @@ public class Dialogue : Interactable1
     GameObject player;
     [SerializeField] Animator anim;
     int scene;
-    //public scriptDeSanti mover;
-     KevinMOv mover;
+    KevinMOv mover;
     public Transform proxPos;
     int i = 0;
     public Transform salida;
