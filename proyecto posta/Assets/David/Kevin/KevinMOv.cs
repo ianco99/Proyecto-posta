@@ -23,7 +23,7 @@ public class KevinMOv : MonoBehaviour
     public ReadTxt read;
     public int[] lineaCodPrinc;
     public int[] lineaCodFin;
-    public string[] text;
+    public string File;
     private int arrnum;
     
 
@@ -118,6 +118,6 @@ public class KevinMOv : MonoBehaviour
     }
 
     public void StartDialogueEsp(){
-        read.StartDialogue(text[arrnum], lineaCodPrinc[arrnum], lineaCodFin[arrnum]);
+        read.StartDialogue(File, lineaCodPrinc[arrnum], lineaCodFin[arrnum]);
     }
 }
