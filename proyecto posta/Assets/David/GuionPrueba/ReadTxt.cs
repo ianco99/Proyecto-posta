@@ -79,7 +79,7 @@ public class ReadTxt : MonoBehaviour
     void EndDialogue(){ 
         x = false;
         GameEvents.current.StoppedTalking();
-        gameManager.instance.UpdateGameState(GameState.Playing);
+        //gameManager.instance.UpdateGameState(GameState.Playing);
         Tex.SetActive(false);
     }
 

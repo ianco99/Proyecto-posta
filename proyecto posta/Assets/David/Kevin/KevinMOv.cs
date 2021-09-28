@@ -6,7 +6,6 @@ public class KevinMOv : MonoBehaviour
 {
     CharacterController controller;
     public float speed = 6f;
-    public GameObject Fin;
     Vector3 moveDir;
     Vector3 direction;
     float turnSmoothVelocity = 0.1f;
@@ -18,7 +17,7 @@ public class KevinMOv : MonoBehaviour
     float movX;
     float movZ;
     int estadoMov = 1;
-    public int NPC;
+    public bool NPC;
     public Animator anim; 
     public ReadTxt read;
     public int[] lineaCodPrinc;
@@ -34,11 +33,11 @@ public class KevinMOv : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameObject obj = GameObject.FindGameObjectWithTag("DialogueText");
+        GameObject obj = GameObject.FindGameObjectWithTag("Text");
         read = obj.GetComponent<ReadTxt>();
        // MoveToThisPoint(new Vector3(Fin.transform.position.x, Fin.transform.position.y, Fin.transform.position.z));
        // anim = this.GetComponent<Animator>();
-        anim.SetInteger("NPC", NPC);
+        //anim.SetInteger("NPC", NPC);
     }
 
     void Update(){
@@ -89,7 +88,7 @@ public class KevinMOv : MonoBehaviour
                 movX = 0;
                 Debug.Log("finish");
             }
-            transform.Translate(movX,0,movZ);
+            transform.Translate(movX * Time.deltaTime, 0,movZ * Time.deltaTime);
             
         }
     }
