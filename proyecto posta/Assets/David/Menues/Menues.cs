@@ -16,9 +16,13 @@ public class Menues : MonoBehaviour
     public Text VolumeCounter;
     AudioManager script;
     Resolution[] resolutions;
+    
     // Start is called before the first frame update
     void Start()
     {
+        
+
+
         resolutions = Screen.resolutions; 
         resDrop.ClearOptions();
         List<string> options = new List<string>();
@@ -52,6 +56,9 @@ public class Menues : MonoBehaviour
     {
          if (Input.GetKey(KeyCode.Escape) && isPaused) DePause();
          else if(Input.GetKey(KeyCode.Escape) && !isPaused) OnPause(); 
+
+          
+
     }
 
     public void SetVolume(float volume){
@@ -64,7 +71,7 @@ public class Menues : MonoBehaviour
 
     public void Quit(){
     	//Application.Quit();
-        Debug.Log("Quit");
+        
     }
 
     public void OnPause(){
@@ -113,5 +120,7 @@ public class Menues : MonoBehaviour
     public void SetFullscreen (bool isFullscreen){
         Screen.fullScreen = isFullscreen;
     }
+
+   
 
 }

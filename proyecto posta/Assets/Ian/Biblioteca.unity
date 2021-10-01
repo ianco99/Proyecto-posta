@@ -760,6 +760,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d0b652f32a2cc243917e4028fa0f046, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &564846232 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3152578028759629128, guid: e9194da3b5fa14f4db9aec63939f89ba,
+    type: 3}
+  m_PrefabInstance: {fileID: 564846230}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &578166247
 GameObject:
   m_ObjectHideFlags: 0
@@ -1582,7 +1588,7 @@ PrefabInstance:
     - target: {fileID: 4788681959534948181, guid: 0eb06dd6c096bc841a3f5329636ae08e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.03932857
+      value: -0.03932835
       objectReference: {fileID: 0}
     - target: {fileID: 4788681959534948181, guid: 0eb06dd6c096bc841a3f5329636ae08e,
         type: 3}
@@ -2068,7 +2074,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1724274773}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.03932845, y: 2.9839697, z: -19.558008}
+  m_LocalPosition: {x: -0.039328232, y: 2.9839697, z: -19.558008}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2288,6 +2294,125 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1531182775}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2025731732
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 564846232}
+    m_Modifications:
+    - target: {fileID: 473724254074584837, guid: 7061a496097f46c479ea73ba83a8f74b,
+        type: 3}
+      propertyPath: m_Name
+      value: Canvas Fade
+      objectReference: {fileID: 0}
+    - target: {fileID: 473724254074584842, guid: 7061a496097f46c479ea73ba83a8f74b,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 473724254074584842, guid: 7061a496097f46c479ea73ba83a8f74b,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 473724254074584842, guid: 7061a496097f46c479ea73ba83a8f74b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 473724254074584842, guid: 7061a496097f46c479ea73ba83a8f74b,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 473724254074584842, guid: 7061a496097f46c479ea73ba83a8f74b,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 473724254074584842, guid: 7061a496097f46c479ea73ba83a8f74b,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473724254074584842, guid: 7061a496097f46c479ea73ba83a8f74b,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473724254074584842, guid: 7061a496097f46c479ea73ba83a8f74b,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473724254074584842, guid: 7061a496097f46c479ea73ba83a8f74b,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473724254074584842, guid: 7061a496097f46c479ea73ba83a8f74b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473724254074584842, guid: 7061a496097f46c479ea73ba83a8f74b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473724254074584842, guid: 7061a496097f46c479ea73ba83a8f74b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473724254074584842, guid: 7061a496097f46c479ea73ba83a8f74b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 473724254074584842, guid: 7061a496097f46c479ea73ba83a8f74b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473724254074584842, guid: 7061a496097f46c479ea73ba83a8f74b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473724254074584842, guid: 7061a496097f46c479ea73ba83a8f74b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473724254074584842, guid: 7061a496097f46c479ea73ba83a8f74b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473724254074584842, guid: 7061a496097f46c479ea73ba83a8f74b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473724254074584842, guid: 7061a496097f46c479ea73ba83a8f74b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473724254074584842, guid: 7061a496097f46c479ea73ba83a8f74b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 473724254074584842, guid: 7061a496097f46c479ea73ba83a8f74b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7061a496097f46c479ea73ba83a8f74b, type: 3}
 --- !u!1001 &2033098735
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2751,6 +2876,7 @@ MonoBehaviour:
   cameraPos: {fileID: 0}
   interactionType: 1
   alreadyTalked: 0
+  script: {fileID: 0}
   anim: {fileID: 2389644465948097149}
   proxPos: {fileID: 2067467141}
   salida: {fileID: 1902535377}
@@ -18272,7 +18398,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
-  Fin: {fileID: 1455293288}
   cam: {fileID: 1724274776}
   velocity: 0.15
   NPC: 0
@@ -18280,7 +18405,7 @@ MonoBehaviour:
   read: {fileID: 0}
   lineaCodPrinc: 
   lineaCodFin: 
-  text: []
+  File: 
 --- !u!143 &8975219067431887516
 CharacterController:
   m_ObjectHideFlags: 0
