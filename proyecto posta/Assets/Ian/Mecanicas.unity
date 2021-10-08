@@ -18044,7 +18044,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8843066213431957496
 Transform:
   m_ObjectHideFlags: 0
@@ -18195,6 +18195,7 @@ MonoBehaviour:
   cameraPos: {fileID: 0}
   interactionType: 1
   alreadyTalked: 0
+  script: {fileID: 0}
   anim: {fileID: 0}
   proxPos: {fileID: 0}
   salida: {fileID: 0}

@@ -746,6 +746,11 @@ PrefabInstance:
       propertyPath: resDrop
       value: 
       objectReference: {fileID: 564846231}
+    - target: {fileID: 6021238724312395689, guid: e9194da3b5fa14f4db9aec63939f89ba,
+        type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 2033098736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9194da3b5fa14f4db9aec63939f89ba, type: 3}
 --- !u!114 &564846231 stripped
@@ -1588,7 +1593,7 @@ PrefabInstance:
     - target: {fileID: 4788681959534948181, guid: 0eb06dd6c096bc841a3f5329636ae08e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.039328344
+      value: -0.03932857
       objectReference: {fileID: 0}
     - target: {fileID: 4788681959534948181, guid: 0eb06dd6c096bc841a3f5329636ae08e,
         type: 3}
@@ -2074,7 +2079,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1724274773}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.03932822, y: 2.9839697, z: -19.558008}
+  m_LocalPosition: {x: -0.03932845, y: 2.9839697, z: -19.558008}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2740,7 +2745,7 @@ GameObject:
   - component: {fileID: 1852877943323905904}
   m_Layer: 0
   m_Name: DialogueManager
-  m_TagString: DialogueText
+  m_TagString: Text
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18401,11 +18406,11 @@ MonoBehaviour:
   cam: {fileID: 1724274776}
   velocity: 0.15
   NPC: 0
-  anim: {fileID: 0}
+  anim: {fileID: 2389644465948097149}
   read: {fileID: 0}
   lineaCodPrinc: 
   lineaCodFin: 
-  File: 
+  File: Biblioteca.txt
 --- !u!143 &8975219067431887516
 CharacterController:
   m_ObjectHideFlags: 0

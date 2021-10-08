@@ -17,7 +17,6 @@ public class triggerBiblioteca : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            Debug.Log("ASHEEEE");
             gameManager.instance.level = 1;
             GameObject.Find("KEVIN").GetComponent<Dialogue>().Acting(ey);
             script.StartDialogue("Biblioteca.txt", 0, 1);

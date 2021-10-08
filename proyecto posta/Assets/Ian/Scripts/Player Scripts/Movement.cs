@@ -129,6 +129,10 @@ public class Movement : MonoBehaviour
         {
             anim.SetBool("Sided", false);
         }
+        if(horizontal == 0f && vertical == 0)
+        {
+            anim.SetBool("Sided", true);
+        }
 
         anim.SetFloat("velocidadX", horizontal);
         anim.SetFloat("velocidadZ", vertical);
