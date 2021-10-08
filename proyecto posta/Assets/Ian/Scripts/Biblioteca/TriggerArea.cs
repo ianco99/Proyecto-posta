@@ -8,7 +8,7 @@ public class TriggerArea : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Trakate");
-        if (other.transform.tag == "Player")
+        if (other.transform.tag == "Player" && other.GetComponent<PlayerManager>().bibliotecaPostaPuzzles == 1)
         {
             Debug.Log("RAKTATAT");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

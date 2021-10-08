@@ -20,7 +20,7 @@ public class spotMonologo : MonoBehaviour
             script = dialogueManager.GetComponent<ReadTxt>();
             if(id == 1 && ids[0] && this.name == "Spot Monologo 1"){
                 Debug.Log("Aca");
-                script.StartDialogue("Bosque.txt.txt", 0, 6);
+                script.StartDialogue("Bosque.txt.txt", 0, 6, true);
                 StartCoroutine(script.waitTen());
                 ids[0] = false;
             }

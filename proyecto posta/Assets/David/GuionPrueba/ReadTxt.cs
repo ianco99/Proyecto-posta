@@ -13,7 +13,7 @@ public class ReadTxt : MonoBehaviour
     string[] textito; 
     bool x = false;
     bool cor = true;
-    
+    public bool shouldPlayAfter = false;
     
     public int cantPal = 0;
     public bool estaPresente; 
@@ -60,7 +60,8 @@ public class ReadTxt : MonoBehaviour
         
     }
 
-    public void StartDialogue(string name, int lineaprinc, int lineaFin){
+    public void StartDialogue(string name, int lineaprinc, int lineaFin, bool playAfter){
+        shouldPlayAfter = playAfter;
         if(gameManager.instance.level != 0) gameManager.instance.UpdateGameState(GameState.Dialogue);
         x = true;
         var textFile = Resources.Load<TextAsset>(name);
@@ -79,7 +80,11 @@ public class ReadTxt : MonoBehaviour
     void EndDialogue(){ 
         x = false;
         GameEvents.current.StoppedTalking();
-        //gameManager.instance.UpdateGameState(GameState.Playing);
+        if (shouldPlayAfter)
+        {
+            gameManager.instance.UpdateGameState(GameState.Playing);
+        }
+        //
         Tex.SetActive(false);
     }
 

@@ -41,12 +41,13 @@ public class KevinMOv : MonoBehaviour
     }
 
     void Update(){
-        percent = velocity + (0.1f * velocity);
+        //percent = velocity + (0.1f * velocity);
+        percent = 0.1f * velocity;
         if (move){
             anim.SetBool("Idle", false);
             float z = direction.z - transform.position.z;
             float x = direction.x - transform.position.x;
-           // Debug.Log("x: " + x + ", z:" + z);
+            Debug.Log("x: " + x + ", z:" + z);
             if( estadoMov == 1){
                 anim.SetBool("MovingX", true);
                 anim.SetBool("MovingZ", false);
@@ -61,9 +62,8 @@ public class KevinMOv : MonoBehaviour
                 }
                 if(z < -percent){
                     movZ = -velocity;
-                    transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, 0.831433f);
+                    transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, -0.831433f);
                 }
-                
             }
             if(estadoMov == 2){
                 anim.SetBool("MovingZ", true);
@@ -117,6 +117,6 @@ public class KevinMOv : MonoBehaviour
     }
 
     public void StartDialogueEsp(){
-        read.StartDialogue(File, lineaCodPrinc[arrnum], lineaCodFin[arrnum]);
+        read.StartDialogue(File, lineaCodPrinc[arrnum], lineaCodFin[arrnum], true);
     }
 }

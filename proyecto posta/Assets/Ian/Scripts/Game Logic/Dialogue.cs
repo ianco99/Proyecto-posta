@@ -27,14 +27,14 @@ public class Dialogue : Interactable1
         mover = this.GetComponent<KevinMOv>();
     }
 
-    public void Talk(string nameFile, int lineaprinc, int lineaFin)
-    {
-        script.StartDialogue(nameFile, lineaprinc, lineaFin);
-        FindObjectOfType<LevelManager>().hasTalkedToKevin = true;
-        GameEvents.current.TalkedToKevinFunct();
-        //gameManager.instance.NextLevel();
-        //gameManager.instance.UpdateGameState(GameState.Dialogue);
-    }
+    //public void Talk(string nameFile, int lineaprinc, int lineaFin)
+    //{
+    //    script.StartDialogue(nameFile, lineaprinc, lineaFin);
+    //    FindObjectOfType<LevelManager>().hasTalkedToKevin = true;
+    //    GameEvents.current.TalkedToKevinFunct();
+    //    //gameManager.instance.NextLevel();
+    //    //gameManager.instance.UpdateGameState(GameState.Dialogue);
+    //}
     public override string GetDescription()
     {
         return "Apretá [E] para hablar con <color=green>Kevin</color>";  
@@ -53,7 +53,7 @@ public class Dialogue : Interactable1
                 Debug.Log("DAALE");
                 if (!alreadyTalked)
                 {
-                    Talk("Biblioteca.txt", 5, 7);
+                    script.StartDialogue("Biblioteca.txt", 5, 7, true);
                     i++;
                     
                     
@@ -61,8 +61,9 @@ public class Dialogue : Interactable1
                 if (alreadyTalked && i == 1)
                 {
                     i++;
-                    Talk("Biblioteca.txt", 9, 16);
+                    script.StartDialogue("Biblioteca.txt", 9, 16, true);
                     StartCoroutine("Hardcodeado");
+                    GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPostaPuzzles++;
                 }
                 break;
             case 2:
@@ -76,20 +77,20 @@ public class Dialogue : Interactable1
                 else if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles == 2)
                 {
                     Debug.Log("juntame las temperas querido");
-                    script.StartDialogue("InstitutoArte.txt", 14, 19);
+                    script.StartDialogue("InstitutoArte.txt", 14, 19, true);
                     GameEvents.current.KevinArtSupplies();
                 }
                 else if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles == 5)
                 {
                     anim.Play("KevinDraw");
-                    script.StartDialogue("InstitutoArte.txt", 26, 31);
+                    script.StartDialogue("InstitutoArte.txt", 26, 31, true);
                     Debug.Log("Garcias, me espantas a los boludos del medio que me tapan la vista?");
                     GameEvents.current.KevinNeedsScaring();
                   
                 }
                 else if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles == 8)
                 {
-                    script.StartDialogue("InstitutoArte.txt", 35, 44);
+                    script.StartDialogue("InstitutoArte.txt", 35, 44, true);
                     
                 }
                 break;

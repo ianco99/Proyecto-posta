@@ -17,7 +17,8 @@ public class TriggerDialogueBotanico : MonoBehaviour
         {
             if (other.tag == "Player")
             {
-                Kevin.GetComponent<KevinMOv>().StartDialogueEsp();
+                GameObject.FindGameObjectWithTag("Text").GetComponent<ReadTxt>().StartDialogue("Jardin.txt", 0, 2, false);
+                //Kevin.GetComponent<KevinMOv>().StartDialogueEsp();
                 used = !used;
             }
         }

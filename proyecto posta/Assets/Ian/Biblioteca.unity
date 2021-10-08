@@ -1598,7 +1598,7 @@ PrefabInstance:
     - target: {fileID: 4788681959534948181, guid: 0eb06dd6c096bc841a3f5329636ae08e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.9839685
+      value: 1.9239686
       objectReference: {fileID: 0}
     - target: {fileID: 4788681959534948181, guid: 0eb06dd6c096bc841a3f5329636ae08e,
         type: 3}
@@ -1682,7 +1682,7 @@ PrefabInstance:
     - target: {fileID: 5340484735969768098, guid: 599e8c73a7421ff44ba9688d6083a3a4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 0.94
       objectReference: {fileID: 0}
     - target: {fileID: 5340484735969768098, guid: 599e8c73a7421ff44ba9688d6083a3a4,
         type: 3}
@@ -2079,7 +2079,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1724274773}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.03932845, y: 2.9839697, z: -19.558008}
+  m_LocalPosition: {x: -0.03932844, y: 1.9239697, z: -19.558004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2287,7 +2287,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1902535376}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.18, y: 1.381, z: -11.94}
+  m_LocalPosition: {x: -13.43, y: 1.381, z: -18.8}
   m_LocalScale: {x: 0.8314339, y: 0.8314339, z: 0.8314339}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2517,8 +2517,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067467140}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.072998, y: 1.381, z: -11.94}
-  m_LocalScale: {x: 0.8314339, y: 0.8314339, z: 0.8314339}
+  m_LocalPosition: {x: 14.072998, y: 1.381, z: -18.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 24
@@ -2710,6 +2710,7 @@ MonoBehaviour:
   panel: {fileID: 1246987446}
   Tex: {fileID: 1821495286}
   Nombre: {fileID: 2075776981}
+  shouldPlayAfter: 0
   cantPal: 0
   estaPresente: 0
   nombFile: Biblioteca.txt
@@ -15154,7 +15155,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &8975219066061332882
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18404,7 +18405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   cam: {fileID: 1724274776}
-  velocity: 0.15
+  velocity: 6
   NPC: 0
   anim: {fileID: 2389644465948097149}
   read: {fileID: 0}
@@ -19020,8 +19021,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bd99bc3677816d4ab8af64862aa0786, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasTalkedToKevin: 0
-  scaredStudent: 0
 --- !u!1 &8975219067683648500
 GameObject:
   m_ObjectHideFlags: 0

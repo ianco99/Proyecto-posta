@@ -19,7 +19,7 @@ public class triggerBiblioteca : MonoBehaviour
         {
             gameManager.instance.level = 1;
             GameObject.Find("KEVIN").GetComponent<Dialogue>().Acting(ey);
-            script.StartDialogue("Biblioteca.txt", 0, 1);
+            script.StartDialogue("Biblioteca.txt", 0, 1, true);
             Destroy(this.gameObject);
 
         }
