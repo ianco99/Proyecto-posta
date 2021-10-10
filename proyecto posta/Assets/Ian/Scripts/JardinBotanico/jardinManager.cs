@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class jardinManager : MonoBehaviour
 {
+    [SerializeField] Transform finnDialogPos;
+    [SerializeField] Transform kevinDialogPos;
+    [SerializeField] Transform kevinInicioPos;
     [SerializeField] GameObject generador;
     [SerializeField] GameObject sprayerController;
     [SerializeField] GameObject[] flowers;
@@ -16,12 +19,16 @@ public class jardinManager : MonoBehaviour
     {
         kevin = GameObject.Find("KEVIN");
         player = GameObject.FindGameObjectWithTag("Player");
-        playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles;
+        
         GameEvents.current.activatingSpray += sprayActivate;
         GameEvents.current.pickingFlowers += flowersActivate;
         GameEvents.current.kevinStoppedTalking += stopDialogue;
     }
 
+    private void Update()
+    {
+        playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles;
+    }
     void sprayActivate()
     {
         sprayerController.tag = "Interactable";
@@ -41,8 +48,14 @@ public class jardinManager : MonoBehaviour
         {
             case 0:
                 gameManager.instance.UpdateGameState(GameState.Dialogue);
-                kevin.GetComponent<KevinMOv>().MoveToThisPoint(new Vector3(-12.78f, 2.25f, -9.15f));
-                player.GetComponent<KevinMOv>().MoveToThisPoint(new Vector3(-12f, 2.25f, -10.15f));
+
+                kevin.GetComponent<KevinMOv>().MoveToThisPoint(kevinDialogPos.position);
+                player.GetComponent<KevinMOv>().MoveToThisPoint(finnDialogPos.position);
+                Debug.Log("cambio");
+                break;
+            case 1:
+                kevin.GetComponent<KevinMOv>().MoveToThisPoint(kevinInicioPos.position);
+                Debug.Log("SASASA");
                 break;
         }
     }

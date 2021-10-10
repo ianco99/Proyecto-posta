@@ -13,7 +13,6 @@ public class Movement : MonoBehaviour
     [SerializeField] float jumpSpeed = 5f;
     [SerializeField] float tiempoFlota;
 
-
     [SerializeField] bool jumping = false;
     [SerializeField] bool puedeFlotar;
 
@@ -111,7 +110,12 @@ public class Movement : MonoBehaviour
 
     void Animations()
     {
-        if(horizontal > 0.01f)
+
+        anim.SetFloat("velocidadX", horizontal);
+        anim.SetFloat("velocidadZ", vertical);
+        anim.SetFloat("velocidadY", directionY);
+
+        if (horizontal > 0.01f)
         {
             anim.SetBool("FacingRight", true);
             anim.SetBool("Sided", true);
@@ -133,10 +137,6 @@ public class Movement : MonoBehaviour
         {
             anim.SetBool("Sided", true);
         }
-
-        anim.SetFloat("velocidadX", horizontal);
-        anim.SetFloat("velocidadZ", vertical);
-        anim.SetFloat("velocidadY", directionY);
 
         if(direction.x == 0 && direction.z == 0){
             anim.SetBool("Idle", true);

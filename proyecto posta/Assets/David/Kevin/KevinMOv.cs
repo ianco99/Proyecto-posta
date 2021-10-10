@@ -47,8 +47,8 @@ public class KevinMOv : MonoBehaviour
             anim.SetBool("Idle", false);
             float z = direction.z - transform.position.z;
             float x = direction.x - transform.position.x;
-            Debug.Log("x: " + x + ", z:" + z);
-            if( estadoMov == 1){
+            //Debug.Log("x: " + x + ", z:" + z);
+            if(estadoMov == 1){
                 anim.SetBool("MovingX", true);
                 anim.SetBool("MovingZ", false);
                 movX = 0;
