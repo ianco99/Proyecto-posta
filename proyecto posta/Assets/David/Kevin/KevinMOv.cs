@@ -41,11 +41,11 @@ public class KevinMOv : MonoBehaviour
     }
 
     void Update(){
-        horizontal = direction.x;
         Debug.Log("Horizontal: " +horizontal);
         //percent = velocity + (0.1f * velocity);
         percent = 0.1f * velocity;
         if (move){
+             horizontal = direction.x - transform.position.x;
             anim.SetBool("Idle", false);
             float z = direction.z - transform.position.z;
             float x = direction.x - transform.position.x;
@@ -59,11 +59,11 @@ public class KevinMOv : MonoBehaviour
                 }
                 if(z > percent){
                     movZ = velocity;
-                    transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, -0.831433f);
+                  
                 }
                 if(z < -percent){
                     movZ = -velocity;
-                    transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, -0.831433f);
+                   
                 }
             }
             if(estadoMov == 2){
@@ -71,11 +71,9 @@ public class KevinMOv : MonoBehaviour
                 if(x >= percent) movX = 0;
                 if(x > -percent){
                   movX = velocity;
-                  transform.localScale = new Vector3(0.8314339f, transform.localScale.y, transform.localScale.z);
                 }
                 if (x < percent) {
                     movX = -velocity;
-                    transform.localScale = new Vector3(-0.8314339f, transform.localScale.y, transform.localScale.z);
                 }
                 
             }
@@ -84,6 +82,7 @@ public class KevinMOv : MonoBehaviour
                 movX = 0;
                 Debug.Log("finish");
                 anim.SetBool("Idle", true);
+                horizontal = 0f;
                 direction = new Vector3(0,0,0);
             }
             transform.Translate(movX * Time.deltaTime, 0,movZ * Time.deltaTime);
