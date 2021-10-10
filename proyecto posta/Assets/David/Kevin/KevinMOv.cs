@@ -24,7 +24,7 @@ public class KevinMOv : MonoBehaviour
     public int[] lineaCodFin;
     public string File;
     private int arrnum;
-    
+    float horizontal;
 
     public void sumArrnum(){
         arrnum++;
@@ -41,6 +41,8 @@ public class KevinMOv : MonoBehaviour
     }
 
     void Update(){
+        horizontal = direction.x;
+        Debug.Log("Horizontal: " +horizontal);
         //percent = velocity + (0.1f * velocity);
         percent = 0.1f * velocity;
         if (move){
@@ -49,8 +51,7 @@ public class KevinMOv : MonoBehaviour
             float x = direction.x - transform.position.x;
             //Debug.Log("x: " + x + ", z:" + z);
             if(estadoMov == 1){
-                anim.SetBool("MovingX", true);
-                anim.SetBool("MovingZ", false);
+                
                 movX = 0;
                 if (z >= -percent && z <= percent){
                     movZ = 0; 
@@ -66,8 +67,6 @@ public class KevinMOv : MonoBehaviour
                 }
             }
             if(estadoMov == 2){
-                anim.SetBool("MovingZ", true);
-                anim.SetBool("MovingX", false);
                 movZ = 0;
                 if(x >= percent) movX = 0;
                 if(x > -percent){
@@ -82,15 +81,14 @@ public class KevinMOv : MonoBehaviour
             }
             if(z <= percent && x <= percent && z>= -percent && x >= -percent){
                 move = false;
-                anim.SetBool("MovingZ", false);
-                anim.SetBool("MovingX", false);
-                anim.SetBool("Idle", true);
                 movX = 0;
                 Debug.Log("finish");
+                anim.SetBool("Idle", true);
             }
             transform.Translate(movX * Time.deltaTime, 0,movZ * Time.deltaTime);
             
         }
+        Animations();
     }
 
     public void MoveToThisPoint(Vector3 vec /*float tiempo*/){
@@ -118,5 +116,11 @@ public class KevinMOv : MonoBehaviour
 
     public void StartDialogueEsp(){
         read.StartDialogue(File, lineaCodPrinc[arrnum], lineaCodFin[arrnum], true);
+    }
+
+    public  void Animations(){
+        anim.SetFloat("MovingX", horizontal);
+        if(horizontal == 0) anim.SetBool("Idle", true);
+        else anim.SetBool("Idle", false);
     }
 }

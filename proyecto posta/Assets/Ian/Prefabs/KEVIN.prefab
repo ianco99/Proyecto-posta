@@ -31,7 +31,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3865367921715117195}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.072998, y: 1.6269989, z: 1.2359924}
+  m_LocalPosition: {x: 14.073, y: 1.626999, z: 1.2359924}
   m_LocalScale: {x: 0.8314339, y: 0.8314339, z: 0.8314339}
   m_Children: []
   m_Father: {fileID: 0}
@@ -119,8 +119,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79c389e23c4ace64e8eb01a232a816e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraPos: {fileID: 0}
   interactionType: 1
   alreadyTalked: 0
+  script: {fileID: 0}
+  anim: {fileID: 0}
+  proxPos: {fileID: 0}
+  salida: {fileID: 0}
 --- !u!136 &3865367921715117198
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -182,5 +187,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
-  Fin: {fileID: 0}
   cam: {fileID: 0}
+  velocity: 0
+  NPC: 0
+  anim: {fileID: 0}
+  read: {fileID: 0}
+  lineaCodPrinc: 
+  lineaCodFin: 
+  File: 
