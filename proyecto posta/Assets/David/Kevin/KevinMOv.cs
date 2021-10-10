@@ -84,6 +84,7 @@ public class KevinMOv : MonoBehaviour
                 movX = 0;
                 Debug.Log("finish");
                 anim.SetBool("Idle", true);
+                direction = new Vector3(0,0,0);
             }
             transform.Translate(movX * Time.deltaTime, 0,movZ * Time.deltaTime);
             
