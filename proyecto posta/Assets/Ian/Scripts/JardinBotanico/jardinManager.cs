@@ -48,7 +48,6 @@ public class jardinManager : MonoBehaviour
         {
             case 0:
                 gameManager.instance.UpdateGameState(GameState.Dialogue);
-
                 kevin.GetComponent<KevinMOv>().MoveToThisPoint(kevinDialogPos.position);
                 player.GetComponent<KevinMOv>().MoveToThisPoint(finnDialogPos.position);
                 Debug.Log("cambio");

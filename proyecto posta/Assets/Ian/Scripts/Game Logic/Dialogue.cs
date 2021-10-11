@@ -94,6 +94,12 @@ public class Dialogue : Interactable1
                     
                 }
                 break;
+            case 4:
+                if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles == 1)
+                {
+                    script.StartDialogue("Jardin.txt", 3, 9, true);
+                }
+                break;
         }
     }
     public void Acting(bool active)
