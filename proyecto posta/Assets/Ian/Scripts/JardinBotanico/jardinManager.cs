@@ -10,6 +10,8 @@ public class jardinManager : MonoBehaviour
     [SerializeField] GameObject generador;
     [SerializeField] GameObject sprayerController;
     [SerializeField] GameObject[] flowers;
+    [SerializeField] Transform finnFlowerPos;
+    [SerializeField] Transform kevinFlowerPos;
     int playerStats;
     GameObject player;
     GameObject kevin;
@@ -55,6 +57,11 @@ public class jardinManager : MonoBehaviour
             case 1:
                 kevin.GetComponent<KevinMOv>().MoveToThisPoint(kevinInicioPos.position);
                 Debug.Log("SASASA");
+                break;
+            case 2:
+                player.GetComponent<KevinMOv>().MoveToThisPoint(finnFlowerPos.localPosition);
+                kevin.GetComponent<KevinMOv>().MoveToThisPoint(kevinFlowerPos.position);
+                
                 break;
         }
     }

@@ -97,7 +97,14 @@ public class Dialogue : Interactable1
             case 4:
                 if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles == 1)
                 {
-                    script.StartDialogue("Jardin.txt", 3, 9, true);
+                    GameEvents.current.ActivateSpray();
+                    GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles++;
+                    script.StartDialogue("Jardin.txt", 10, 18, true);
+                }
+                else if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles == 2)
+                {
+                    
+                    
                 }
                 break;
         }

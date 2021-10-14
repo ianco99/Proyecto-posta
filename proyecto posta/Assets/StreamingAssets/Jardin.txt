@@ -6,8 +6,16 @@ Finn: ¿Qué pasa?
 Kevin: No sé a que sacarle foto..
 Finn: …(Tiene sentido.)
 Finn: Dejame que encuentre algo lindo y te aviso.
-Finn : Creo recordar que habían unas rosas especialmente vistosas por alguna parte del jardín.
+Finn : (Creo recordar que habían unas rosas especialmente vistosas por alguna parte del jardín).
 Bool: 
+Finn: ¡Encontré unas flores que servirían para la foto!
+Kevin: ¿Del tamaño correcto?
+Finn: ¡Perfectas!
+Kevin: ¿Tienen lindo color?
+Finn: Claro.
+Kevin: ¿Transmiten felicidad?
+Finn: Son flores.
+Kevin: Genial.
 Kevin: Entonces, ¿le saco foto a esto?
 Finn: No, todavía no. Hay una ciencia detrás de la fotografía. Bueno.. no sé si una ciencia pero si hay una teoría y forma de hacer las cosas.
 Kevin: Entonces..

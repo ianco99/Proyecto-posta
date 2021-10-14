@@ -8,7 +8,7 @@ public class triggerFinDialogoBotanico : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles++;
+            //GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles++;
             GameObject.FindGameObjectWithTag("Text").GetComponent<ReadTxt>().StartDialogue("Jardin.txt", 3, 9, true);
             
             Destroy(gameObject);
