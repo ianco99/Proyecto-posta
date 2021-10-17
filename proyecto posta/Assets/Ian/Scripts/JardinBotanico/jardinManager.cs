@@ -48,7 +48,7 @@ public class jardinManager : MonoBehaviour
     {
         switch (playerStats)
         {
-            case 0:
+            case 0: //INICIO
                 gameManager.instance.UpdateGameState(GameState.Dialogue);
                 kevin.GetComponent<KevinMOv>().MoveToThisPoint(kevinDialogPos.position);
                 player.GetComponent<KevinMOv>().MoveToThisPoint(finnDialogPos.position);
@@ -56,9 +56,9 @@ public class jardinManager : MonoBehaviour
                 //player.GetComponent<PlayerManager>().canLerp = true;
                 //Debug.Log("cambio");
                 break;
-            case 1:
+            case 1: //
                 kevin.GetComponent<KevinMOv>().MoveToThisPoint(kevinInicioPos.position);
-                //Debug.Log("SASASA");
+                Debug.Log("SASASA");
                 break;
             case 2:
                 gameManager.instance.UpdateGameState(GameState.Dialogue);

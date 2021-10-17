@@ -11,10 +11,11 @@ public class cuartoKevinManager : MonoBehaviour
     {
         playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().cuartoKevinDialogues;
         GameEvents.current.kevinStoppedTalking += stopDialogue;
+        player = GameObject.FindGameObjectWithTag("Player");
     }
     private void Update()
     {
-        playerStats = player.GetComponent<PlayerManager>().jardinPuzzles;
+        playerStats = player.GetComponent<PlayerManager>().cuartoKevinDialogues;
     }
 
     void stopDialogue()

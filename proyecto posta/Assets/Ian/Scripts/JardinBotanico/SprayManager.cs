@@ -20,7 +20,7 @@ public class SprayManager : Interactable1
 
     public override string GetDescription()
     {
-        Debug.Log("uwuwuw");
+        
         return "sas" + descripcion;
     }
 
@@ -33,6 +33,7 @@ public class SprayManager : Interactable1
         if (!used)
         {
             ActivateSpray();
+            Debug.Log("fire");
             used = !used;
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles++;
         }
