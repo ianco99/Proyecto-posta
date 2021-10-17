@@ -29,7 +29,7 @@ public class jardinManager : MonoBehaviour
 
     private void Update()
     {
-        playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles;
+        playerStats = player.GetComponent<PlayerManager>().jardinPuzzles;
     }
     void sprayActivate()
     {
@@ -61,6 +61,7 @@ public class jardinManager : MonoBehaviour
                 //Debug.Log("SASASA");
                 break;
             case 2:
+                gameManager.instance.UpdateGameState(GameState.Dialogue);
                 player.GetComponent<KevinMOv>().MoveToThisPoint(finnFlowerPos.position);
                 kevin.GetComponent<KevinMOv>().MoveToThisPoint(kevinFlowerPos.position);
                 
