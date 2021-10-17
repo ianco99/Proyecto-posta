@@ -52,14 +52,16 @@ public class jardinManager : MonoBehaviour
                 gameManager.instance.UpdateGameState(GameState.Dialogue);
                 kevin.GetComponent<KevinMOv>().MoveToThisPoint(kevinDialogPos.position);
                 player.GetComponent<KevinMOv>().MoveToThisPoint(finnDialogPos.position);
-                Debug.Log("cambio");
+                //player.GetComponent<PlayerManager>().b = finnDialogPos.position;
+                //player.GetComponent<PlayerManager>().canLerp = true;
+                //Debug.Log("cambio");
                 break;
             case 1:
                 kevin.GetComponent<KevinMOv>().MoveToThisPoint(kevinInicioPos.position);
-                Debug.Log("SASASA");
+                //Debug.Log("SASASA");
                 break;
             case 2:
-                player.GetComponent<KevinMOv>().MoveToThisPoint(finnFlowerPos.localPosition);
+                player.GetComponent<KevinMOv>().MoveToThisPoint(finnFlowerPos.position);
                 kevin.GetComponent<KevinMOv>().MoveToThisPoint(kevinFlowerPos.position);
                 
                 break;

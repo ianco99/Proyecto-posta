@@ -99,7 +99,7 @@ public class Dialogue : Interactable1
                 {
                     GameEvents.current.ActivateSpray();
                     GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles++;
-                    script.StartDialogue("Jardin.txt", 10, 18, true);
+                    script.StartDialogue("Jardin.txt", 10, 18, false);
                 }
                 else if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles == 2)
                 {

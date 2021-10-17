@@ -45,7 +45,7 @@ public class KevinMOv : MonoBehaviour
         //percent = velocity + (0.1f * velocity);
         percent = 0.1f * velocity;
         if (move){
-             horizontal = direction.x - transform.position.x;
+            horizontal = direction.x - transform.position.x;
             anim.SetBool("Idle", false);
             float z = direction.z - transform.position.z;
             float x = direction.x - transform.position.x;
