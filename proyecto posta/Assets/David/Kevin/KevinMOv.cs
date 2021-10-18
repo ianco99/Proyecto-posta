@@ -13,9 +13,9 @@ public class KevinMOv : MonoBehaviour
     public Transform cam;
     bool move = false;
     public float velocity;
-    float percent;
-    float movX;
-    float movZ;
+    public float percent;
+    public float movX;
+    public float movZ;
     int estadoMov = 1;
     public bool NPC;
     public Animator anim; 
@@ -25,6 +25,9 @@ public class KevinMOv : MonoBehaviour
     public string File;
     private int arrnum;
     float horizontal;
+    bool conversionX = true;
+    bool conversionZ = true;
+
 
     public void sumArrnum(){
         arrnum++;
@@ -41,9 +44,9 @@ public class KevinMOv : MonoBehaviour
     }
 
     void Update(){
-        Debug.Log("Horizontal: " +horizontal);
+        
         //percent = velocity + (0.1f * velocity);
-        percent = 0.1f * velocity;
+        percent = 0.5f;
         if (move){
             horizontal = direction.x - transform.position.x;
             anim.SetBool("Idle", false);
@@ -51,41 +54,37 @@ public class KevinMOv : MonoBehaviour
             float x = direction.x - transform.position.x;
             //Debug.Log("x: " + x + ", z:" + z);
             if(estadoMov == 1){
-                
                 movX = 0;
+                if(direction.z < transform.position.z)movZ = velocity;
+                else if(direction.z > transform.position.z) movZ = -velocity;
+                else movZ = 0;
                 if (z >= -percent && z <= percent){
                     movZ = 0; 
                     estadoMov = 2;
+                    Debug.Log("Cambiando");
                 }
-                if(z > percent){
-                    movZ = velocity;
-                  
-                }
-                if(z < -percent){
-                    movZ = -velocity;
-                   
-                }
+               transform.Translate(movZ, 0,0);
             }
             if(estadoMov == 2){
+                Debug.Log("Cambiado");
                 movZ = 0;
-                if(x >= percent) movX = 0;
-                if(x > -percent){
-                  movX = velocity;
-                }
-                if (x < percent) {
-                    movX = -velocity;
-                }
+                if(direction.x > transform.position.x) movX = velocity;
+                else if (direction.x < transform.position.x)movX = -velocity;
+                else movX = 0;
+                if( x>= -percent && x <= percent) movX = 0;
+                transform.Translate(0, 0,movX);
                 
             }
             if(z <= percent && x <= percent && z>= -percent && x >= -percent){
                 move = false;
                 movX = 0;
+                movZ=0;
                 Debug.Log("finish");
                 anim.SetBool("Idle", true);
                 horizontal = 0f;
-                direction = new Vector3(0,0,0);
             }
-            transform.Translate(movX * Time.deltaTime, 0,movZ * Time.deltaTime);
+           // Debug.Log("z: " +z + ", x: " + x);
+            
             
         }
         Animations();
