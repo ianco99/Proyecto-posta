@@ -25,6 +25,7 @@ public class jardinManager : MonoBehaviour
         GameEvents.current.activatingSpray += sprayActivate;
         GameEvents.current.pickingFlowers += flowersActivate;
         GameEvents.current.kevinStoppedTalking += stopDialogue;
+        GameEvents.current.FinishedWalking += finishedWalk;
     }
 
     private void Update()
@@ -50,21 +51,43 @@ public class jardinManager : MonoBehaviour
         {
             case 0: //INICIO
                 gameManager.instance.UpdateGameState(GameState.Dialogue);
-                kevin.GetComponent<KevinMOv>().MoveToThisPoint(kevinDialogPos.position);
-                player.GetComponent<KevinMOv>().MoveToThisPoint(finnDialogPos.position);
+                kevin.GetComponent<KevinMOv>().MoveToThisPoint(kevinDialogPos.position, true);
+                player.GetComponent<KevinMOv>().MoveToThisPoint(finnDialogPos.position, false);
                 //player.GetComponent<PlayerManager>().b = finnDialogPos.position;
                 //player.GetComponent<PlayerManager>().canLerp = true;
                 //Debug.Log("cambio");
                 break;
             case 1: //
-                kevin.GetComponent<KevinMOv>().MoveToThisPoint(kevinInicioPos.position);
+                //kevin.GetComponent<KevinMOv>().MoveToThisPoint(kevinInicioPos.position);
+                //Debug.Log("SASASA");
+                break;
+            case 3:
+                gameManager.instance.UpdateGameState(GameState.Dialogue);
+                //player.GetComponent<scriptDeSanti>().MoveToDestination(finnFlowerPos.position);
+                kevin.GetComponent<KevinMOv>().MoveToThisPoint(kevinFlowerPos.position, true);
+                
+                break;
+        }
+    }
+
+    void finishedWalk()
+    {
+        switch (playerStats)
+        {
+            case 0: //INICIO
+                GameObject.FindGameObjectWithTag("Text").GetComponent<ReadTxt>().StartDialogue("Jardin.txt", 3, 9, true);
+                GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles++;
+                break;
+            case 1: //
+                kevin.GetComponent<KevinMOv>().MoveToThisPoint(kevinInicioPos.position, true);
                 Debug.Log("SASASA");
                 break;
-            case 2:
-                gameManager.instance.UpdateGameState(GameState.Dialogue);
-                player.GetComponent<KevinMOv>().MoveToThisPoint(finnFlowerPos.position);
-                kevin.GetComponent<KevinMOv>().MoveToThisPoint(kevinFlowerPos.position);
-                
+            case 3:
+                GameObject.FindGameObjectWithTag("Text").GetComponent<ReadTxt>().StartDialogue("Jardin.txt", 18, 25, true);
+                GameEvents.current.ActivateSpray();
+                GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles++;
+                break;
+            default:
                 break;
         }
     }

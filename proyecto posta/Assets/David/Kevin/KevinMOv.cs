@@ -27,7 +27,7 @@ public class KevinMOv : MonoBehaviour
     float horizontal;
     bool conversionX = true;
     bool conversionZ = true;
-
+    bool doEvent = false;
 
     public void sumArrnum(){
         arrnum++;
@@ -55,31 +55,36 @@ public class KevinMOv : MonoBehaviour
             //Debug.Log("x: " + x + ", z:" + z);
             if(estadoMov == 1){
                 movX = 0;
-                if(direction.z < transform.position.z)movZ = velocity;
-                else if(direction.z > transform.position.z) movZ = -velocity;
+                if(direction.z < transform.position.z)movZ = -velocity * Time.deltaTime;
+                else if(direction.z > transform.position.z) movZ = velocity * Time.deltaTime;
                 else movZ = 0;
                 if (z >= -percent && z <= percent){
                     movZ = 0; 
                     estadoMov = 2;
                     Debug.Log("Cambiando");
                 }
-               transform.Translate(movZ, 0,0);
+               transform.Translate(0, 0, movZ);
             }
             if(estadoMov == 2){
                 Debug.Log("Cambiado");
                 movZ = 0;
-                if(direction.x > transform.position.x) movX = velocity;
-                else if (direction.x < transform.position.x)movX = -velocity;
+                if(direction.x > transform.position.x) movX = velocity * Time.deltaTime;
+                else if (direction.x < transform.position.x)movX = -velocity * Time.deltaTime;
                 else movX = 0;
                 if( x>= -percent && x <= percent) movX = 0;
-                transform.Translate(0, 0,movX);
+                transform.Translate(movX, 0,0);
                 
             }
             if(z <= percent && x <= percent && z>= -percent && x >= -percent){
                 move = false;
                 movX = 0;
                 movZ=0;
-                Debug.Log("finish");
+                Debug.Log("Sas");
+                if (doEvent)
+                {
+                    GameEvents.current.FinishedWalkingToPoint();
+                }
+                
                 anim.SetBool("Idle", true);
                 horizontal = 0f;
             }
@@ -90,10 +95,11 @@ public class KevinMOv : MonoBehaviour
         Animations();
     }
 
-    public void MoveToThisPoint(Vector3 vec /*float tiempo*/){
+    public void MoveToThisPoint(Vector3 vec, bool sendsEvent /*float tiempo*/){
         estadoMov = 1;
         move = true;
-        direction = vec; 
+        direction = vec;
+        doEvent = sendsEvent;
         /*direction = transform.position - vec; 
         float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
         float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
@@ -108,7 +114,7 @@ public class KevinMOv : MonoBehaviour
     public IEnumerator points(Vector3[] vectors){
         foreach (Vector3 v in vectors){
         //Debug.Log(v);
-            MoveToThisPoint(v);
+            MoveToThisPoint(v, false);
             yield return new WaitUntil(() => !move);
         } 
     }

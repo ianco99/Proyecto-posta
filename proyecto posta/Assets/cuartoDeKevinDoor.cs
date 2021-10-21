@@ -32,7 +32,7 @@ public class cuartoDeKevinDoor : Interactable1
             //GameObject.FindGameObjectWithTag("GameController").GetComponent<timelineController>().Play();
             gameManager.instance.UpdateGameState(GameState.Dialogue);     
             alreadyTalked = true;
-            GameObject.FindGameObjectWithTag("Player").GetComponent<KevinMOv>().MoveToThisPoint(proxPosFinn.position);
+            GameObject.FindGameObjectWithTag("Player").GetComponent<KevinMOv>().MoveToThisPoint(proxPosFinn.position, false);
         }
     }
 

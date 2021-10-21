@@ -12,6 +12,15 @@ public class GameEvents : MonoBehaviour
        // dialogueManager.current.TalkedToKevin += DoorFuctions;
     }
 
+    public event Action FinishedWalking;
+
+    public void FinishedWalkingToPoint()
+    {
+        if(FinishedWalking != null)
+        {
+            FinishedWalking();
+        }
+    }
     public event Action TalkedToKevin;
     public void TalkedToKevinFunct()
     {

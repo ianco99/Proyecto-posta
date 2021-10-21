@@ -23,10 +23,13 @@ public class flowerManager : Interactable1
             }
             else
             {
-                GameObject.FindGameObjectWithTag("Text").GetComponent<ReadTxt>().StartDialogue("Jardin.txt", 45, 47, false);
-                //Debug.Log("Las flores se extienden con gracia, presume sus colores con orgullo. Seria buen sujeto para una foto.");
+                //GameObject.FindGameObjectWithTag("Text").GetComponent<ReadTxt>().StartDialogue("Jardin.txt", 46, 46, false);
+                Debug.Log("Las flores se extienden con gracia, presume sus colores con orgullo. Seria buen sujeto para una foto.");
                 GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles++;
                 GameEvents.current.PickedFlowers();
+                GameEvents.current.ActivateSpray();
+                GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles++;
+                GameObject.FindGameObjectWithTag("Text").GetComponent<ReadTxt>().StartDialogue("Jardin.txt", 10, 18, false);
             }
         }
         else

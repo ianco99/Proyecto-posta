@@ -44,11 +44,11 @@ public class PushNPull : MonoBehaviour
                 interacted = hit.transform.gameObject;
                 initialAngularDrag = interacted.GetComponent<Rigidbody>().angularDrag;
                 initialDrag = interacted.GetComponent<Rigidbody>().drag;
-
+                Debug.Log("sus");
                 anim.SetBool("Pushing", true);
             }
         }
-        if (Input.GetKey(KeyCode.R) && interacting)
+        else if (Input.GetKey(KeyCode.R) && interacting)
         {
             if(Vector3.Distance(interacted.transform.position, this.transform.position) > 2f)
             {
@@ -70,10 +70,12 @@ public class PushNPull : MonoBehaviour
             if (player.GetComponent<Movement>().direction.x < -0.0001 || player.GetComponent<Movement>().direction.z < -0.0001)
             {
                 Debug.Log("ARRASTRANDO");
+                anim.SetBool("Pushing", true);
             }
             else if (player.GetComponent<Movement>().direction.x > 0.0001 || player.GetComponent<Movement>().direction.z > 0.0001)
             {
                 Debug.Log("EMPUJANDO");
+                anim.SetBool("Pushing", true);
             }
 
             

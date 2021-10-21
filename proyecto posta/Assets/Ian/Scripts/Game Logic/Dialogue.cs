@@ -97,9 +97,9 @@ public class Dialogue : Interactable1
             case 4:
                 if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles == 1)
                 {
-                    GameEvents.current.ActivateSpray();
-                    GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles++;
-                    script.StartDialogue("Jardin.txt", 10, 18, false);
+                    //GameEvents.current.ActivateSpray();
+                    //GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles++;
+                    //script.StartDialogue("Jardin.txt", 10, 18, false);
                 }
                 else if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles == 2)
                 {
@@ -120,7 +120,7 @@ public class Dialogue : Interactable1
             case 1:
                 if (!alreadyTalked && i == 1)
                 {
-                    mover.MoveToThisPoint(proxPos.position);
+                    mover.MoveToThisPoint(proxPos.position, false);
                     alreadyTalked = !alreadyTalked;
                 }
                 
@@ -138,6 +138,6 @@ public class Dialogue : Interactable1
     IEnumerator Hardcodeado()
     {
         yield return new WaitForSeconds(2);
-        mover.MoveToThisPoint(salida.position);
+        mover.MoveToThisPoint(salida.position, false);
     }
 }
