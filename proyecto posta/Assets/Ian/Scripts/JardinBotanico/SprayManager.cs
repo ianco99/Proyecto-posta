@@ -9,6 +9,9 @@ public class SprayManager : Interactable1
     bool used = false;
     bool on = false;
     [SerializeField] string descripcion;
+    [SerializeField]float cameraTime;
+    [SerializeField] float holdCameraTime;
+    GameObject playCam;
     private void ActivateSpray()
     {
 
@@ -19,6 +22,20 @@ public class SprayManager : Interactable1
         
     }
 
+    private void Update()
+    {
+        if (on)
+        {
+            cameraTime += Time.deltaTime;
+            if (holdCameraTime < cameraTime)
+            {
+                playCam.GetComponent<CinemachineVirtualCamera>().Follow = GameObject.FindGameObjectWithTag("Player").transform;
+                cameraTime = 0;
+                on = false;
+                gameManager.instance.UpdateGameState(GameState.Playing);
+            }
+        }
+    }
     public override string GetDescription()
     {
         
@@ -35,13 +52,16 @@ public class SprayManager : Interactable1
     {
         if (!used)
         {
+            playCam = GameObject.Find("PlayCam");
             ActivateSpray();
             gameManager.instance.UpdateGameState(GameState.Cinematic);
+            on = true;
+            changeCamera();
             //HACE QUE EL CAMBIO DE CAMARA SEA POR UNOS SEGUNDOS
             Debug.Log("fire");
             used = !used;
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles++;
-            changeCamera();
+            
         }
     }
 
