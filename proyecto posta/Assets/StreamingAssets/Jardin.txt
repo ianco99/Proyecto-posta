@@ -22,7 +22,7 @@ Kevin: Entonces..
 Finn: Necesitamos una buena foto. Necesita un sujeto al cual enfocar la atención, un buen contraste, profundidad..
 Kevin: Una buena iluminación también es necesaria.
 Finn: ¡Exacto! ¿Por dónde empezamos?
-Kevin: Traeme unas flores para darle variedad a la imagen, van a dar un contraste entre tanto rojo de las rosas.
+Kevin: Se me ocurre que activando los aspersores podemos crear un arcoiris sobre las flores.
 (El jugador busca otras flores que encuentra resolviendo un par de puzzles de mover objetos. Se las lleva a Kevin.)
 Kevin: ¡Genial! Aunque, siento que le falta algo..
 Finn:Puedo usar los aspersores para darle un efecto arcoiris a la imagen.
@@ -34,6 +34,7 @@ Finn: ¡Enseguida!
 Kevin: Hmm… Esto sería un “plano detalle”, ¿no?
 Finn: ¿Cómo sabés eso?
 Kevin: Películas..
+Tiempo: 3
 Bool:
 Finn: Yo creo que hicimos un buen trabajo.
 Kevin: Si, se ve bien. Pero..

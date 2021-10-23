@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 
 public class jardinManager : MonoBehaviour
 {
@@ -26,6 +28,8 @@ public class jardinManager : MonoBehaviour
         GameEvents.current.pickingFlowers += flowersActivate;
         GameEvents.current.kevinStoppedTalking += stopDialogue;
         GameEvents.current.FinishedWalking += finishedWalk;
+        GameEvents.current.prepareFlowers += flowersActivate;
+        GameEvents.current.finishedFlowerPuzzle += lightsEnd;
     }
 
     private void Update()
@@ -44,7 +48,17 @@ public class jardinManager : MonoBehaviour
             flower.tag = "Interactable";
         }
     }
-
+    void lightsEnd()
+    {
+        generador.tag = "Untagged";
+        generador.GetComponent<Lightbulb>().enabled = false;
+    }
+    public void stopTimeline()
+    {
+        GetComponent<PlayableDirector>().Stop();
+        GameObject.FindGameObjectWithTag("Text").GetComponent<ReadTxt>().StartDialogue("Jardin.txt", 38, 46, false);
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles++;
+    }
     void stopDialogue()
     {
         switch (playerStats)
@@ -67,6 +81,13 @@ public class jardinManager : MonoBehaviour
                 kevin.GetComponent<KevinMOv>().MoveToThisPoint(kevinFlowerPos.position, true);
                 
                 break;
+            case 7:
+                GetComponent<PlayableDirector>().Play();
+                GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles++;
+                break;
+            case 9:
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                break;
         }
     }
 
@@ -85,6 +106,7 @@ public class jardinManager : MonoBehaviour
             case 3:
                 GameObject.FindGameObjectWithTag("Text").GetComponent<ReadTxt>().StartDialogue("Jardin.txt", 18, 25, true);
                 GameEvents.current.ActivateSpray();
+                //GameEvents.current.PrepareFlowers();
                 GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles++;
                 break;
             default:

@@ -101,10 +101,19 @@ public class Dialogue : Interactable1
                     //GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles++;
                     //script.StartDialogue("Jardin.txt", 10, 18, false);
                 }
-                else if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles == 2)
+                else if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles == 4)
                 {
-                    
-                    
+                    script.StartDialogue("Jardin.txt", 26, 29, true);
+                    GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles++;
+                }
+                else if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles == 5)
+                {
+                    script.StartDialogue("Jardin.txt", 30, 32, true);
+                    GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles++;
+                }
+                else if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles == 7)
+                {
+                    script.StartDialogue("Jardin.txt", 33, 36, false);
                 }
                 break;
         }

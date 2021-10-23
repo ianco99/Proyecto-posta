@@ -97,4 +97,22 @@ public class GameEvents : MonoBehaviour
             pickedFlower();
         }
     }
+
+    public event Action prepareFlowers;
+    public void PrepareFlowers()
+    {
+        if (prepareFlowers != null)
+        {
+            prepareFlowers();
+        }
+    }
+
+    public event Action finishedFlowerPuzzle;
+    public void FinishedFlowerPuzzle()
+    {
+        if (finishedFlowerPuzzle != null)
+        {
+            finishedFlowerPuzzle();
+        }
+    }
 }

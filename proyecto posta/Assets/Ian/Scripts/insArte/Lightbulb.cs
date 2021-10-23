@@ -3,21 +3,30 @@ using Cinemachine;
 public class Lightbulb : Interactable1
 {
     public GameObject light1, light2, light3, light4;
-    public bool isOn;
+    public bool isOn = true;
     public bool inverter = false;
     //hola soy blastermanmnmnmnmnmmm
+
+    private void Update()
+    {
+        if(!light1.activeSelf && light2.activeSelf && !light3.activeSelf && !light4.activeSelf)
+        {
+            GameEvents.current.FinishedFlowerPuzzle();
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles++;
+        }
+    }
     void UpdateLight1()
     {
         light1.SetActive(!light1.activeSelf);
+        light2.SetActive(!light2.activeSelf);
     }
     void UpdateLight2()
     {
-        light1.SetActive(!light1.activeSelf);
+        light2.SetActive(!light2.activeSelf);
         light4.SetActive(!light4.activeSelf);
     }
     void UpdateLight3()
     {
-        light1.SetActive(!light1.activeSelf);
         light2.SetActive(!light2.activeSelf);
         light3.SetActive(!light3.activeSelf);
         light4.SetActive(!light4.activeSelf);
@@ -25,7 +34,7 @@ public class Lightbulb : Interactable1
 
     public override string GetDescription()
     {
-        if (isOn) return "Press [E] to turn <color=red>off</color=red> the light.";
+        if (isOn) return "Press [1], [2] or [3] to change the lights";
         return "Press [E] to turn <color=green>on</color> the light.";
     }
 
@@ -33,8 +42,7 @@ public class Lightbulb : Interactable1
     {
         GameObject playCam = GameObject.Find("PlayCam");
         playCam.GetComponent<CinemachineVirtualCamera>().Follow = cameraPos;
-        playCam.GetComponent<CinemachineVirtualCamera>().LookAt = cameraPos;
-        playCam.GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachineFramingTransposer>().m_CameraDistance = 17;
+        playCam.GetComponent<CinemachineVirtualCamera>().LookAt = cameraPos;;
     }
     public override void Interact()
     {

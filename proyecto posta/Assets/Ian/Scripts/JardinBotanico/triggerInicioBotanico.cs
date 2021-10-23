@@ -16,7 +16,7 @@ public class triggerInicioBotanico : MonoBehaviour
             if (other.GetComponent<PlayerManager>().jardinPuzzles == 0)
             {
                 Debug.Log("Finn, elijamos la flor correcta!");
-                GameEvents.current.ActivateFlowers();
+                //GameEvents.current.ActivateFlowers();
                 player.GetComponent<PlayerManager>().jardinPuzzles++;
             }
             else if (other.GetComponent<PlayerManager>().jardinPuzzles == 2)
