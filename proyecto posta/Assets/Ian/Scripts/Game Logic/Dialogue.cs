@@ -116,6 +116,9 @@ public class Dialogue : Interactable1
                     script.StartDialogue("Jardin.txt", 33, 36, false);
                 }
                 break;
+            case 5:
+                Debug.Log("eyeyeyye");
+                break;
         }
     }
     public void Acting(bool active)
