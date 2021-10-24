@@ -48,21 +48,23 @@ public class KevinMOv : MonoBehaviour
         //percent = velocity + (0.1f * velocity);
         percent = 0.5f;
         if (move){
+            Debug.Log("Direccion: " + direction);
             horizontal = direction.x - transform.position.x;
             anim.SetBool("Idle", false);
             float z = direction.z - transform.position.z;
             float x = direction.x - transform.position.x;
-            //Debug.Log("x: " + x + ", z:" + z);
+            Debug.Log("x: " + x + ", z:" + z);
             if(estadoMov == 1){
                 movX = 0;
                 if(direction.z < transform.position.z)movZ = -velocity * Time.deltaTime;
                 else if(direction.z > transform.position.z) movZ = velocity * Time.deltaTime;
-                else movZ = 0;
-                if (z >= -percent && z <= percent){
-                    movZ = 0; 
+                else if (z >= -percent && z <= percent)
+                {
+                    movZ = 0;
                     estadoMov = 2;
-                    Debug.Log("Cambiando");
                 }
+                else movZ = 0;
+                
                transform.Translate(0, 0, movZ);
             }
             if(estadoMov == 2){
@@ -70,8 +72,9 @@ public class KevinMOv : MonoBehaviour
                 movZ = 0;
                 if(direction.x > transform.position.x) movX = velocity * Time.deltaTime;
                 else if (direction.x < transform.position.x)movX = -velocity * Time.deltaTime;
+                else if (x >= -percent && x <= percent) movX = 0;
                 else movX = 0;
-                if( x>= -percent && x <= percent) movX = 0;
+                
                 transform.Translate(movX, 0,0);
                 
             }
@@ -79,7 +82,7 @@ public class KevinMOv : MonoBehaviour
                 move = false;
                 movX = 0;
                 movZ=0;
-                Debug.Log("Sas");
+                //Debug.Log("Sas");
                 if (doEvent)
                 {
                     GameEvents.current.FinishedWalkingToPoint();

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class cuartoDeKevinDoor : Interactable1
 {
@@ -22,17 +23,19 @@ public class cuartoDeKevinDoor : Interactable1
 
     public override void changeCamera()
     {
-
+        GameObject playCam = GameObject.Find("PlayCam");
+        playCam.GetComponent<CinemachineVirtualCamera>().Follow = cameraPos;
     }
     public override void Interact()
     {
         if (!alreadyTalked)
         {
             changePos();
+            changeCamera();
             //GameObject.FindGameObjectWithTag("GameController").GetComponent<timelineController>().Play();
-            gameManager.instance.UpdateGameState(GameState.Dialogue);     
+            //gameManager.instance.UpdateGameState(GameState.Dialogue);     
             alreadyTalked = true;
-            GameObject.FindGameObjectWithTag("Player").GetComponent<KevinMOv>().MoveToThisPoint(proxPosFinn.position, false);
+            GameObject.FindGameObjectWithTag("Player").GetComponent<KevinMOv>().MoveToThisPoint(proxPosFinn.localPosition, true);
         }
     }
 
