@@ -30,12 +30,14 @@ public class cuartoDeKevinDoor : Interactable1
     {
         if (!alreadyTalked)
         {
+            gameManager.instance.UpdateGameState(GameState.Cinematic);
             changePos();
             changeCamera();
             //GameObject.FindGameObjectWithTag("GameController").GetComponent<timelineController>().Play();
             //gameManager.instance.UpdateGameState(GameState.Dialogue);     
             alreadyTalked = true;
-            GameObject.FindGameObjectWithTag("Player").GetComponent<KevinMOv>().MoveToThisPoint(proxPosFinn.localPosition, true);
+            GameObject.FindGameObjectWithTag("Player").GetComponent<KevinMOv>().MoveToThisPoint(proxPosFinn.position, true);
+            //GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>
         }
     }
 
