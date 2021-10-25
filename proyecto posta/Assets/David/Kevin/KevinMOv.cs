@@ -43,7 +43,7 @@ public class KevinMOv : MonoBehaviour
         //anim.SetInteger("NPC", NPC);
     }
 
-    void Update(){
+    void FixedUpdate(){
         
         //percent = velocity + (0.1f * velocity);
         percent = 0.5f;
