@@ -21,7 +21,7 @@ public class possessBanquito : Interactable1
 
     public override void changeCamera()
     {
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
     }
 
     public override void Interact()

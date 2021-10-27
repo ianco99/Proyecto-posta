@@ -19,8 +19,7 @@ public class triggerVoid : MonoBehaviour
         cameraPos.position = new Vector3(cameraPos.position.x, cameraPos.position.y, zz);
         playCam.GetComponent<CinemachineVirtualCamera>().Follow = cameraPos;
         playCam.GetComponent<CinemachineVirtualCamera>().LookAt = cameraPos;
-        float z = GameObject.FindGameObjectWithTag("Player").transform.position.z;
-        councilPos.position = new Vector3(councilPos.position.x, councilPos.position.y, z);
+        councilPos.position = new Vector3(councilPos.position.x, councilPos.position.y, zz);
         Instantiate(Council, councilPos.position, Quaternion.identity);
         Destroy(gameObject);
     }
