@@ -8,10 +8,12 @@ public class triggerVoid : MonoBehaviour
     [SerializeField] Transform councilPos;
     [SerializeField] GameObject Council;
     [SerializeField] Transform cameraPos;
+    [SerializeField] GameObject dialogue;
     private void OnTriggerEnter(Collider other)
     {
         gameManager.instance.UpdateGameState(GameState.Dialogue);
         GameObject.FindGameObjectWithTag("Player").GetComponent<movementReflect>().enabled = false;
+        dialogue.GetComponent<ReadTxt>().StartDialogue("Void.txt", 0,7,false);
         GameObject playCam = GameObject.Find("PlayCam");
         float zz = GameObject.FindGameObjectWithTag("Player").transform.position.z;
         cameraPos.position = new Vector3(cameraPos.position.x, cameraPos.position.y, zz);
