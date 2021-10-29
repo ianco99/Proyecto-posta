@@ -13,8 +13,9 @@ public class triggerDoorCuarto : MonoBehaviour
             gameManager.instance.UpdateGameState(GameState.Dialogue);
             GameObject.FindGameObjectWithTag("Player").GetComponent<KevinMOv>().enabled = false;
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().cuartoKevinDialogues++;
-            GameObject.FindGameObjectWithTag("Text").GetComponent<ReadTxt>().StartDialogue("CuartoDeKevin.txt", 0, 2, false);
+            GameObject.FindGameObjectWithTag("Text").GetComponent<ReadTxt>().StartDialogue("CuartoDeKevin.txt", 0, 2, true);
             puerta.GetComponent<cuartoDeKevinDoor>().changePos();
+            Destroy(gameObject);
         }
     }
 }
