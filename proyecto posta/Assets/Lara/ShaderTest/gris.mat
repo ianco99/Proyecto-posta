@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Silla
+  m_Name: gris
   m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
     type: 3}
   m_ShaderKeywords: 
@@ -25,13 +25,13 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 0ee02dd222406ff4c80559ed3181852e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 897acf0c8280fec46932831f2e7c71d1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors:
-    - Color_6820E916: {r: 0.7735849, g: 0.7309659, b: 0.3539516, a: 0}
-    - Color_779D8C7A: {r: 1, g: 0.94963926, b: 0.8443396, a: 0}
-    - Color_8768768687: {r: 0.4339623, g: 0.20149153, b: 0.120772526, a: 0}
-    - _L1_color: {r: 0.6037736, g: 0.57093275, b: 0.48700607, a: 0.10079677}
-    - _L1_dir: {r: 0.5200375, g: 0.851434, b: -0.06797878, a: 0}
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.8490566, g: 0.8490566, b: 0.8490566, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.754717, g: 0.754717, b: 0.754717, a: 0}
+    - _L1_dir: {r: 0.1888783, g: 0.963706, b: -0.1886682, a: 0}
