@@ -287,7 +287,7 @@ MonoBehaviour:
   isGlobal: 1
   priority: 0
   blendDistance: 0
-  weight: 1
+  weight: 0.55
   sharedProfile: {fileID: 11400000, guid: 15f41b85a506e944b9d41bdb85103169, type: 2}
 --- !u!4 &51427366
 Transform:
@@ -3069,6 +3069,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CanvasPause
+      objectReference: {fileID: 0}
+    - target: {fileID: 3152578028759629132, guid: e9194da3b5fa14f4db9aec63939f89ba,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9194da3b5fa14f4db9aec63939f89ba, type: 3}
@@ -9067,7 +9072,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh74126
+  m_Name: pb_Mesh95612
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -28920,7 +28925,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh74522
+  m_Name: pb_Mesh96014
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
