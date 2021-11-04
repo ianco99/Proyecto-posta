@@ -53,7 +53,7 @@ public class KevinMOv : MonoBehaviour
             anim.SetBool("Idle", false);
             float z = direction.z - transform.position.z;
             float x = direction.x - transform.position.x;
-            Debug.Log("x: " + x + ", z:" + z);
+            //Debug.Log("x: " + x + ", z:" + z);
             if(estadoMov == 1){
                 movX = 0;
                 if(direction.z < transform.position.z)movZ = -velocity * Time.deltaTime;

@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -121,6 +121,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &24782215 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3865367921715117195, guid: 06a4287bbf023bb4bada2ef1c7baf0ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 931780466}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &113649383 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5917096859811601149, guid: 5904c8cd30847024896c3f55fedc3296,
@@ -201,7 +207,7 @@ PrefabInstance:
     - target: {fileID: 4788681959534948181, guid: 0eb06dd6c096bc841a3f5329636ae08e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.079328
+      value: -8.079329
       objectReference: {fileID: 0}
     - target: {fileID: 4788681959534948181, guid: 0eb06dd6c096bc841a3f5329636ae08e,
         type: 3}
@@ -6910,7 +6916,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh45024
+  m_Name: pb_Mesh18028
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7350,7 +7356,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh45182
+  m_Name: pb_Mesh18190
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7592,7 +7598,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh45236
+  m_Name: pb_Mesh18246
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7979,7 +7985,7 @@ PrefabInstance:
     - target: {fileID: 6667526119264479110, guid: 5a6e0fc682c1bb7409a5172bd87c7ed9,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a6e0fc682c1bb7409a5172bd87c7ed9, type: 3}
@@ -11752,8 +11758,8 @@ MonoBehaviour:
   State: 1
   dialogueManager: {fileID: 698176881}
   player: {fileID: 113649383}
-  HUD: {fileID: 2007242262878239477}
-  level: 9
+  HUD: {fileID: 2007242264848349955}
+  level: 3
 --- !u!4 &1805922437
 Transform:
   m_ObjectHideFlags: 0
@@ -12823,7 +12829,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1944055747}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.079328, y: 3.9339685, z: -19.789104}
+  m_LocalPosition: {x: -8.079329, y: 3.9339685, z: -19.789104}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -12900,7 +12906,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh45118
+  m_Name: pb_Mesh18126
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13204,6 +13210,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2055409025 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6667526119264479110, guid: 5a6e0fc682c1bb7409a5172bd87c7ed9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1646088571}
+  m_PrefabAsset: {fileID: 0}
 --- !u!23 &11547719582374578
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13896,8 +13908,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2492f30a401b134186ee813e40164eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 0}
-  Kevin: {fileID: 0}
+  door: {fileID: 4937869212027863803}
+  Kevin: {fileID: 24782215}
+  council: {fileID: 2055409025}
 --- !u!33 &2387686115844443216
 MeshFilter:
   m_ObjectHideFlags: 0

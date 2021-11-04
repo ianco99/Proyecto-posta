@@ -10,6 +10,7 @@ public class Dialogue : Interactable1
     GameObject TextDialogue;
     public ReadTxt script;
     GameObject player;
+    PlayerManager playerStats;
     [SerializeField] Animator anim;
     int scene;
     KevinMOv mover;
@@ -20,13 +21,17 @@ public class Dialogue : Interactable1
     // Start is called before the first frame update
     void Start()
     {
+        
         TextDialogue = GameObject.FindWithTag("Text");
         script = TextDialogue.GetComponent<ReadTxt>();
         player = GameObject.FindGameObjectWithTag("Player");
         GameEvents.current.kevinStoppedTalking += EndLevel;
         mover = this.GetComponent<KevinMOv>();
     }
-
+    private void Update()
+    {
+        playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>();
+    }
     //public void Talk(string nameFile, int lineaprinc, int lineaFin)
     //{
     //    script.StartDialogue(nameFile, lineaprinc, lineaFin);
@@ -63,24 +68,24 @@ public class Dialogue : Interactable1
                     i++;
                     script.StartDialogue("Biblioteca.txt", 9, 16, true);
                     StartCoroutine("Hardcodeado");
-                    GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPostaPuzzles++;
+                    playerStats.bibliotecaPostaPuzzles++;
                 }
                 break;
             case 2:
                 Debug.Log("DAALE");
-                if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles == 0){
+                if (playerStats.bibliotecaPuzzles == 0){
                     Debug.Log("El gordo");
                     
                     alreadyTalked = !alreadyTalked;
                     //talk "aaa finn ayuda quiero entrar"
                 }
-                else if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles == 2)
+                else if(playerStats.bibliotecaPuzzles == 2)
                 {
                     Debug.Log("juntame las temperas querido");
                     script.StartDialogue("InstitutoArte.txt", 14, 19, true);
                     GameEvents.current.KevinArtSupplies();
                 }
-                else if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles == 5)
+                else if(playerStats.bibliotecaPuzzles == 5)
                 {
                     anim.Play("KevinDraw");
                     script.StartDialogue("InstitutoArte.txt", 26, 31, true);
@@ -88,36 +93,44 @@ public class Dialogue : Interactable1
                     GameEvents.current.KevinNeedsScaring();
                   
                 }
-                else if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles == 8)
+                else if (playerStats.bibliotecaPuzzles == 8)
                 {
                     script.StartDialogue("InstitutoArte.txt", 35, 44, true);
                     
                 }
                 break;
             case 4:
-                if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles == 1)
+                if(playerStats.jardinPuzzles == 1)
                 {
                     //GameEvents.current.ActivateSpray();
                     //GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles++;
                     //script.StartDialogue("Jardin.txt", 10, 18, false);
                 }
-                else if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles == 4)
+                else if(playerStats.jardinPuzzles == 4)
                 {
                     script.StartDialogue("Jardin.txt", 26, 29, true);
-                    GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles++;
+                    playerStats.jardinPuzzles++;
                 }
-                else if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles == 5)
+                else if (playerStats.jardinPuzzles == 5)
                 {
                     script.StartDialogue("Jardin.txt", 30, 32, true);
-                    GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles++;
+                    playerStats.jardinPuzzles++;
                 }
-                else if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles == 7)
+                else if (playerStats.jardinPuzzles == 7)
                 {
                     script.StartDialogue("Jardin.txt", 33, 36, false);
                 }
                 break;
             case 5:
                 Debug.Log("eyeyeyye");
+                break;
+            case 3:
+                if(playerStats.cuartoKevinDialogues == 1)
+                {
+                    script.StartDialogue("CuartoDeKevin.txt", 3, 12, false);
+                    playerStats.cuartoKevinDialogues++;
+                }
+                
                 break;
         }
     }

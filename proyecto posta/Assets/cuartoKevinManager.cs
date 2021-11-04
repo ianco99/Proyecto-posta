@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class cuartoKevinManager : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class cuartoKevinManager : MonoBehaviour
     GameObject player;
     [SerializeField] GameObject door;
     [SerializeField] GameObject Kevin;
+    [SerializeField] GameObject council;
     ReadTxt dialogue;
 
     private void Start()
@@ -25,7 +27,19 @@ public class cuartoKevinManager : MonoBehaviour
 
     void stopDialogue()
     {
-        GameObject.FindGameObjectWithTag("GameController").GetComponent<timelineController>().Play();
+        if(playerStats == 1)
+        {
+            GameObject playCam = GameObject.Find("PlayCam");
+            playCam.GetComponent<CinemachineVirtualCamera>().Follow = player.transform;
+        }
+        else if(playerStats == 2)
+        {
+            council.SetActive(true);
+            GameObject playCam = GameObject.Find("PlayCam");
+            playCam.GetComponent<CinemachineVirtualCamera>().Follow = council.transform;
+            dialogue.StartDialogue("CuartoDeKevin.txt", 13,17,false);
+        }
+        ///GameObject.FindGameObjectWithTag("GameController").GetComponent<timelineController>().Play();
         //Kevin.GetComponent<KevinMOv>().MoveToThisPoint(, true);
     }
 
@@ -40,7 +54,7 @@ public class cuartoKevinManager : MonoBehaviour
 
     public void kevinScared()
     {
-        Debug.LogError("WAWWA");
+        //Debug.LogError("WAWWA");
         dialogue.StartDialogue("CuartoDeKevin.txt", 3, 4, true);
     }
 }
