@@ -132,6 +132,13 @@ public class Dialogue : Interactable1
                 }
                 
                 break;
+            case 6:
+                if(playerStats.universidadPuzzles == 0)
+                {
+                    Debug.Log("heyyy hay fila tf??");
+                    GameEvents.current.StoppedTalking();
+                }
+                break;
         }
     }
     public void Acting(bool active)

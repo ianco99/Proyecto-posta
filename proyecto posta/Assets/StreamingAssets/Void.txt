@@ -1,8 +1,8 @@
-???: Toda persona que pise la tierra debe llevar consigo al otro mundo, una resolución.
-???: Una respuesta que encuentra cada uno al para qué llegó a la tierra. 
-???: Dime, Finn, ¿Para qué has llegado tú al mundo?
+???: Toda persona que pise la tierra debe llevar consigo al otro mundo, una resoluciÃ³n.
+???: Una respuesta que encuentra cada uno al para quÃ© llegÃ³ a la tierra. 
+???: Dime, Finn, Â¿Para quÃ© has llegado tÃº al mundo?
 Tiempo: 3
 Finn: ...
-???: Bueno, tu misión en la tierra no está completada. Vagarás un tiempo más hasta que descifres lo que significa estar vivo.
+???: Bueno, tu misiÃ³n en la tierra no estÃ¡ completada. VagarÃ¡s un tiempo mÃ¡s hasta que descifres lo que significa estar vivo.
 ???: Por favor, avanza hacia la puerta de salida que tienes delante.
-Tan pronto como la figura deja de hablar, una puerta, igual como la que usó Finn para entrar, se aparece delante de él.
+Tan pronto como la figura deja de hablar, una puerta, igual como la que usÃ³ Finn para entrar, se aparece delante de Ã©l.
