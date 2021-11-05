@@ -124,4 +124,12 @@ public class GameEvents : MonoBehaviour
             talkedToRightQueue();
         }
     }
+    public event Action spraysUniversidad;
+    public void SpraysUniversidad()
+    {
+        if (spraysUniversidad != null)
+        {
+            spraysUniversidad();
+        }
+    }
 }
