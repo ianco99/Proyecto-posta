@@ -115,4 +115,13 @@ public class GameEvents : MonoBehaviour
             finishedFlowerPuzzle();
         }
     }
+
+    public event Action talkedToRightQueue;
+    public void TalkedToRightQueue()
+    {
+        if(talkedToRightQueue != null)
+        {
+            talkedToRightQueue();
+        }
+    }
 }
