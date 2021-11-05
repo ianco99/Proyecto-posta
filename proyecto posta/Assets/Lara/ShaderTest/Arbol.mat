@@ -25,13 +25,13 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 9ab4ae7c43a8bc54c999c25a5b02b8f2, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors:
     - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.15812458, g: 0.4433962, b: 0.07320219, a: 0}
-    - Color_8768768687: {r: 0.029592374, g: 0.3301887, b: 0.1483484, a: 0}
-    - _L1_color: {r: 0.46635816, g: 0.55783963, b: 0.754717, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.5931827, g: 0.6648566, b: 0.8113208, a: 0}
     - _L1_dir: {r: 0.1888783, g: 0.963706, b: -0.1886682, a: 0}
