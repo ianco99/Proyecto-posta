@@ -40,5 +40,6 @@ public class Fade : MonoBehaviour
         GetComponent<Animator>().Play("New Animation");
 		yield return new WaitForSeconds(1f);
         image.color = new Color(image.color.r, image.color.g, image.color.b, 0);
+        Debug.Log("TERMINA");
     }
 }

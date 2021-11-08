@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -120,7 +120,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 4b123d088c5ad9e47932a5b9316cf760, type: 2}
 --- !u!1 &24782215 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3865367921715117195, guid: 06a4287bbf023bb4bada2ef1c7baf0ca,
@@ -642,7 +642,7 @@ PrefabInstance:
     - target: {fileID: 6688891680545506815, guid: e9194da3b5fa14f4db9aec63939f89ba,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9194da3b5fa14f4db9aec63939f89ba, type: 3}
@@ -664,7 +664,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &560932644
 MeshCollider:
@@ -5957,6 +5957,11 @@ PrefabInstance:
       propertyPath: velocity
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 7834562590110716089, guid: 06a4287bbf023bb4bada2ef1c7baf0ca,
+        type: 3}
+      propertyPath: m_AngularSpeed
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06a4287bbf023bb4bada2ef1c7baf0ca, type: 3}
 --- !u!1 &1074324056
@@ -6908,6 +6913,11 @@ PrefabInstance:
       propertyPath: AudioManager
       value: 
       objectReference: {fileID: 744942378}
+    - target: {fileID: 6171813504377460065, guid: 5904c8cd30847024896c3f55fedc3296,
+        type: 3}
+      propertyPath: m_AngularSpeed
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5904c8cd30847024896c3f55fedc3296, type: 3}
 --- !u!43 &1410225555
@@ -6916,7 +6926,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh31330
+  m_Name: pb_Mesh147102
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7598,7 +7608,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh31548
+  m_Name: pb_Mesh147320
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11971,7 +11981,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1925986472
 MeshCollider:
@@ -14178,7 +14188,7 @@ GameObject:
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!95 &4937869212027863804
 Animator:

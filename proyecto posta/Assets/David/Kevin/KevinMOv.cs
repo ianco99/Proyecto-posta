@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class KevinMOv : MonoBehaviour
 {
     CharacterController controller;
-    public float speed = 6f;
+    public float speed = 0.01f;
     Vector3 moveDir;
     Vector3 direction;
     float turnSmoothVelocity = 0.1f;
@@ -28,6 +29,7 @@ public class KevinMOv : MonoBehaviour
     bool conversionX = true;
     bool conversionZ = true;
     bool doEvent = false;
+    NavMeshAgent agente;
 
     public void sumArrnum(){
         arrnum++;
@@ -36,8 +38,10 @@ public class KevinMOv : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        agente = GetComponent<NavMeshAgent>();
         GameObject obj = GameObject.FindGameObjectWithTag("Text");
         read = obj.GetComponent<ReadTxt>();
+        agente.updateRotation = false;
        // MoveToThisPoint(new Vector3(Fin.transform.position.x, Fin.transform.position.y, Fin.transform.position.z));
        // anim = this.GetComponent<Animator>();
         //anim.SetInteger("NPC", NPC);
@@ -48,15 +52,16 @@ public class KevinMOv : MonoBehaviour
         //percent = velocity + (0.1f * velocity);
         percent = 0.5f;
         if (move){
-            Debug.Log("Direccion: " + direction);
             horizontal = direction.x - transform.position.x;
             anim.SetBool("Idle", false);
             float z = direction.z - transform.position.z;
             float x = direction.x - transform.position.x;
             //Debug.Log("x: " + x + ", z:" + z);
             if(estadoMov == 1){
+                agente.enabled = true;
                 movX = 0;
-                if(direction.z < transform.position.z)movZ = -velocity * Time.deltaTime;
+                agente.destination = direction;
+               /* if(direction.z < transform.position.z)movZ = -velocity * Time.deltaTime;
                 else if(direction.z > transform.position.z) movZ = velocity * Time.deltaTime;
                 else if (z >= -percent && z <= percent)
                 {
@@ -65,24 +70,14 @@ public class KevinMOv : MonoBehaviour
                 }
                 else movZ = 0;
                 
-               transform.Translate(0, 0, movZ);
+               transform.Translate(0, 0, movZ);*/
+                if(z>-0.5f && z<0.5f &&x >-0.5f && x<0.5f) estadoMov = 2;
             }
             if(estadoMov == 2){
-                Debug.Log("Cambiado");
-                movZ = 0;
-                if(direction.x > transform.position.x) movX = velocity * Time.deltaTime;
-                else if (direction.x < transform.position.x)movX = -velocity * Time.deltaTime;
-                else if (x >= -percent && x <= percent) movX = 0;
-                else movX = 0;
-                
-                transform.Translate(movX, 0,0);
-                
-            }
-            if(z <= percent && x <= percent && z>= -percent && x >= -percent){
+                agente.enabled = false;
                 move = false;
                 movX = 0;
                 movZ=0;
-                //Debug.Log("Sas");
                 if (doEvent)
                 {
                     GameEvents.current.FinishedWalkingToPoint();
