@@ -12,11 +12,16 @@ public class AudioManager : MonoBehaviour
         foreach(AudioSounds s in sounds){
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
-            s.volume = volume;
+            if(s.source.name != "Theme")  s.volume = volume;
             s.source.volume = s.volume;
             s.source.pitch = s.pitch; 
             s.source.loop = s.loop;
         }
+    }
+
+    void Start(){
+        Play("Theme");
+
     }
 
     public void setVolume(float Vol){

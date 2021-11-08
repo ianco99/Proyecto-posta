@@ -24,7 +24,7 @@ public class Menues : MonoBehaviour
 
 
         resolutions = Screen.resolutions; 
-        resDrop.ClearOptions();
+        //resDrop.ClearOptions();
         List<string> options = new List<string>();
         int currRes = 0;
         int a = 0;
@@ -37,9 +37,9 @@ public class Menues : MonoBehaviour
             a++;
         }
 
-        resDrop.AddOptions(options);
-        resDrop.value = currRes;
-        resDrop.RefreshShownValue();
+      //  resDrop.AddOptions(options);
+       // resDrop.value = currRes;
+       // resDrop.RefreshShownValue();
 
 
         script = audioManager.GetComponent<AudioManager>();
