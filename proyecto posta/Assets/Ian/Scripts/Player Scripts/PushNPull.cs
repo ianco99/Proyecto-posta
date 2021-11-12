@@ -28,7 +28,7 @@ public class PushNPull : MonoBehaviour
     }
     void PushAndPull()
     {
-        if (Input.GetKey(KeyCode.R) && !interacting && controller.isGrounded)
+        if (Input.GetKeyDown(KeyCode.R) && !interacting && controller.isGrounded)
         {
 
             Vector3 origin = new Vector3(raycastOrigin.transform.position.x, raycastOrigin.transform.position.y, raycastOrigin.transform.position.z);
@@ -46,14 +46,14 @@ public class PushNPull : MonoBehaviour
                 initialDrag = interacted.GetComponent<Rigidbody>().drag;
                 Debug.Log("sus");
                 anim.SetBool("Pushing", true);
-            }
+            }//:)
         }
         else if (Input.GetKey(KeyCode.R) && interacting)
         {
-            if(Vector3.Distance(interacted.transform.position, this.transform.position) > 2f)
-            {
-                StopPushing(interacted);
-            }
+            //if(Vector3.Distance(interacted.transform.position, this.transform.position) > 2f)
+            //{
+            //    //StopPushing(interacted);
+            //}
             if(!Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
             {
                 interacted.GetComponent<Rigidbody>().isKinematic = true;
@@ -64,18 +64,24 @@ public class PushNPull : MonoBehaviour
             }
             Vector3 moveObject = new Vector3(this.transform.position.x, interacted.transform.position.y, interacted.transform.position.z);
             interacted.GetComponent<Rigidbody>().velocity = player.GetComponent<Movement>().direction * player.GetComponent<Movement>().speed;
-            interacted.GetComponent<Rigidbody>().drag = 0f;
-            interacted.GetComponent<Rigidbody>().angularDrag = 0f;
+            //interacted.GetComponent<Rigidbody>().drag = 0f;
+            //interacted.GetComponent<Rigidbody>().angularDrag = 0f;
 
             if (player.GetComponent<Movement>().direction.x < -0.0001 || player.GetComponent<Movement>().direction.z < -0.0001)
             {
                 Debug.Log("ARRASTRANDO");
                 anim.SetBool("Pushing", true);
+                interacted.GetComponent<Rigidbody>().drag = 0f;
+                interacted.GetComponent<Rigidbody>().angularDrag = 0f;
+                player.GetComponent<Movement>().speed = 2f;
             }
             else if (player.GetComponent<Movement>().direction.x > 0.0001 || player.GetComponent<Movement>().direction.z > 0.0001)
             {
                 Debug.Log("EMPUJANDO");
                 anim.SetBool("Pushing", true);
+                player.GetComponent<Movement>().speed = 2f;
+                interacted.GetComponent<Rigidbody>().drag = initialDrag;
+                interacted.GetComponent<Rigidbody>().angularDrag = initialAngularDrag;
             }
 
             
@@ -98,5 +104,6 @@ public class PushNPull : MonoBehaviour
         player.GetComponent<Movement>().speed = 6f;
         anim.SetBool("Pushing", false);
         anim.SetBool("PushingVolteado", false);
+        Debug.Log("Stopped pushing");
     }
 }
