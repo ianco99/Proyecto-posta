@@ -82,7 +82,6 @@ public class KevinMOv : MonoBehaviour
                 {
                     GameEvents.current.FinishedWalkingToPoint();
                 }
-                
                 anim.SetBool("Idle", true);
                 horizontal = 0f;
             }
