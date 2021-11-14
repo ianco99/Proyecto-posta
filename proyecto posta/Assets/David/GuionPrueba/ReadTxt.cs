@@ -8,6 +8,7 @@ public class ReadTxt : MonoBehaviour
 {
     public Text texto;
     public GameObject panel;
+    public GameObject panel2;
     public GameObject Tex;
     public Text Nombre;
     string[] textito; 
@@ -26,6 +27,10 @@ public class ReadTxt : MonoBehaviour
     public GameObject AudioManager;
     AudioManager script;
     public bool sentTrue = false;
+    public Image kevIm;
+    public Image finIm;
+    public Image profIm;
+    public 
 
 
     // Start is called before the first frame update
@@ -114,17 +119,17 @@ public class ReadTxt : MonoBehaviour
                     switch (nomb[0])
                     {
                         case "Finn":
-                           // panel.GetComponent<Image>().material.color = new Color(255, 255, 0);
+                           panel2.GetComponent<Image>() = finIm;
                             break;
                          case  "TFinn": 
-                           // panel.GetComponent<Image>().material.color = new Color(255, 255, 0);
+                           panel2.GetComponent<Image>() = finIm;
                             nomb[0] = " Dialogo de Finn";
                             break;
                         case "Kevin":
-                           // panel.GetComponent<Image>().material.color = new Color(0, 255, 255);
+                            panel2.GetComponent<Image>() = kevIm;
                             break;
                         case "Profesor":
-                            //panel.GetComponent<Image>().material.color = new Color(255, 0, 255);
+                            panel2.GetComponent<Image>() = profIm;
                             break;
                     }
                     StartCoroutine(TypeSentence(nomb[1]));
