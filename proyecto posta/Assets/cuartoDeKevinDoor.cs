@@ -38,6 +38,7 @@ public class cuartoDeKevinDoor : Interactable1
             alreadyTalked = true;
             GameObject.FindGameObjectWithTag("Player").GetComponent<KevinMOv>().MoveToThisPoint(proxPosFinn.position, true);
             //GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().cuartoKevinDialogues++;
         }
     }
 

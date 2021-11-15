@@ -93,6 +93,8 @@ public class KevinMOv : MonoBehaviour
     }
 
     public void MoveToThisPoint(Vector3 vec, bool sendsEvent /*float tiempo*/){
+        agente.enabled = true;
+        this.GetComponent<KevinMOv>().enabled = true;
         estadoMov = 1;
         move = true;
         direction = vec;

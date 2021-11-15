@@ -30,7 +30,7 @@ public class ReadTxt : MonoBehaviour
     public Image kevIm;
     public Image finIm;
     public Image profIm;
-    public 
+    //public 
 
 
     // Start is called before the first frame update
@@ -119,17 +119,17 @@ public class ReadTxt : MonoBehaviour
                     switch (nomb[0])
                     {
                         case "Finn":
-                           panel2.GetComponent<Image>() = finIm;
-                            break;
+                           //panel2.GetComponent<Image>().sprite = finIm;
+                           break;
                          case  "TFinn": 
-                           panel2.GetComponent<Image>() = finIm;
+                           //panel2.GetComponent<Image>().sprite = finIm;
                             nomb[0] = " Dialogo de Finn";
                             break;
                         case "Kevin":
-                            panel2.GetComponent<Image>() = kevIm;
+                            //panel2.GetComponent<Image>().sprite = kevIm;
                             break;
                         case "Profesor":
-                            panel2.GetComponent<Image>() = profIm;
+                            //panel2.GetComponent<Image>().sprite = profIm;
                             break;
                     }
                     StartCoroutine(TypeSentence(nomb[1]));
