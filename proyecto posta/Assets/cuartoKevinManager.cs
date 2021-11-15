@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.SceneManagement;
 
 public class cuartoKevinManager : MonoBehaviour
 {
@@ -13,6 +14,9 @@ public class cuartoKevinManager : MonoBehaviour
     [SerializeField] Transform middleFinn;
     ReadTxt dialogue;
     [SerializeField] Transform cameraPosKevinFinn;
+    [SerializeField] Transform cameraPosPuerta1;
+    [SerializeField] Transform bookFinn;
+    [SerializeField] Transform cameraPosCama;
 
     private void Start()
     {
@@ -43,8 +47,39 @@ public class cuartoKevinManager : MonoBehaviour
         {
             council.SetActive(true);
             GameObject playCam = GameObject.Find("PlayCam");
-            playCam.GetComponent<CinemachineVirtualCamera>().Follow = council.transform;
+            playCam.GetComponent<CinemachineVirtualCamera>().Follow = cameraPosPuerta1.transform;
             dialogue.StartDialogue("CuartoDeKevin.txt", 13,17,false);
+            player.GetComponent<PlayerManager>().cuartoKevinDialogues++;
+        }
+        else if (playerStats == 3)
+        {
+            council.SetActive(false);
+            GameObject playCam = GameObject.Find("PlayCam");
+            playCam.GetComponent<CinemachineVirtualCamera>().Follow = cameraPosKevinFinn.transform;
+            dialogue.StartDialogue("CuartoDeKevin.txt", 18, 33, false);
+            player.GetComponent<PlayerManager>().cuartoKevinDialogues++;
+        }
+        else if (playerStats == 4)
+        {
+            player.GetComponent<KevinMOv>().MoveToThisPoint(bookFinn.position, true);
+        }
+        else if (playerStats == 5)
+        {
+            GameObject playCam = GameObject.Find("PlayCam");
+            playCam.GetComponent<CinemachineVirtualCamera>().Follow = cameraPosCama.transform;
+            dialogue.StartDialogue("CuartoDeKevin.txt", 47, 49, false);
+            player.GetComponent<PlayerManager>().cuartoKevinDialogues++;
+        }
+        else if (playerStats == 6)
+        {
+            GameObject playCam = GameObject.Find("PlayCam");
+            playCam.GetComponent<CinemachineVirtualCamera>().Follow = cameraPosKevinFinn.transform;
+            player.GetComponent<PlayerManager>().cuartoKevinDialogues++;
+            dialogue.StartDialogue("CuartoDeKevin.txt", 50, 63, false);
+        }
+        else if (playerStats == 7)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         ///GameObject.FindGameObjectWithTag("GameController").GetComponent<timelineController>().Play();
         //Kevin.GetComponent<KevinMOv>().MoveToThisPoint(, true);
@@ -62,6 +97,11 @@ public class cuartoKevinManager : MonoBehaviour
         else if(playerStats == 2)
         {
             dialogue.StartDialogue("CuartoDeKevin.txt", 3, 12, false);
+        }
+        else if(playerStats == 4)
+        {
+            dialogue.StartDialogue("CuartoDeKevin.txt", 34, 45, false);
+            player.GetComponent<PlayerManager>().cuartoKevinDialogues++;
         }
         
     }
