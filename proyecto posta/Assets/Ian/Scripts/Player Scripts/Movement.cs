@@ -57,11 +57,6 @@ public class Movement : MonoBehaviour
         {
             SceneManager.LoadScene("Biblioteca");
         }
-
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            gameManager.instance.UpdateGameState(GameState.Menu);
-        }
         Animations();
 
 

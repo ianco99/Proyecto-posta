@@ -23,7 +23,7 @@ public class Fade : MonoBehaviour
     }
 
     public void LoadScene(string nameScene){
-    	SceneManager.LoadScene(nameScene);
+        SceneManager.LoadScene(nameScene);
     }
 
     IEnumerator Fadein(string sceneName){

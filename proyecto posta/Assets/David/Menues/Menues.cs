@@ -54,10 +54,9 @@ public class Menues : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         if (Input.GetKey(KeyCode.Escape) && isPaused) DePause();
-         else if(Input.GetKey(KeyCode.Escape) && !isPaused) OnPause(); 
+         if (Input.GetKeyDown(KeyCode.Escape) && isPaused) DePause();
+         else if(Input.GetKeyDown(KeyCode.Escape) && !isPaused) OnPause(); 
 
-          
 
     }
 
@@ -66,6 +65,7 @@ public class Menues : MonoBehaviour
     }
 
     public void LoadScene(string nameScene){
+            	
     	SceneManager.LoadScene(nameScene);
     }
 
@@ -99,7 +99,7 @@ public class Menues : MonoBehaviour
     }
 
     public void IrMenuConfiguracion(string name){
-        
+        Debug.Log(name);
         switch(name){
             case "Main":
                 MainMenu.SetActive(false);
@@ -109,6 +109,7 @@ public class Menues : MonoBehaviour
                 break;
         }
         ConfigurationMenu.SetActive(true);
+        Debug.Log("LLEGO");
         slider.value = script.getVolume();
     }
 

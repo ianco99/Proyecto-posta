@@ -27,9 +27,10 @@ public class ReadTxt : MonoBehaviour
     public GameObject AudioManager;
     AudioManager script;
     public bool sentTrue = false;
-    public Image kevIm;
-    public Image finIm;
-    public Image profIm;
+    public UnityEngine.Sprite kevIm;
+    public UnityEngine.Sprite finIm;
+    public UnityEngine.Sprite profIm;
+    
     //public 
 
 
@@ -38,6 +39,7 @@ public class ReadTxt : MonoBehaviour
     {
         script = AudioManager.GetComponent<AudioManager>();
         estaPresente = false;
+      
     }
 
     public bool getEstaPresente(){
@@ -119,17 +121,20 @@ public class ReadTxt : MonoBehaviour
                     switch (nomb[0])
                     {
                         case "Finn":
-                           //panel2.GetComponent<Image>().sprite = finIm;
+                           panel2.GetComponent<Image>().sprite = finIm;
                            break;
                          case  "TFinn": 
-                           //panel2.GetComponent<Image>().sprite = finIm;
+                            panel2.GetComponent<Image>().sprite = finIm;
                             nomb[0] = " Dialogo de Finn";
                             break;
                         case "Kevin":
-                            //panel2.GetComponent<Image>().sprite = kevIm;
+                            panel2.GetComponent<Image>().sprite = kevIm;
                             break;
                         case "Profesor":
-                            //panel2.GetComponent<Image>().sprite = profIm;
+                            panel2.GetComponent<Image>().sprite = profIm;
+                            break;
+                        default:
+                            panel2.GetComponent<Image>().sprite = null;
                             break;
                     }
                     StartCoroutine(TypeSentence(nomb[1]));
