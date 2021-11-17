@@ -11,13 +11,15 @@ public class UniversidadManager : MonoBehaviour
     [SerializeField] GameObject kevin;
     [SerializeField] Transform kevinQueuePos;
     [SerializeField] Transform finnQueuePos;
+    [SerializeField] GameObject[] sprays;
 
     private void Start()
     {
         playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().cuartoKevinDialogues;
         GameEvents.current.kevinStoppedTalking += stopDialogue;
         GameEvents.current.FinishedWalking += stopWalking;
-        
+        GameEvents.current.spraysUniversidad += spraysActivated;
+        GameEvents.current.acondicionadorOn += ticketFalls;
         player = GameObject.FindGameObjectWithTag("Player");
         dialogue = GameObject.FindGameObjectWithTag("Text").GetComponent<ReadTxt>();
     }
@@ -36,7 +38,10 @@ public class UniversidadManager : MonoBehaviour
         }
         else if (playerStats == 2)
         {
-           
+            foreach (GameObject spray in sprays)
+            {
+                spray.GetComponent<Outline>().enabled = true;
+            }
         }
         ///GameObject.FindGameObjectWithTag("GameController").GetComponent<timelineController>().Play();
         //Kevin.GetComponent<KevinMOv>().MoveToThisPoint(, true);
@@ -50,9 +55,13 @@ public class UniversidadManager : MonoBehaviour
         }
     }
 
-    public void kevinScared()
+    public void spraysActivated()
     {
-        //Debug.LogError("WAWWA");
-        dialogue.StartDialogue("CuartoDeKevin.txt", 3, 4, true);
+        Debug.Log("TIMELINE");
+    }
+
+    public void ticketFalls()
+    {
+        Debug.Log("TIMELINE 2");
     }
 }

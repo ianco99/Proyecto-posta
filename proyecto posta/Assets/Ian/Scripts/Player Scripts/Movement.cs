@@ -49,14 +49,14 @@ public class Movement : MonoBehaviour
         direction = new Vector3(horizontal, 0f, vertical).normalized; //Getting our inputs in the vector3 direction
         Move();
 
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            SceneManager.LoadScene("Mecanicas");
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            SceneManager.LoadScene("Biblioteca");
-        }
+        //if (Input.GetKeyDown(KeyCode.Alpha1))
+        //{
+        //    SceneManager.LoadScene("Mecanicas");
+        //}
+        //if (Input.GetKeyDown(KeyCode.Alpha2))
+        //{
+        //    SceneManager.LoadScene("Biblioteca");
+        //}
         Animations();
 
 

@@ -132,4 +132,12 @@ public class GameEvents : MonoBehaviour
             spraysUniversidad();
         }
     }
+    public event Action acondicionadorOn;
+    public void AcondicionadorOn()
+    {
+        if(acondicionadorOn != null)
+        {
+            acondicionadorOn();
+        }
+    }
 }

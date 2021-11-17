@@ -158,7 +158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   texto: {fileID: 2137664657}
   panel: {fileID: 66654767}
-  panel2: {fileID: 0}
+  panel2: {fileID: 1864043058}
   Tex: {fileID: 1465475601}
   Nombre: {fileID: 439480898}
   shouldPlayAfter: 0
@@ -1559,6 +1559,12 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 3865367921715117194, guid: 06a4287bbf023bb4bada2ef1c7baf0ca,
     type: 3}
   m_PrefabInstance: {fileID: 1782202898}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1864043058 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6352333274792348445, guid: b0ea1ac9f01647b409438a358054e003,
+    type: 3}
+  m_PrefabInstance: {fileID: 1552542218449066611}
   m_PrefabAsset: {fileID: 0}
 --- !u!224 &1869330814 stripped
 RectTransform:
