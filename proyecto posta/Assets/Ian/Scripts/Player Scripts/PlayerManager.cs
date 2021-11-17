@@ -13,7 +13,8 @@ public class PlayerManager : MonoBehaviour
     public int bibliotecaPuzzles = 0; //esto en realidad es de instituto de arte
     public int jardinPuzzles = 0;
     public int universidadPuzzles = 0;
-    
+    public int terrazaDialogos = 0;
+
     //public bool canLerp = false;
     //public Vector3 a;
     //public Vector3 b;

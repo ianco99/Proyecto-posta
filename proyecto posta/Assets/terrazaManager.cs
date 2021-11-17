@@ -1,53 +1,49 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Cinemachine;
+using UnityEngine.Playables;
 
-public class UniversidadManager : MonoBehaviour
+public class terrazaManager : MonoBehaviour
 {
     int playerStats;
     GameObject player;
     ReadTxt dialogue;
-    [SerializeField] GameObject kevin;
-    [SerializeField] Transform kevinQueuePos;
-    [SerializeField] Transform finnQueuePos;
-
+    [SerializeField] GameObject council;
     private void Start()
     {
         playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().cuartoKevinDialogues;
         GameEvents.current.kevinStoppedTalking += stopDialogue;
         GameEvents.current.FinishedWalking += stopWalking;
-        
         player = GameObject.FindGameObjectWithTag("Player");
         dialogue = GameObject.FindGameObjectWithTag("Text").GetComponent<ReadTxt>();
     }
     private void Update()
     {
-        playerStats = player.GetComponent<PlayerManager>().universidadPuzzles;
+        playerStats = player.GetComponent<PlayerManager>().terrazaDialogos;
     }
 
     void stopDialogue()
     {
         if (playerStats == 0)
         {
-            player.GetComponent<PlayerManager>().universidadPuzzles++;
-            kevin.GetComponent<KevinMOv>().MoveToThisPoint(kevinQueuePos.position, false);
-            player.GetComponent<KevinMOv>().MoveToThisPoint(finnQueuePos.position, true);
+            player.GetComponent<PlayerManager>().terrazaDialogos++;
+            council.SetActive(true);
+            dialogue.StartDialogue("terraza.txt", 29, 43, false);
         }
-        else if (playerStats == 2)
+        if(playerStats == 1)
         {
-           
+            this.GetComponent<PlayableDirector>().Play();
         }
-        ///GameObject.FindGameObjectWithTag("GameController").GetComponent<timelineController>().Play();
-        //Kevin.GetComponent<KevinMOv>().MoveToThisPoint(, true);
     }
 
     void stopWalking()
     {
-        if(playerStats == 1)
+        if (playerStats == 0)
         {
-            dialogue.StartDialogue("universidad.txt", 1, 8, true);
+            dialogue.StartDialogue("terraza.txt", 0, 29, false);
+            
         }
+
     }
 
     public void kevinScared()

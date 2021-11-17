@@ -25,11 +25,8 @@ public class queueMember : Interactable1
             {
                 //GameObject.FindGameObjectWithTag("Text").GetComponent<ReadTxt>().StartDialogue("Jardin.txt", 46, 46, false);
                 Debug.Log(correctDesc);
-                GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles++;
-                GameEvents.current.PickedFlowers();
-                GameEvents.current.ActivateSpray();
-                GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles++;
-                GameObject.FindGameObjectWithTag("Text").GetComponent<ReadTxt>().StartDialogue("Jardin.txt", 10, 18, false);
+                GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().universidadPuzzles++;
+                GameObject.FindGameObjectWithTag("Text").GetComponent<ReadTxt>().StartDialogue("universidad.txt", 10, 18, false);
             }
         }
     }
