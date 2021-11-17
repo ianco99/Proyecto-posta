@@ -13,8 +13,13 @@ public class turbinaUniversidad : Interactable1
     GameObject playCam;
     private void ActivateSpray()
     {
-        particle.SetActive(true);
-        GameEvents.current.AcondicionadorOn();
+        particle.GetComponent<ParticleSystem>().Play();
+        if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().universidadPuzzles == 4)
+        {
+            
+            GameEvents.current.AcondicionadorOn();
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().universidadPuzzles++;
+        }
     }
     public override string GetDescription()
     {
@@ -30,15 +35,14 @@ public class turbinaUniversidad : Interactable1
     }
     public override void Interact()
     {
-        if (!used)
+        if (Input.GetKeyDown(KeyCode.E))
         {
             playCam = GameObject.Find("PlayCam");
             ActivateSpray();
-            gameManager.instance.UpdateGameState(GameState.Cinematic);
             changeCamera();
             used = !used;
-            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().universidadPuzzles++;
-
+            
         }
+
     }
 }

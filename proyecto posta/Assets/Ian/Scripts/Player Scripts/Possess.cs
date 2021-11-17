@@ -101,7 +101,7 @@ public class Possess : MonoBehaviour
                 enemiesList = GameObject.FindGameObjectsWithTag("Possesable");
                 possesable = GetClosestEnemy(enemiesList).gameObject;
 
-                if (Vector3.Distance(possesable.transform.position, transform.position) <= 10)
+                if (Vector3.Distance(possesable.transform.position, transform.position) <= 20)
                 {
                     possesable.GetComponent<Outline>().enabled = true;
                     found = possesable;

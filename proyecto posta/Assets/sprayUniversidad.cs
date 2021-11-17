@@ -12,14 +12,12 @@ public class sprayUniversidad : Interactable1
 
     void ActivateSprays()
     {
-        if (!isOn)
-        {
-            foreach (GameObject spray in sprays)
-            {
 
-                spray.SetActive(true);
-            }
+        foreach (GameObject spray in sprays)
+        {
+            spray.SetActive(true);
         }
+
         GameEvents.current.SpraysUniversidad();
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().universidadPuzzles++;
     }
@@ -40,7 +38,10 @@ public class sprayUniversidad : Interactable1
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            ActivateSprays();
+            if (!isOn)
+            {
+                ActivateSprays();
+            }
         }
     }
 }
