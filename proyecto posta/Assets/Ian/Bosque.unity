@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -121,6 +121,76 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!21 &9840101
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
+--- !u!21 &20964836
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &22471786
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,13 +523,48 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 925114258}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &73947426
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!43 &123595059
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh73040
+  m_Name: pb_Mesh69216
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -622,7 +727,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh160618
+  m_Name: pb_Mesh69174
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -863,76 +968,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce5eff88e1065844eb01a483376e2471, type: 3}
---- !u!21 &140678351
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
---- !u!21 &151090542
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &161125920
 GameObject:
   m_ObjectHideFlags: 0
@@ -1005,7 +1040,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2134802833}
+  - {fileID: 1371031090}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -1114,111 +1149,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 167729826}
   m_Mesh: {fileID: 3820541900440350585, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
---- !u!21 &169920346
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
---- !u!21 &183389882
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
---- !u!21 &184913593
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &186081826
 GameObject:
   m_ObjectHideFlags: 0
@@ -1291,7 +1221,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1181241915}
+  - {fileID: 73947426}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -1399,7 +1329,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1331786323}
+  - {fileID: 1067676247}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -1513,6 +1443,41 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 349860849361bcc4cb21897ecbcc0540, type: 3}
+--- !u!21 &212162380
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &215954006
 GameObject:
   m_ObjectHideFlags: 0
@@ -1585,7 +1550,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 495764180}
+  - {fileID: 546804067}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -1615,6 +1580,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 215954006}
   m_Mesh: {fileID: -896912255314443536, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
+--- !u!21 &218861889
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &225247495
 GameObject:
   m_ObjectHideFlags: 0
@@ -1687,7 +1687,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 662729879}
+  - {fileID: 896927891}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -1717,76 +1717,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 225247495}
   m_Mesh: {fileID: -896912255314443536, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
---- !u!21 &226287490
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
---- !u!21 &227327234
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!4 &234670559 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2118652688780167266, guid: 349860849361bcc4cb21897ecbcc0540,
@@ -1929,6 +1859,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   texto: {fileID: 1368241060}
   panel: {fileID: 188835137}
+  panel2: {fileID: 658229015}
   Tex: {fileID: 713706266}
   Nombre: {fileID: 1497774215}
   shouldPlayAfter: 0
@@ -1941,6 +1872,9 @@ MonoBehaviour:
   cambiaDialogo: 1
   AudioManager: {fileID: 1676929530}
   sentTrue: 0
+  kevIm: {fileID: 0}
+  finIm: {fileID: 0}
+  profIm: {fileID: 0}
 --- !u!4 &249963883
 Transform:
   m_ObjectHideFlags: 0
@@ -1955,7 +1889,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &254485934
+--- !u!21 &264277163
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -2062,7 +1996,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2031358644}
+  - {fileID: 825680191}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -2243,7 +2177,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 184913593}
+  - {fileID: 1793926498}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -2279,7 +2213,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh161864
+  m_Name: pb_Mesh70426
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2436,41 +2370,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!21 &312807515
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1001 &338268724
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2728,41 +2627,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365787810}
   m_Mesh: {fileID: -5534591290900139944, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
---- !u!21 &392545813
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &394726573
 GameObject:
   m_ObjectHideFlags: 0
@@ -2914,7 +2778,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 986052529}
+  - {fileID: 264277163}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -2944,7 +2808,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 396134120}
   m_Mesh: {fileID: -896912255314443536, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
---- !u!21 &396494513
+--- !u!21 &397385447
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -3058,41 +2922,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 404988188}
   m_Mesh: {fileID: -2186257154207007639, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
---- !u!21 &413492243
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!4 &414199376 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2118652688780167266, guid: 349860849361bcc4cb21897ecbcc0540,
@@ -3615,7 +3444,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 955198973}
+  - {fileID: 212162380}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -3645,42 +3474,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 486874990}
   m_Mesh: {fileID: -896912255314443536, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
---- !u!21 &495764180
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
---- !u!21 &505900529
+--- !u!21 &503746032
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -3721,41 +3515,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 45065699}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &522648698
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &523244517
 GameObject:
   m_ObjectHideFlags: 0
@@ -4654,7 +4413,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1783993554}
+  - {fileID: 947412953}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -4684,6 +4443,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 531552640}
   m_Mesh: {fileID: -896912255314443536, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
+--- !u!21 &546804067
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &551237753
 GameObject:
   m_ObjectHideFlags: 0
@@ -4847,41 +4641,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 349860849361bcc4cb21897ecbcc0540, type: 3}
---- !u!21 &571677953
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &571872517
 GameObject:
   m_ObjectHideFlags: 0
@@ -5267,7 +5026,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1344200916}
+  - {fileID: 20964836}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -5297,41 +5056,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 602276784}
   m_Mesh: {fileID: -896912255314443536, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
---- !u!21 &605570529
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &608642430
 GameObject:
   m_ObjectHideFlags: 0
@@ -5404,7 +5128,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 625975255}
+  - {fileID: 1377816711}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -5434,7 +5158,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 608642430}
   m_Mesh: {fileID: -896912255314443536, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
---- !u!21 &625975255
+--- !u!21 &612423175
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -5621,7 +5345,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1315481103}
+  - {fileID: 1489921758}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -5730,6 +5454,41 @@ Transform:
   m_Father: {fileID: 1088496602}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &633937292
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &636555957
 GameObject:
   m_ObjectHideFlags: 0
@@ -5802,7 +5561,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 392545813}
+  - {fileID: 1893690263}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -5850,41 +5609,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 208716877}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &662729879
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+--- !u!1 &658229015 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5594519230423073664, guid: 14ef43c1ee01df8418e787ce9fa2df86,
     type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
+  m_PrefabInstance: {fileID: 1276096840}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &662898104
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6297,7 +6027,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1648890202}
+  - {fileID: 633937292}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -6490,7 +6220,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 728624478}
   m_Mesh: {fileID: -2186257154207007639, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
---- !u!21 &731629164
+--- !u!21 &743917379
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -6677,7 +6407,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 254485934}
+  - {fileID: 1784995948}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -6779,7 +6509,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1514772712}
+  - {fileID: 1259535020}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -6815,41 +6545,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1828677749}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &766526250
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &769782652
 GameObject:
   m_ObjectHideFlags: 0
@@ -7001,7 +6696,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2057115959}
+  - {fileID: 1791043678}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -7469,6 +7164,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 800360579}
   m_Mesh: {fileID: -4449512068089084730, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
+--- !u!21 &803944496
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &815623157
 GameObject:
   m_ObjectHideFlags: 0
@@ -7549,6 +7279,76 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 815623157}
   m_Mesh: {fileID: -4449512068089084730, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
+--- !u!21 &823237499
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
+--- !u!21 &825680191
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &842559145
 GameObject:
   m_ObjectHideFlags: 0
@@ -7597,7 +7397,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &870161904
+--- !u!21 &846280293
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -7704,7 +7504,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 151090542}
+  - {fileID: 743917379}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -7978,6 +7778,111 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 896134616}
   m_Mesh: {fileID: 3820541900440350585, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
+--- !u!21 &896139614
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
+--- !u!21 &896927891
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
+--- !u!21 &898666437
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &903943589
 GameObject:
   m_ObjectHideFlags: 0
@@ -8220,6 +8125,76 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 349860849361bcc4cb21897ecbcc0540, type: 3}
+--- !u!21 &927959226
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
+--- !u!21 &947412953
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1001 &949387764
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8376,76 +8351,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &955198973
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
---- !u!21 &986052529
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &996298451 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4788681959534948176, guid: 0eb06dd6c096bc841a3f5329636ae08e,
@@ -8714,6 +8619,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5340484735969768126, guid: 599e8c73a7421ff44ba9688d6083a3a4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5340484735969768127, guid: 599e8c73a7421ff44ba9688d6083a3a4,
         type: 3}
       propertyPath: controller
@@ -8741,6 +8651,41 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 599e8c73a7421ff44ba9688d6083a3a4, type: 3}
+--- !u!21 &1042745774
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!114 &1045838790 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2007242263124091823, guid: 8f7f640f65eba3845a4d1bc5981b347c,
@@ -8753,6 +8698,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!21 &1048665171
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &1049717403
 GameObject:
   m_ObjectHideFlags: 0
@@ -8833,6 +8813,76 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1049717403}
   m_Mesh: {fileID: -4449512068089084730, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
+--- !u!21 &1061275005
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
+--- !u!21 &1067676247
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &1069672571
 GameObject:
   m_ObjectHideFlags: 0
@@ -8974,7 +9024,7 @@ Transform:
   m_Father: {fileID: 543450653330819983}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1104468266
+--- !u!21 &1112119477
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -9081,7 +9131,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 226287490}
+  - {fileID: 1048665171}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -9348,7 +9398,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 522648698}
+  - {fileID: 1061275005}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -9536,7 +9586,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1977187147}
+  - {fileID: 846280293}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -9794,7 +9844,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1419156733}
+  - {fileID: 1239234936}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -9824,7 +9874,42 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1167555979}
   m_Mesh: {fileID: -896912255314443536, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
---- !u!21 &1169466299
+--- !u!21 &1171524820
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
+--- !u!21 &1174610264
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -9955,41 +10040,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1179929261}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &1181241915
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1001 &1188251754
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10226,7 +10276,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1104468266}
+  - {fileID: 1954199869}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -10256,6 +10306,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1191843696}
   m_Mesh: {fileID: -896912255314443536, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
+--- !u!21 &1193645964
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &1195730618
 GameObject:
   m_ObjectHideFlags: 0
@@ -10416,76 +10501,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1206266329}
   m_Mesh: {fileID: -7941435614655087241, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
---- !u!21 &1207849591
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
---- !u!21 &1209918199
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &1210556590
 GameObject:
   m_ObjectHideFlags: 0
@@ -10734,7 +10749,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 312807515}
+  - {fileID: 927959226}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -10916,7 +10931,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 227327234}
+  - {fileID: 898666437}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -10952,7 +10967,42 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1893125739}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &1256379903
+--- !u!21 &1239234936
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
+--- !u!21 &1259535020
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -11059,7 +11109,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1599072700}
+  - {fileID: 1337073602}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -11529,7 +11579,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1286615457}
   m_Mesh: {fileID: -4449512068089084730, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
---- !u!21 &1315481103
+--- !u!21 &1323861076
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -11701,44 +11751,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 3
-  script: {fileID: 0}
+  script: {fileID: 249963882}
   ids: 010101
   dialogueManager: {fileID: 249963881}
---- !u!21 &1331786323
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &1334606653
 GameObject:
   m_ObjectHideFlags: 0
@@ -11832,6 +11847,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &1337073602
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &1340574258
 GameObject:
   m_ObjectHideFlags: 0
@@ -11904,7 +11954,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1901272375}
+  - {fileID: 803944496}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -11934,41 +11984,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340574258}
   m_Mesh: {fileID: -896912255314443536, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
---- !u!21 &1344200916
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1001 &1355999828
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12111,7 +12126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 2
-  script: {fileID: 0}
+  script: {fileID: 249963882}
   ids: 010101
   dialogueManager: {fileID: 249963881}
 --- !u!1 &1365327118
@@ -12310,7 +12325,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 731629164}
+  - {fileID: 1464375319}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -12352,6 +12367,76 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!21 &1371031090
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
+--- !u!21 &1377816711
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1001 &1385744776
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12436,41 +12521,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 349860849361bcc4cb21897ecbcc0540, type: 3}
---- !u!21 &1386012998
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!4 &1403799996 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4009914640709859776, guid: ce5eff88e1065844eb01a483376e2471,
@@ -12532,17 +12582,17 @@ PrefabInstance:
     - target: {fileID: 4788681959534948181, guid: 0eb06dd6c096bc841a3f5329636ae08e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 98.80699
+      value: 20.905983
       objectReference: {fileID: 0}
     - target: {fileID: 4788681959534948181, guid: 0eb06dd6c096bc841a3f5329636ae08e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.661221
+      value: 10.081222
       objectReference: {fileID: 0}
     - target: {fileID: 4788681959534948181, guid: 0eb06dd6c096bc841a3f5329636ae08e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 121.880905
+      value: 120.938
       objectReference: {fileID: 0}
     - target: {fileID: 4788681959534948181, guid: 0eb06dd6c096bc841a3f5329636ae08e,
         type: 3}
@@ -12654,7 +12704,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 605570529}
+  - {fileID: 503746032}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -12684,41 +12734,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1407515869}
   m_Mesh: {fileID: -896912255314443536, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
---- !u!21 &1419156733
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1001 &1425693246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12981,6 +12996,41 @@ Transform:
   m_Father: {fileID: 1832615726}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 31.471, y: -89.121, z: 1.6320001}
+--- !u!21 &1464375319
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &1469986291 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2007242264350564948, guid: 8f7f640f65eba3845a4d1bc5981b347c,
@@ -13235,7 +13285,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 766526250}
+  - {fileID: 1171524820}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -13425,6 +13475,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1481953053}
   m_Mesh: {fileID: -4449512068089084730, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
+--- !u!21 &1489921758
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1001 &1497368506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13432,6 +13517,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1635678335260998289, guid: 5904c8cd30847024896c3f55fedc3296,
+        type: 3}
+      propertyPath: interactionText
+      value: 
+      objectReference: {fileID: 1045838790}
+    - target: {fileID: 1635678335260998289, guid: 5904c8cd30847024896c3f55fedc3296,
+        type: 3}
+      propertyPath: interactionHoldGO
+      value: 
+      objectReference: {fileID: 1074643356}
+    - target: {fileID: 1635678335260998289, guid: 5904c8cd30847024896c3f55fedc3296,
+        type: 3}
+      propertyPath: interactionHoldProgress
+      value: 
+      objectReference: {fileID: 1074643358}
     - target: {fileID: 5592433310619205481, guid: 5904c8cd30847024896c3f55fedc3296,
         type: 3}
       propertyPath: cam
@@ -13450,17 +13550,17 @@ PrefabInstance:
     - target: {fileID: 5917096859811601121, guid: 5904c8cd30847024896c3f55fedc3296,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 98.79
+      value: 20.9
       objectReference: {fileID: 0}
     - target: {fileID: 5917096859811601121, guid: 5904c8cd30847024896c3f55fedc3296,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.11
+      value: 7.53
       objectReference: {fileID: 0}
     - target: {fileID: 5917096859811601121, guid: 5904c8cd30847024896c3f55fedc3296,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 128.6429
+      value: 127.7
       objectReference: {fileID: 0}
     - target: {fileID: 5917096859811601121, guid: 5904c8cd30847024896c3f55fedc3296,
         type: 3}
@@ -13691,41 +13791,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1511123222}
   m_Mesh: {fileID: -7941435614655087241, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
---- !u!21 &1514772712
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1001 &1522445018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13996,7 +14061,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1386012998}
+  - {fileID: 397385447}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -14120,6 +14185,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1550893723}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!21 &1558575293
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &1562164935
 GameObject:
   m_ObjectHideFlags: 0
@@ -14199,6 +14299,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1562164935}
   m_Mesh: {fileID: -2186257154207007639, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
+--- !u!21 &1572143915
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &1575947068
 GameObject:
   m_ObjectHideFlags: 0
@@ -14271,7 +14406,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1743047665}
+  - {fileID: 2113134627}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -14465,6 +14600,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1586658263}
   m_Mesh: {fileID: -4449512068089084730, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
+--- !u!21 &1591686970
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &1593981354
 GameObject:
   m_ObjectHideFlags: 0
@@ -14625,41 +14795,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1598939285}
   m_Mesh: {fileID: -4449512068089084730, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
---- !u!21 &1599072700
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &1608593519
 GameObject:
   m_ObjectHideFlags: 0
@@ -14718,7 +14853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 1
-  script: {fileID: 0}
+  script: {fileID: 249963882}
   ids: 010101
   dialogueManager: {fileID: 249963881}
 --- !u!1 &1609959505
@@ -14887,7 +15022,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 140678351}
+  - {fileID: 612423175}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -15002,76 +15137,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1648630999}
   m_Mesh: {fileID: 2390143739278006880, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
---- !u!21 &1648890202
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
---- !u!21 &1659411463
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &1661176889
 GameObject:
   m_ObjectHideFlags: 0
@@ -15478,7 +15543,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1871371069}
+  - {fileID: 1323861076}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -15754,7 +15819,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 870161904}
+  - {fileID: 2103427116}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -15946,7 +16011,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 571677953}
+  - {fileID: 218861889}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -15982,41 +16047,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1497368506}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &1743047665
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!4 &1744468628 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2118652688780167266, guid: 349860849361bcc4cb21897ecbcc0540,
@@ -16473,7 +16503,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1659411463}
+  - {fileID: 1193645964}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -16503,7 +16533,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1771999994}
   m_Mesh: {fileID: -896912255314443536, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
---- !u!21 &1783993554
+--- !u!21 &1784995948
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -16632,6 +16662,76 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1790520235}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!21 &1791043678
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
+--- !u!21 &1793926498
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &1800226816
 GameObject:
   m_ObjectHideFlags: 0
@@ -16704,7 +16804,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1207849591}
+  - {fileID: 1112119477}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -16886,7 +16986,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 183389882}
+  - {fileID: 1042745774}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -17293,41 +17393,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1864228269}
   m_Mesh: {fileID: -7941435614655087241, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
---- !u!21 &1871371069
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1001 &1893125739
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17412,7 +17477,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce5eff88e1065844eb01a483376e2471, type: 3}
---- !u!21 &1901272375
+--- !u!21 &1893690263
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -17842,7 +17907,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 169920346}
+  - {fileID: 1591686970}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -17872,13 +17937,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1929427012}
   m_Mesh: {fileID: -896912255314443536, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
---- !u!4 &1954574853 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2118652688780167266, guid: 349860849361bcc4cb21897ecbcc0540,
-    type: 3}
-  m_PrefabInstance: {fileID: 1385744776}
-  m_PrefabAsset: {fileID: 0}
---- !u!21 &1977187147
+--- !u!21 &1954199869
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -17913,6 +17972,12 @@ Material:
     - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
     - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
     - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
+--- !u!4 &1954574853 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2118652688780167266, guid: 349860849361bcc4cb21897ecbcc0540,
+    type: 3}
+  m_PrefabInstance: {fileID: 1385744776}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1978060555
 GameObject:
   m_ObjectHideFlags: 0
@@ -18079,7 +18144,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 413492243}
+  - {fileID: 896139614}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -18189,7 +18254,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2027629382}
   m_Mesh: {fileID: -4449512068089084730, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
---- !u!21 &2031358644
+--- !u!21 &2027885928
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -18296,7 +18361,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1169466299}
+  - {fileID: 1572143915}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -18326,41 +18391,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2036983430}
   m_Mesh: {fileID: -896912255314443536, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
---- !u!21 &2048270372
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1001 &2050568034
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18524,7 +18554,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2054522363}
   m_LocalRotation: {x: 0.08149545, y: 0, z: 0, w: 0.9966737}
-  m_LocalPosition: {x: 98.80699, y: 9.661221, z: 121.880905}
+  m_LocalPosition: {x: 20.905983, y: 10.081222, z: 121.86369}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -18595,76 +18625,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!21 &2057115959
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
---- !u!21 &2060960537
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1001 &2073433532
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18901,7 +18861,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1209918199}
+  - {fileID: 2145349470}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -19798,7 +19758,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 505900529}
+  - {fileID: 1174610264}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -19828,6 +19788,76 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2101083156}
   m_Mesh: {fileID: -896912255314443536, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
+--- !u!21 &2103427116
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
+--- !u!21 &2113134627
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &2115965290
 GameObject:
   m_ObjectHideFlags: 0
@@ -19900,7 +19930,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2060960537}
+  - {fileID: 823237499}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -20086,7 +20116,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1256379903}
+  - {fileID: 1558575293}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -20188,7 +20218,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 396494513}
+  - {fileID: 9840101}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -20218,41 +20248,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2129952825}
   m_Mesh: {fileID: -896912255314443536, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
---- !u!21 &2134802833
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of Arbol
-  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
-    type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - Texture2D_4074D64A:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_8F457594:
-        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
-    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
-    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
-    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &2140257852
 GameObject:
   m_ObjectHideFlags: 0
@@ -20325,7 +20320,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2048270372}
+  - {fileID: 2027885928}
   - {fileID: 2100000, guid: d0e5d1c5b4212dd4ebc85eb380175bae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -20355,6 +20350,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2140257852}
   m_Mesh: {fileID: -896912255314443536, guid: 32be87fe6c3a96c409115da518b43d0c, type: 3}
+--- !u!21 &2145349470
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of Arbol
+  m_Shader: {fileID: -6465566751694194690, guid: 50dc6b70849f4da4c96f57f14db2f171,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4074D64A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F457594:
+        m_Texture: {fileID: 2800000, guid: 1855750777e8802448346d36b88181dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_6820E916: {r: 1, g: 1, b: 1, a: 0}
+    - Color_779D8C7A: {r: 0.2966358, g: 0.6226415, b: 0.36950764, a: 0}
+    - Color_8768768687: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 0.20518868, g: 0.24623309, b: 0.3, a: 0.99}
+    - _L1_dir: {r: 0.85280097, g: 0.52207214, b: -0.013082666, a: 0}
 --- !u!1 &547693068636342
 GameObject:
   m_ObjectHideFlags: 0
@@ -20421,7 +20451,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 96
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!23 &159079048777014213
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21395,7 +21425,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 69713493391160065}
   m_LocalRotation: {x: -0.49972787, y: 0.50027204, z: 0.5002716, w: 0.49972832}
-  m_LocalPosition: {x: 132.18126, y: 11.0278225, z: 130.53563}
+  m_LocalPosition: {x: 129.964, y: 11.0278225, z: 130.53563}
   m_LocalScale: {x: 429.45068, y: 278.75177, z: 792.55786}
   m_Children: []
   m_Father: {fileID: 1832615726}

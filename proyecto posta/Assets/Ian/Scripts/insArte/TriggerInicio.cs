@@ -27,7 +27,7 @@ public class TriggerInicio : MonoBehaviour
             if (other.transform.gameObject.GetComponent<PlayerManager>().bibliotecaPuzzles == 0 && on)
             {
                 gameManager.instance.level = 2;
-                script.StartDialogue("InstitutoArte.txt", 0, 6, true);
+                
                 on = false;
             }
             else if (other.transform.gameObject.GetComponent<PlayerManager>().bibliotecaPuzzles == 1 && !on)

@@ -74,8 +74,8 @@ public class Dialogue : Interactable1
             case 2:
                 Debug.Log("DAALE");
                 if (playerStats.bibliotecaPuzzles == 0){
-                    Debug.Log("El gordo");
                     
+                    script.StartDialogue("InstitutoArte.txt", 0, 6, true);
                     alreadyTalked = !alreadyTalked;
                     //talk "aaa finn ayuda quiero entrar"
                 }
