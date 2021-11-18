@@ -2341,7 +2341,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1741519236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2775,9 +2775,9 @@ MonoBehaviour:
   cambiaDialogo: 0
   AudioManager: {fileID: 2033098736}
   sentTrue: 0
-  kevIm: {fileID: 0}
-  finIm: {fileID: 0}
-  profIm: {fileID: 0}
+  kevIm: {fileID: 21300000, guid: d180e22fe1218a8498981ccac8c71ca1, type: 3}
+  finIm: {fileID: 21300000, guid: 7007ba2091f75284d90832d84affe03e, type: 3}
+  profIm: {fileID: 21300000, guid: 3863b936254181b46b44775e5de59989, type: 3}
 --- !u!4 &1852877943323905905
 Transform:
   m_ObjectHideFlags: 0
@@ -15133,7 +15133,7 @@ PrefabInstance:
     - target: {fileID: 1997147889115651741, guid: b0ea1ac9f01647b409438a358054e003,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0ea1ac9f01647b409438a358054e003, type: 3}
