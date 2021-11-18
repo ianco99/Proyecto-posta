@@ -13,6 +13,7 @@ public class breakableGlass : MonoBehaviour
         {
             
             particulas.SetActive(true);
+            Destroy(maceta.GetComponent<LineRenderer>());
             Destroy(maceta.GetComponent<HingeJoint>());
             Destroy(gameObject);
         }

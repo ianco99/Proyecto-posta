@@ -39,7 +39,7 @@ public class SprayManager : Interactable1
     public override string GetDescription()
     {
         
-        return "sas" + descripcion;
+        return descripcion;
     }
 
     public override void changeCamera()

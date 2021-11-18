@@ -34,8 +34,7 @@ public class Lightbulb : Interactable1
 
     public override string GetDescription()
     {
-        if (isOn) return "Press [1], [2] or [3] to change the lights";
-        return "Press [E] to turn <color=green>on</color> the light.";
+        return description;
     }
 
     public override void changeCamera()

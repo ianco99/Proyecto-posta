@@ -15,7 +15,7 @@ public class insArteManager : MonoBehaviour
         GameEvents.current.kevinArtSupplies += PickUpMaterials;
         GameEvents.current.needScaring += ScareStudents;
         GameEvents.current.needScaring += preparePossesables;
-        GameEvents.current.kevinStoppedTalking += hardcodeadisimo;
+        //GameEvents.current.kevinStoppedTalking += hardcodeadisimo;
     }
 
     void PickUpMaterials()

@@ -65,6 +65,7 @@ public class jardinManager : MonoBehaviour
         {
             case 0: //INICIO
                 gameManager.instance.UpdateGameState(GameState.Dialogue);
+                kevin.GetComponent<Animator>().SetBool("fotoIdle", false);
                 kevin.GetComponent<KevinMOv>().MoveToThisPoint(kevinDialogPos.position, true);
                 player.GetComponent<KevinMOv>().MoveToThisPoint(finnDialogPos.position, false);
                 //player.GetComponent<PlayerManager>().b = finnDialogPos.position;
@@ -104,6 +105,7 @@ public class jardinManager : MonoBehaviour
                 Debug.Log("SASASA");
                 break;
             case 3:
+                kevin.GetComponent<Animator>().SetBool("fotoIdle", true);
                 GameObject.FindGameObjectWithTag("Text").GetComponent<ReadTxt>().StartDialogue("Jardin.txt", 18, 25, true);
                 GameEvents.current.ActivateSpray();
                 //GameEvents.current.PrepareFlowers();

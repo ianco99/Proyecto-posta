@@ -10,6 +10,7 @@ public abstract class Interactable1 : MonoBehaviour
     }
 
     float holdTime;
+    public string description;
 
     public Transform cameraPos;
 

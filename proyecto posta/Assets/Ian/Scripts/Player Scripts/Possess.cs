@@ -15,7 +15,7 @@ public class Possess : MonoBehaviour
     public GameObject AudioManager;
     [SerializeField] TMPro.TextMeshProUGUI interactionText;
     [SerializeField] GameObject playCam;
-
+    string descRecieved = "";
     private void Start()
     {
         anim = GetComponentInChildren<Animator>();
@@ -27,8 +27,9 @@ public class Possess : MonoBehaviour
         if (isPossesing)
         {
             Debug.Log("eueue");
-            interactionText.text = found.GetComponent<Interactable1>().GetDescription();
-            //Debug.Log(interactionText.text);
+            descRecieved = found.GetComponent<Interactable1>().GetDescription();
+            Debug.Log(interactionText.text);
+            interactionText.text = descRecieved;
             found.GetComponent<Interactable1>().Interact();
 
             if (Input.GetKeyDown(KeyCode.F))

@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   script: {fileID: 1852877943323905904}
-  dialogueManager: {fileID: 0}
+  dialogueManager: {fileID: 1852877943323905907}
 --- !u!114 &312688415 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1997147888077719213, guid: b0ea1ac9f01647b409438a358054e003,
@@ -2252,7 +2252,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1724274773}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.039482553, y: 1.9278213, z: -19.558006}
+  m_LocalPosition: {x: -0.03932844, y: 1.9239697, z: -19.558004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
