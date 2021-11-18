@@ -15,6 +15,7 @@ public class Menues : MonoBehaviour
     public Dropdown resDrop;
     public Text VolumeCounter;
     AudioManager script;
+    public GameObject panelPrinc;
     Resolution[] resolutions;
     
     // Start is called before the first frame update
@@ -24,7 +25,7 @@ public class Menues : MonoBehaviour
 
 
         resolutions = Screen.resolutions; 
-        //resDrop.ClearOptions();
+        resDrop.ClearOptions();
         List<string> options = new List<string>();
         int currRes = 0;
         int a = 0;
@@ -37,9 +38,9 @@ public class Menues : MonoBehaviour
             a++;
         }
 
-      //  resDrop.AddOptions(options);
-       // resDrop.value = currRes;
-       // resDrop.RefreshShownValue();
+        resDrop.AddOptions(options);
+        resDrop.value = currRes;
+        resDrop.RefreshShownValue();
 
 
         script = audioManager.GetComponent<AudioManager>();
@@ -90,6 +91,7 @@ public class Menues : MonoBehaviour
         switch(name){
             case "Main":
                 MainMenu.SetActive(true);
+                panelPrinc.SetActive(true);
                 break;
             case "Pause":
                 PauseMenu.SetActive(true);
@@ -103,6 +105,7 @@ public class Menues : MonoBehaviour
         switch(name){
             case "Main":
                 MainMenu.SetActive(false);
+                panelPrinc.SetActive(false);
                 break;
             case "Pause":
                 PauseMenu.SetActive(false);
@@ -114,8 +117,8 @@ public class Menues : MonoBehaviour
     }
 
     public void SetResolution(int resolutionIndex){
-    //    Resolution resolution = resolutions[resolutionIndex];
-      //  Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+        Resolution resolution = resolutions[resolutionIndex];
+        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
 
     public void SetFullscreen (bool isFullscreen){
