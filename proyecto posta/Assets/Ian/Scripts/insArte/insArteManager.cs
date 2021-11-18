@@ -8,6 +8,7 @@ public class insArteManager : MonoBehaviour
     public GameObject[] students;
     public GameObject[] possesables;
     public GameObject camera;
+    public GameObject dialogue;
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +16,7 @@ public class insArteManager : MonoBehaviour
         GameEvents.current.kevinArtSupplies += PickUpMaterials;
         GameEvents.current.needScaring += ScareStudents;
         GameEvents.current.needScaring += preparePossesables;
+        GameEvents.current.fadedIn += hardcodeadisimo;
         //GameEvents.current.kevinStoppedTalking += hardcodeadisimo;
     }
 
@@ -29,11 +31,7 @@ public class insArteManager : MonoBehaviour
 
     void hardcodeadisimo()
     {
-        if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles == 0)
-        {
-            camera.GetComponent<CameraWallSeeThrough>().enabled = true;
-        }
-        
+        dialogue.GetComponent<ReadTxt>().StartDialogue("insArteDesc.txt", 0, 0, true);
     }
 
     void ScareStudents()

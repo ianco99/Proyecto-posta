@@ -73,13 +73,7 @@ public class Dialogue : Interactable1
                 break;
             case 2:
                 Debug.Log("DAALE");
-                if (playerStats.bibliotecaPuzzles == 0){
-                    
-                    script.StartDialogue("InstitutoArte.txt", 0, 6, true);
-                    alreadyTalked = !alreadyTalked;
-                    //talk "aaa finn ayuda quiero entrar"
-                }
-                else if(playerStats.bibliotecaPuzzles == 2)
+                 if(playerStats.bibliotecaPuzzles == 2)
                 {
                     Debug.Log("juntame las temperas querido");
                     script.StartDialogue("InstitutoArte.txt", 14, 19, true);

@@ -140,4 +140,13 @@ public class GameEvents : MonoBehaviour
             acondicionadorOn();
         }
     }
+
+    public event Action fadedIn;
+    public void FadedIn()
+    {
+        if (fadedIn != null)
+        {
+            fadedIn();
+        }
+    }
 }

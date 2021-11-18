@@ -27,14 +27,14 @@ public class TriggerInicio : MonoBehaviour
             if (other.transform.gameObject.GetComponent<PlayerManager>().bibliotecaPuzzles == 0 && on)
             {
                 gameManager.instance.level = 2;
-                
+                script.StartDialogue("InstitutoArte.txt", 0, 6, true);
                 on = false;
             }
             else if (other.transform.gameObject.GetComponent<PlayerManager>().bibliotecaPuzzles == 1 && !on)
             {
                 script.StartDialogue("InstitutoArte.txt", 9, 13, true);
+                
                 on = !on;
-
             }
             //gameManager.instance.UpdateGameState(GameState.Dialogue);
             //dialogueManager.readtxt(institutodearte);
@@ -48,7 +48,7 @@ public class TriggerInicio : MonoBehaviour
             on = false;
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles++;
             StartCoroutine(mover.points(new Vector3[] { proxPosKevin.position, pos2.position }));
-            profe.GetComponent<scriptDeSanti>().MoveToDestination(direccionProfe.position);
+            profe.GetComponent<KevinMOv>().MoveToThisPoint(direccionProfe.position, false);
             //santi.MoveToDestination(direccionProfe.position);
             profe.GetComponent<Animator>().SetBool("MovingX", true);
             profe.GetComponent<Animator>().SetBool("Idle", false);

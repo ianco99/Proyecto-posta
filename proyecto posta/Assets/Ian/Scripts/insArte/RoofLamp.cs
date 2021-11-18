@@ -10,6 +10,8 @@ public class RoofLamp : Interactable1
     GameObject player;
     [SerializeField] GameObject student;
     [SerializeField] Transform runToPosition;
+    [SerializeField] GameObject panel;
+    [SerializeField] Animation fade, titilar;
 
     private void Start()
     {
@@ -19,12 +21,17 @@ public class RoofLamp : Interactable1
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            on = !on;
-            luz.SetActive(on);
+            //on = !on;
+            //luz.SetActive(on);
+            fade.Play();
+            titilar.Play();
             if (player.GetComponent<PlayerManager>().bibliotecaPuzzles == 0)
             {
                 player.GetComponent<PlayerManager>().bibliotecaPuzzles++;
-                student.GetComponent<scriptDeSanti>().MoveToDestination(runToPosition.position);
+                gameManager.instance.UpdateGameState(GameState.Cinematic);
+                Destroy(student);
+                //student.GetComponent<KevinMOv>().MoveToThisPoint(runToPosition.position, false);
+                panel.GetComponent<Animation>().Play();
                 GameEvents.current.ScaringStudent();
             }
         }
