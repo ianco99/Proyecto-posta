@@ -23,15 +23,14 @@ public class RoofLamp : Interactable1
         {
             //on = !on;
             //luz.SetActive(on);
-            fade.Play();
-            titilar.Play();
+            panel.SetActive(true);
             if (player.GetComponent<PlayerManager>().bibliotecaPuzzles == 0)
             {
                 player.GetComponent<PlayerManager>().bibliotecaPuzzles++;
                 gameManager.instance.UpdateGameState(GameState.Cinematic);
                 Destroy(student);
                 //student.GetComponent<KevinMOv>().MoveToThisPoint(runToPosition.position, false);
-                panel.GetComponent<Animation>().Play();
+                panel.SetActive(true);
                 GameEvents.current.ScaringStudent();
             }
         }

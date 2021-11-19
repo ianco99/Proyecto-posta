@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 0b85f8b8e521cc74cba1bb8a5da18a5c,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -409,7 +409,7 @@ PrefabInstance:
     - target: {fileID: 4788681959534948181, guid: 0eb06dd6c096bc841a3f5329636ae08e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.71067
+      value: 10.360672
       objectReference: {fileID: 0}
     - target: {fileID: 4788681959534948181, guid: 0eb06dd6c096bc841a3f5329636ae08e,
         type: 3}
@@ -459,6 +459,12 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 4788681959534948180, guid: 0eb06dd6c096bc841a3f5329636ae08e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0eb06dd6c096bc841a3f5329636ae08e, type: 3}
+--- !u!1 &186535080 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6352333274792348445, guid: b0ea1ac9f01647b409438a358054e003,
+    type: 3}
+  m_PrefabInstance: {fileID: 285422641641225836}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &242543887 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4788681959534948176, guid: 0eb06dd6c096bc841a3f5329636ae08e,
@@ -1055,7 +1061,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   texto: {fileID: 929782851}
   panel: {fileID: 628816072}
-  panel2: {fileID: 0}
+  panel2: {fileID: 186535080}
   Tex: {fileID: 1212166388}
   Nombre: {fileID: 1421183074}
   shouldPlayAfter: 0
@@ -1850,6 +1856,21 @@ PrefabInstance:
       propertyPath: m_MaskInteraction
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1635678335260998289, guid: 5904c8cd30847024896c3f55fedc3296,
+        type: 3}
+      propertyPath: interactionText
+      value: 
+      objectReference: {fileID: 6888114027900906998}
+    - target: {fileID: 1635678335260998289, guid: 5904c8cd30847024896c3f55fedc3296,
+        type: 3}
+      propertyPath: interactionHoldGO
+      value: 
+      objectReference: {fileID: 6888114027862136189}
+    - target: {fileID: 1635678335260998289, guid: 5904c8cd30847024896c3f55fedc3296,
+        type: 3}
+      propertyPath: interactionHoldProgress
+      value: 
+      objectReference: {fileID: 6888114027862136191}
     - target: {fileID: 5592433310619205481, guid: 5904c8cd30847024896c3f55fedc3296,
         type: 3}
       propertyPath: cam
@@ -1873,7 +1894,7 @@ PrefabInstance:
     - target: {fileID: 5917096859811601121, guid: 5904c8cd30847024896c3f55fedc3296,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.75
+      value: 10.4
       objectReference: {fileID: 0}
     - target: {fileID: 5917096859811601121, guid: 5904c8cd30847024896c3f55fedc3296,
         type: 3}
@@ -2032,7 +2053,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1880734336}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.71067, y: 2.706782, z: -10.6454525}
+  m_LocalPosition: {x: 10.360672, y: 2.706782, z: -10.6454525}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
