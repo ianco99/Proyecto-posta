@@ -1971,12 +1971,12 @@ PrefabInstance:
     - target: {fileID: 1997147888077719213, guid: b0ea1ac9f01647b409438a358054e003,
         type: 3}
       propertyPath: m_FontData.m_MinSize
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1997147888077719213, guid: b0ea1ac9f01647b409438a358054e003,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 61
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1997147888784076212, guid: b0ea1ac9f01647b409438a358054e003,
         type: 3}
