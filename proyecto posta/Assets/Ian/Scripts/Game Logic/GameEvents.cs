@@ -149,4 +149,13 @@ public class GameEvents : MonoBehaviour
             fadedIn();
         }
     }
+
+    public event Action ticketFell;
+    public void TicketFell()
+    {
+        if(ticketFell != null)
+        {
+            ticketFell();
+        }
+    }
 }
