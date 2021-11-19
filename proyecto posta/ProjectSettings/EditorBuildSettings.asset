@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Ian/Universidad.unity
     guid: 48def5b2c3f4a4c4f9040ea98b23d216
   - enabled: 1
+    path: Assets/Ian/Terraza.unity
+    guid: 06d096e311d8df643b65535f1f0d481e
+  - enabled: 1
     path: Assets/Ian/FinalMenu.unity
     guid: 018a6f15d2cdf6b4b80b2c33423344de
   m_configObjects: {}

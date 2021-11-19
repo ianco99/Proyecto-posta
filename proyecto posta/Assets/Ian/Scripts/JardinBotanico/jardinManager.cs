@@ -56,7 +56,7 @@ public class jardinManager : MonoBehaviour
     public void stopTimeline()
     {
         GetComponent<PlayableDirector>().Stop();
-        GameObject.FindGameObjectWithTag("Text").GetComponent<ReadTxt>().StartDialogue("Jardin.txt", 38, 46, false);
+        GameObject.FindGameObjectWithTag("Text").GetComponent<ReadTxt>().StartDialogue("Jardin.txt", 38, 45, false);
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().jardinPuzzles++;
     }
     void stopDialogue()

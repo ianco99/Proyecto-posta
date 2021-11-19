@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 
 public class terrazaManager : MonoBehaviour
 {
@@ -33,6 +34,7 @@ public class terrazaManager : MonoBehaviour
         if(playerStats == 1)
         {
             this.GetComponent<PlayableDirector>().Play();
+            SceneManager.LoadScene("StartMenu");
         }
     }
 
