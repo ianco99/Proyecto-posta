@@ -14,10 +14,11 @@ public class turbinaUniversidad : Interactable1
     private void ActivateSpray()
     {
         particle.GetComponent<ParticleSystem>().Play();
-        if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().universidadPuzzles == 4)
+        if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().universidadPuzzles == 2)
         {
             
             GameEvents.current.AcondicionadorOn();
+            gameManager.instance.UpdateGameState(GameState.Cinematic);
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().universidadPuzzles++;
         }
     }
@@ -39,7 +40,6 @@ public class turbinaUniversidad : Interactable1
         {
             playCam = GameObject.Find("PlayCam");
             ActivateSpray();
-            changeCamera();
             used = !used;
             
         }

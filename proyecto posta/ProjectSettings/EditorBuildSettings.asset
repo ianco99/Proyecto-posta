@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Ian/JardinBotanico.unity
     guid: 9bea109607bd5d64ea941b5248d1c993
   - enabled: 1
+    path: Assets/Ian/Universidad.unity
+    guid: 48def5b2c3f4a4c4f9040ea98b23d216
+  - enabled: 1
     path: Assets/Ian/FinalMenu.unity
     guid: 018a6f15d2cdf6b4b80b2c33423344de
   m_configObjects: {}
