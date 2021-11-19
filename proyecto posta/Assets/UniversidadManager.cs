@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.Playables;
 
 public class UniversidadManager : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class UniversidadManager : MonoBehaviour
     [SerializeField] Transform kevinQueuePos;
     [SerializeField] Transform finnQueuePos;
     [SerializeField] GameObject[] sprays;
+    [SerializeField] Animator ticket;
+    [SerializeField] Transform ticketTransf;
 
     private void Start()
     {
@@ -57,11 +60,12 @@ public class UniversidadManager : MonoBehaviour
 
     public void spraysActivated()
     {
-        Debug.Log("TIMELINE");
+        ticket.Play("New Animation");
+        GameObject.Find("PlayCam").GetComponent<CinemachineVirtualCamera>().Follow = ticketTransf;
     }
 
     public void ticketFalls()
     {
-        Debug.Log("TIMELINE 2");
+        ticket.Play("clip1");
     }
 }

@@ -31,7 +31,7 @@ public class insArteManager : MonoBehaviour
 
     void hardcodeadisimo()
     {
-        dialogue.GetComponent<ReadTxt>().StartDialogue("insArteDesc.txt", 0, 0, true);
+        dialogue.GetComponent<ReadTxt>().StartDialogue("insArteDesc.txt", 0, 1, true);
     }
 
     void ScareStudents()
