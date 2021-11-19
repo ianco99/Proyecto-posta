@@ -12,6 +12,7 @@ public class possessBanquito : Interactable1
     public float fuerza;
     [SerializeField] GameObject student;
     [SerializeField] Transform runToPosition;
+    [SerializeField] GameObject panel;
 
     private void Start()
     {
@@ -28,6 +29,7 @@ public class possessBanquito : Interactable1
     {
         if (!used)
         {
+            panel.SetActive(true);
             Debug.Log("moviendo banquito ayeee");
             on = !on;
             StartCoroutine("moverBanquito", on);

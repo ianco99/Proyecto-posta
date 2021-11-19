@@ -9,6 +9,8 @@ public class WardrobeController : Interactable1
     bool used = false;
     [SerializeField] Transform runToPosition;
     GameObject player;
+    [SerializeField] GameObject panel;
+
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -19,6 +21,7 @@ public class WardrobeController : Interactable1
         {
             if (!used)
             {
+                panel.SetActive(true);
                 GetComponent<Animator>().enabled = true;
                 GetComponent<BoxCollider>().enabled = false;
                 GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().bibliotecaPuzzles++;

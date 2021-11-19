@@ -13,6 +13,7 @@ public class pizarraManager : Interactable1
     [SerializeField] float fadeOutTime = 1f;
     [SerializeField] SpriteRenderer sprite;
     [SerializeField] Transform runToPosition;
+    [SerializeField] GameObject panel;
     bool used = false;
 
     private void Start()
@@ -25,6 +26,7 @@ public class pizarraManager : Interactable1
 
         if (!used)
         {
+            panel.SetActive(true);
             on = !on;
             StartCoroutine(Dibujo(sprite, on));
             student.GetComponent<scriptDeSanti>().MoveToDestination(runToPosition.position);

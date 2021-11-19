@@ -31,7 +31,8 @@ public class insArteManager : MonoBehaviour
 
     void hardcodeadisimo()
     {
-        dialogue.GetComponent<ReadTxt>().StartDialogue("insArteDesc.txt", 0, 1, true);
+        dialogue.GetComponent<ReadTxt>().StartDialogue("InstitutoArte.txt", 47, 48, true);
+        StartCoroutine(fin());
     }
 
     void ScareStudents()
@@ -53,5 +54,10 @@ public class insArteManager : MonoBehaviour
             possesable.tag = "Possesable";
             Debug.Log("Terminó el foreach");
         }
+    }
+
+    IEnumerator fin(){
+        yield return new WaitForSeconds(5f);
+        dialogue.GetComponent<ReadTxt>().EndDialogue();
     }
 }

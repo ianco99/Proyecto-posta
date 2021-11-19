@@ -1020,6 +1020,7 @@ MonoBehaviour:
   fadeOutTime: 1
   sprite: {fileID: 295094557}
   runToPosition: {fileID: 424426477}
+  panel: {fileID: 1029965696}
 --- !u!114 &240349097
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -85,7 +85,7 @@ public class ReadTxt : MonoBehaviour
         NextDialogue(lineaFin);
     }
 
-    void EndDialogue(){ 
+    public void EndDialogue(){ 
         x = false;
         GameEvents.current.StoppedTalking();
         if (shouldPlayAfter)
