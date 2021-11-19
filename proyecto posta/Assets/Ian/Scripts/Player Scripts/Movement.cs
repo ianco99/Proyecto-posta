@@ -49,14 +49,38 @@ public class Movement : MonoBehaviour
         direction = new Vector3(horizontal, 0f, vertical).normalized; //Getting our inputs in the vector3 direction
         Move();
 
-        //if (Input.GetKeyDown(KeyCode.Alpha1))
-        //{
-        //    SceneManager.LoadScene("Mecanicas");
-        //}
-        //if (Input.GetKeyDown(KeyCode.Alpha2))
-        //{
-        //    SceneManager.LoadScene("Biblioteca");
-        //}
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            SceneManager.LoadScene("Void");
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            SceneManager.LoadScene("Biblioteca");
+        }
+        else if(Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            SceneManager.LoadScene("CuartoDeKevin");
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            SceneManager.LoadScene("InstitutoDeArte");
+        }
+        else if(Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            SceneManager.LoadScene("JardinBotanico");
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            SceneManager.LoadScene("Universidad");
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            SceneManager.LoadScene("Terraza");
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha8))
+        {
+            SceneManager.LoadScene("Bosque");
+        }
 
         Animations();
 
