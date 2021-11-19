@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: db62420e7a1ba6c4d96fd272d845c6f9,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -8061,9 +8061,9 @@ MonoBehaviour:
   cambiaDialogo: 0
   AudioManager: {fileID: 1120687174}
   sentTrue: 0
-  kevIm: {fileID: 0}
-  finIm: {fileID: 0}
-  profIm: {fileID: 0}
+  kevIm: {fileID: 21300000, guid: d180e22fe1218a8498981ccac8c71ca1, type: 3}
+  finIm: {fileID: 21300000, guid: 7007ba2091f75284d90832d84affe03e, type: 3}
+  profIm: {fileID: 21300000, guid: 3863b936254181b46b44775e5de59989, type: 3}
 --- !u!4 &1245637371
 Transform:
   m_ObjectHideFlags: 0
