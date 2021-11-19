@@ -8064,6 +8064,7 @@ MonoBehaviour:
   kevIm: {fileID: 21300000, guid: d180e22fe1218a8498981ccac8c71ca1, type: 3}
   finIm: {fileID: 21300000, guid: 7007ba2091f75284d90832d84affe03e, type: 3}
   profIm: {fileID: 21300000, guid: 3863b936254181b46b44775e5de59989, type: 3}
+  pngVacio: {fileID: 21300000, guid: e5a83b0fb1b518f45aeba0065f28b3b4, type: 3}
 --- !u!4 &1245637371
 Transform:
   m_ObjectHideFlags: 0

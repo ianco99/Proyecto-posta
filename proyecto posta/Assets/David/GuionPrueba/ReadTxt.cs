@@ -30,6 +30,7 @@ public class ReadTxt : MonoBehaviour
     public UnityEngine.Sprite kevIm;
     public UnityEngine.Sprite finIm;
     public UnityEngine.Sprite profIm;
+    public UnityEngine.Sprite pngVacio;
     
     //public 
 
@@ -134,7 +135,7 @@ public class ReadTxt : MonoBehaviour
                             panel2.GetComponent<Image>().sprite = profIm;
                             break;
                         default:
-                            panel2.GetComponent<Image>().sprite = null;
+                            panel2.GetComponent<Image>().sprite = pngVacio;
                             break;
                     }
                     StartCoroutine(TypeSentence(nomb[1]));
