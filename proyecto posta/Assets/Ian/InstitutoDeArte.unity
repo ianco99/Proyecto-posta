@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: db62420e7a1ba6c4d96fd272d845c6f9,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1189,6 +1189,7 @@ GameObject:
   - component: {fileID: 268494881}
   - component: {fileID: 268494880}
   - component: {fileID: 268494883}
+  - component: {fileID: 268494884}
   m_Layer: 0
   m_Name: STUDENT A (1)
   m_TagString: Untagged
@@ -1290,6 +1291,25 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!95 &268494884
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268494878}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7eb93d72129c5404a919bf95e0b01fd0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &275577327
 GameObject:
   m_ObjectHideFlags: 0
@@ -4206,6 +4226,7 @@ GameObject:
   - component: {fileID: 787122036}
   - component: {fileID: 787122035}
   - component: {fileID: 787122038}
+  - component: {fileID: 787122039}
   m_Layer: 0
   m_Name: STUDENT A
   m_TagString: Untagged
@@ -4307,6 +4328,25 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!95 &787122039
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787122033}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 71333cc40a074dc49bf21608fd064250, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &796310570
 GameObject:
   m_ObjectHideFlags: 0
@@ -6485,6 +6525,7 @@ MonoBehaviour:
   fuerza: 200
   student: {fileID: 341968237}
   runToPosition: {fileID: 424426477}
+  panel: {fileID: 1029965696}
 --- !u!54 &878135302
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6806,7 +6847,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 956684992}
   m_LocalRotation: {x: 0, y: -0.000000014901161, z: 0, w: 1}
-  m_LocalPosition: {x: 13.012754, y: 4.2221146, z: -4.709104}
+  m_LocalPosition: {x: 44.76067, y: 4.2221146, z: 3.3008962}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7206,7 +7247,7 @@ PrefabInstance:
     - target: {fileID: 4788681959534948181, guid: 0eb06dd6c096bc841a3f5329636ae08e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.240672
+      value: 44.76067
       objectReference: {fileID: 0}
     - target: {fileID: 4788681959534948181, guid: 0eb06dd6c096bc841a3f5329636ae08e,
         type: 3}
@@ -7216,7 +7257,7 @@ PrefabInstance:
     - target: {fileID: 4788681959534948181, guid: 0eb06dd6c096bc841a3f5329636ae08e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.709104
+      value: 3.3008962
       objectReference: {fileID: 0}
     - target: {fileID: 4788681959534948181, guid: 0eb06dd6c096bc841a3f5329636ae08e,
         type: 3}
@@ -7769,7 +7810,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: d5ff3a5373114c14ba9fceb66d14cf3d, type: 3}
+  m_Sprite: {fileID: 1410641362214486825, guid: 8a9e23d2df0c2d645a60ffd621a7bc5e,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7787,13 +7829,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1165074921}
-  m_LocalRotation: {x: 0.70710677, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.085377134, y: 0.039999947, z: -0.51}
-  m_LocalScale: {x: 6.8737626, y: 2.4999254, z: 0.8049706}
+  m_LocalRotation: {x: 0.7067049, y: -0.02383436, z: 0.023834363, w: 0.706705}
+  m_LocalPosition: {x: -0.2, y: 0.04, z: 0.01}
+  m_LocalScale: {x: 3.1361713, y: 1.1405971, z: 0.3672698}
   m_Children: []
   m_Father: {fileID: 268494879}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 89.97201, y: 0, z: 3.8630002}
 --- !u!114 &1165074924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9452,13 +9494,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1602056711}
-  m_LocalRotation: {x: 0.70710677, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.2818, y: 0.2670002, z: 0.05163515}
-  m_LocalScale: {x: 5.8926272, y: 2.3754525, z: 0.69007194}
+  m_LocalRotation: {x: 0.70545506, y: 0.048303246, z: -0.04830325, w: 0.7054551}
+  m_LocalPosition: {x: -2.54, y: 0.66, z: 1.09}
+  m_LocalScale: {x: 3.7062018, y: 1.4940547, z: 0.43402475}
   m_Children: []
   m_Father: {fileID: 787122034}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: -7.8340006}
 --- !u!95 &1602056713
 Animator:
   serializedVersion: 3
@@ -9532,7 +9574,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 8baa25cebf6ca2a4f9b1bd001db5847f, type: 3}
+  m_Sprite: {fileID: 2376170920153781776, guid: c8d1b29ee5850ce429ffb22d580f5ba1,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9595,7 +9638,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh161054
+  m_Name: pb_Mesh394556
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -29816,7 +29859,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh161466
+  m_Name: pb_Mesh394970
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -30449,6 +30492,7 @@ MonoBehaviour:
   interactionType: 0
   student: {fileID: 1602056711}
   runToPosition: {fileID: 424426477}
+  panel: {fileID: 1029965696}
 --- !u!114 &2145555361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31391,7 +31435,7 @@ PrefabInstance:
     - target: {fileID: 5917096859811601121, guid: 5904c8cd30847024896c3f55fedc3296,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.28
+      value: 44.8
       objectReference: {fileID: 0}
     - target: {fileID: 5917096859811601121, guid: 5904c8cd30847024896c3f55fedc3296,
         type: 3}
@@ -31401,7 +31445,7 @@ PrefabInstance:
     - target: {fileID: 5917096859811601121, guid: 5904c8cd30847024896c3f55fedc3296,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.37
+      value: 10.38
       objectReference: {fileID: 0}
     - target: {fileID: 5917096859811601121, guid: 5904c8cd30847024896c3f55fedc3296,
         type: 3}
