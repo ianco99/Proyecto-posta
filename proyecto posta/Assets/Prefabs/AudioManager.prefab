@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1252036479079694221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 996924527013642680}
+  - component: {fileID: 6697368158210167967}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &996924527013642680
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252036479079694221}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.908372, y: -8.209411, z: 8.844702}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6697368158210167967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252036479079694221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba3b7b1591059164999bf38748898bad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - clip: {fileID: 8300000, guid: bd65e3869c3a60344b6de9d369abb28f, type: 3}
+    name: Jump
+    volume: 0.36
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: 512ed63421b8ba443902656ae2659e10, type: 3}
+    name: Poseer
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: dd5382a0cf18aa1469079c74dffaa71b, type: 3}
+    name: Push
+    volume: 1
+    pitch: 0
+    source: {fileID: 0}
+    loop: 1
+  - clip: {fileID: 8300000, guid: 1db25ed787b000248a68f5fda5b37ad9, type: 3}
+    name: Letra
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: a353ba92b382bbe4db4ac1e2f495b466, type: 3}
+    name: Theme
+    volume: 0.35
+    pitch: 1
+    source: {fileID: 0}
+    loop: 1

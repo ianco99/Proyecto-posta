@@ -6,33 +6,33 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Ian/StartMenu.unity
+    path: Assets/Scenes/StartMenu.unity
     guid: 537458a742475e44dadea479dc42b3ad
   - enabled: 1
-    path: Assets/Ian/Void.unity
+    path: Assets/Scenes/Void.unity
     guid: 1b99998795dfcfb4da4653c14240d851
   - enabled: 1
-    path: Assets/Ian/Bosque.unity
+    path: Assets/Scenes/Bosque.unity
     guid: 5187cc387297164489e0a0321b074475
   - enabled: 1
-    path: Assets/Ian/Biblioteca.unity
+    path: Assets/Scenes/Biblioteca.unity
     guid: 1d6fa0f45b871a24dade61166c814153
   - enabled: 1
-    path: Assets/Ian/CuartoDeKevin.unity
+    path: Assets/Scenes/CuartoDeKevin.unity
     guid: 4bd4ac63ed22f044ea5ae7032165689b
   - enabled: 1
-    path: Assets/Ian/InstitutoDeArte.unity
+    path: Assets/Scenes/InstitutoDeArte.unity
     guid: 87a48f14362c8ff4d8b65262d4f09b92
   - enabled: 1
-    path: Assets/Ian/JardinBotanico.unity
+    path: Assets/Scenes/JardinBotanico.unity
     guid: 9bea109607bd5d64ea941b5248d1c993
   - enabled: 1
-    path: Assets/Ian/Universidad.unity
+    path: Assets/Scenes/Universidad.unity
     guid: 48def5b2c3f4a4c4f9040ea98b23d216
   - enabled: 1
-    path: Assets/Ian/Terraza.unity
+    path: Assets/Scenes/Terraza.unity
     guid: 06d096e311d8df643b65535f1f0d481e
   - enabled: 1
-    path: Assets/Ian/FinalMenu.unity
+    path: Assets/Scenes/FinalMenu.unity
     guid: 018a6f15d2cdf6b4b80b2c33423344de
   m_configObjects: {}
